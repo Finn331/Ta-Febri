@@ -1,23 +1,34 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class PuzzleHolder : MonoBehaviour, IDropHandler
+public class PuzzleHolder : MonoBehaviour
 {
-    public int holderID; // Tambahkan ID pada object holder
+    public int holderID; // ID untuk holder
 
-    public void OnDrop(PointerEventData eventData)
+    private SpriteRenderer holderImage; // Komponen SpriteRenderer dari holder
+
+    private void Start()
     {
-        PuzzlePiece piece = eventData.pointerDrag.GetComponent<PuzzlePiece>();
-        if (piece != null && !piece.isPlaced)
+        holderImage = GetComponent<SpriteRenderer>(); // Mengambil komponen SpriteRenderer dari holder
+    }
+
+    public void SetActiveState(bool isActive)
+    {
+        holderImage.enabled = isActive; // Mengatur status aktif/nonaktif dari SpriteRenderer holder
+    }
+
+    public void DisableHolderImage()
+    {
+        if (holderImage != null)
         {
-            if (piece.pieceID == holderID)
-            {
-                piece.PlacePiece(transform);
-            }
-            else
-            {
-                piece.ResetPosition(); // Kembali ke posisi awal jika ID tidak cocok
-            }
+            // Fade out the image over 0.8 seconds
+            LeanTween.alpha(gameObject, 0f, 0.8f).setOnComplete(() => {
+                holderImage.enabled = false; // Menonaktifkan gambar holder setelah delay
+                // Reset the alpha to 1 for potential future use
+                Color color = holderImage.color;
+                color.a = 1f;
+                holderImage.color = color;
+            });
         }
     }
 }

@@ -1,104 +1,169 @@
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class PuzzlePiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+public class PuzzlePiece : MonoBehaviour
 {
-    private RectTransform rectTransform;
-    private Image image;
-    public bool isPlaced = false; // Deklarasi boolean isPlaced
-    private Transform originalParent;
-    private Vector3 originalPosition; // Menyimpan posisi awal
-    public int pieceID; // Tambahkan ID pada puzzle piece
-    public RectTransform panelRectTransform;
+    public int objectID; // ID untuk GameObject yang di-drag
+    private bool isDragging = false;
+    private bool isSnapped = false; // Menandai apakah GameObject sudah tersnap atau belum
+    private Vector3 offset;
+    private Vector3 initialPosition; // Posisi awal GameObject saat di-instantiate
+    private Camera mainCamera;
+    private float snapDistance = 0.5f; // Jarak untuk deteksi collider
+    private Collider2D spawnAreaCollider; // Collider untuk area spawn
+    private Vector3 lastValidPosition; // Posisi terakhir sebelum diangkat
 
     private void Start()
     {
-        rectTransform = GetComponent<RectTransform>();
-        image = GetComponent<Image>();
-        originalParent = transform.parent;
-        originalPosition = transform.position; // Simpan posisi awal
-        panelRectTransform = originalParent.GetComponent<RectTransform>(); // Mengambil RectTransform dari panel parent
-    }
+        mainCamera = Camera.main;
+        initialPosition = transform.position; // Simpan posisi awal saat di-instantiate
 
-    public void OnBeginDrag(PointerEventData eventData)
-    {
-        if (!isPlaced)
+        // Cari Collider dari GameObject "Spawn Area"
+        GameObject spawnArea = GameObject.Find("Spawn Area");
+        if (spawnArea != null)
         {
-            // Mendapatkan warna saat ini
-            Color currentColor = image.color;
-
-            // Mengubah nilai alpha saja menjadi 170
-            currentColor.a = 170 / 255f;
-
-            // Mengatur kembali warna dengan nilai alpha yang baru
-            image.color = currentColor;
-
-            // Memindahkan parent ke root untuk menghindari masalah sorting
-            transform.SetParent(transform.root);
-            GetComponent<CanvasGroup>().blocksRaycasts = false;
+            spawnAreaCollider = spawnArea.GetComponent<Collider2D>();
         }
-    }
-
-    public void OnDrag(PointerEventData eventData)
-    {
-        if (!isPlaced)
+        else
         {
-            // Memperbarui posisi objek mengikuti posisi mouse
-            transform.position = Input.mousePosition;
+            Debug.LogError("Spawn Area not found or Collider2D component is missing.");
         }
+
+        // Pindahkan objek ke atas (di atas semua objek lain)
+        transform.SetAsLastSibling();
     }
 
-    public void OnEndDrag(PointerEventData eventData)
+    private void Update()
     {
-        if (!isPlaced)
+        if (Input.touchCount > 0)
         {
-            // Mendapatkan warna saat ini
-            Color currentColor = image.color;
+            Touch touch = Input.GetTouch(0);
+            Vector3 touchPosition = GetTouchWorldPosition(touch.position);
 
-            // Mengubah nilai alpha saja menjadi 255
-            currentColor.a = 255 / 255f;
+            HandleInput(touch.phase, touchPosition);
+        }
+        else if (Input.GetMouseButtonDown(0))
+        {
+            Vector3 mousePosition = GetMouseWorldPosition();
+            HandleInput(TouchPhase.Began, mousePosition);
+        }
+        else if (Input.GetMouseButton(0) && isDragging)
+        {
+            Vector3 mousePosition = GetMouseWorldPosition();
+            transform.position = mousePosition + offset;
+        }
+        else if (Input.GetMouseButtonUp(0) && isDragging)
+        {
+            HandleInput(TouchPhase.Ended, Vector3.zero);
+        }
 
-            // Mengatur kembali warna dengan nilai alpha yang baru
-            image.color = currentColor;
-
-            // Mengecek apakah puzzle piece berada di dalam area panel
-            if (RectTransformUtility.RectangleContainsScreenPoint(panelRectTransform, Input.mousePosition))
+        // Pengecekan jika GameObject berada di luar Spawn Area
+        if (!isSnapped && spawnAreaCollider != null && !spawnAreaCollider.bounds.Contains(transform.position))
+        {
+            if (!isDragging)
             {
-                // Tetap di posisi akhir jika berada di dalam panel
-                transform.SetParent(originalParent);
+                ResetToInitialPosition();
             }
-            else
-            {
-                // Kembali ke posisi awal jika berada di luar panel
-                transform.SetParent(originalParent);
-                transform.position = originalPosition;
-            }
-
-            GetComponent<CanvasGroup>().blocksRaycasts = true;
         }
     }
 
-    public void PlacePiece(Transform slot)
+    private void HandleInput(TouchPhase touchPhase, Vector3 inputPosition)
     {
-        isPlaced = true;
-        transform.position = slot.position;
-        transform.SetParent(slot);
+        switch (touchPhase)
+        {
+            case TouchPhase.Began:
+                RaycastHit2D hit = Physics2D.Raycast(inputPosition, Vector2.zero);
+                if (hit.collider != null && hit.collider == GetComponent<Collider2D>())
+                {
+                    isDragging = true;
+                    offset = transform.position - inputPosition;
+                    lastValidPosition = transform.position; // Simpan posisi terakhir sebelum diangkat
+                    Debug.Log("Dragging started");
 
-        // Mengubah nilai alpha menjadi 255 jika isPlaced bernilai true
-        Color currentColor = image.color;
-        currentColor.a = 255 / 255f;
-        image.color = currentColor;
+                    // Pindahkan objek ke atas (di atas semua objek lain)
+                    transform.SetAsLastSibling();
+                }
+                break;
 
-        // Pastikan untuk memblokir raycast setelah ter-place
-        GetComponent<CanvasGroup>().blocksRaycasts = true;
+            case TouchPhase.Moved:
+                if (isDragging)
+                {
+                    transform.position = inputPosition + offset;
+                }
+                break;
+
+            case TouchPhase.Ended:
+            case TouchPhase.Canceled:
+                if (isDragging)
+                {
+                    Debug.Log("Dragging ended");
+                    CheckForHolderMatch();
+                    if (!isSnapped && spawnAreaCollider != null && !spawnAreaCollider.bounds.Contains(transform.position))
+                    {
+                        ResetToInitialPosition();
+                    }
+                    isDragging = false;
+                }
+                break;
+        }
     }
 
-    public void ResetPosition()
+    private Vector3 GetTouchWorldPosition(Vector3 touchPosition)
     {
-        isPlaced = false;
-        transform.position = originalPosition;
-        transform.SetParent(originalParent);
-        GetComponent<CanvasGroup>().blocksRaycasts = true;
+        touchPosition.z = mainCamera.nearClipPlane;
+        return mainCamera.ScreenToWorldPoint(touchPosition);
+    }
+
+    private Vector3 GetMouseWorldPosition()
+    {
+        Vector3 mousePosition = Input.mousePosition;
+        mousePosition.z = mainCamera.nearClipPlane;
+        return mainCamera.ScreenToWorldPoint(mousePosition);
+    }
+
+    private void CheckForHolderMatch()
+    {
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, snapDistance); // Menggunakan OverlapCircleAll untuk mendeteksi collider di sekitar
+
+        foreach (Collider2D collider in colliders)
+        {
+            PuzzleHolder holderScript = collider.GetComponent<PuzzleHolder>();
+            if (holderScript != null && holderScript.holderID == objectID)
+            {
+                float distance = Vector3.Distance(transform.position, collider.transform.position);
+                if (distance < snapDistance)
+                {
+                    transform.position = collider.transform.position; // Snap ke posisi holder
+                    isSnapped = true; // Menandai bahwa GameObject sudah tersnap
+                    GetComponent<Collider2D>().enabled = false; // Menonaktifkan collider agar tidak bisa diambil lagi
+                    lastValidPosition = transform.position; // Update posisi terakhir yang valid setelah tersnap
+
+                    Debug.Log("Snapped to holder: " + holderScript.holderID);
+
+                    // Animasi scaling menggunakan LeanTween
+                    LeanTween.scale(gameObject, new Vector3(1, 1, 1), 0.5f).setEase(LeanTweenType.easeOutBack);
+
+                    // Menonaktifkan gambar holder jika ada
+                    holderScript.DisableHolderImage();
+
+                    break;
+                }
+            }
+        }
+    }
+
+    private void ResetToLastValidPosition()
+    {
+        if (!isSnapped) // Hanya reset jika belum tersnap
+        {
+            transform.position = lastValidPosition; // Kembalikan ke posisi terakhir sebelum diangkat
+            Debug.Log("Reset to last valid position");
+        }
+    }
+
+    private void ResetToInitialPosition()
+    {
+        transform.position = initialPosition; // Kembalikan ke posisi awal saat di-instantiate
+        Debug.Log("Reset to initial position");
     }
 }
