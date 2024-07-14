@@ -39,6 +39,11 @@ public class InitialscreenManager : MonoBehaviour
     [Header("Scene Name")]
     [SerializeField] private string sceneToLoad = "YourNextSceneNameHere"; // The name of the scene to load
 
+    [Header("Audio")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip logoPop;
+    [SerializeField] private AudioClip logoPop2;
+
     private float startYMini = 900f;
     private float endYMini = 247.5f;
     private float endYZoo = 50f;
@@ -75,22 +80,23 @@ public class InitialscreenManager : MonoBehaviour
         LTSeq sequence = LeanTween.sequence();
 
         // Animate "Mini"
-        sequence.append(LeanTween.moveY(logoM, endYMini, animationDuration).setEase(LeanTweenType.easeInOutQuad));
-        sequence.append(LeanTween.moveY(logoI, endYMini, animationDuration).setEase(LeanTweenType.easeInOutQuad));
-        sequence.append(LeanTween.moveY(logoN, endYMini, animationDuration).setEase(LeanTweenType.easeInOutQuad));
-        sequence.append(LeanTween.moveY(logoI2, endYMini, animationDuration).setEase(LeanTweenType.easeInOutQuad));
+        sequence.append(LeanTween.moveY(logoM, endYMini, animationDuration).setEase(LeanTweenType.easeInOutQuad).setOnComplete(() => PlayLogoPop()));
+        sequence.append(LeanTween.moveY(logoI, endYMini, animationDuration).setEase(LeanTweenType.easeInOutQuad).setOnComplete(() => PlayLogoPop()));
+        sequence.append(LeanTween.moveY(logoN, endYMini, animationDuration).setEase(LeanTweenType.easeInOutQuad).setOnComplete(() => PlayLogoPop()));
+        sequence.append(LeanTween.moveY(logoI2, endYMini, animationDuration).setEase(LeanTweenType.easeInOutQuad).setOnComplete(() => PlayLogoPop()));
 
         // Animate "Zoo"
-        sequence.append(LeanTween.moveY(logoZ, endYZoo, animationDuration).setEase(LeanTweenType.easeInOutQuad));
-        sequence.append(LeanTween.moveY(logoO, endYZoo, animationDuration).setEase(LeanTweenType.easeInOutQuad));
+        sequence.append(LeanTween.moveY(logoZ, endYZoo, animationDuration).setEase(LeanTweenType.easeInOutQuad).setOnComplete(() => PlayLogoPop()));
+        sequence.append(LeanTween.moveY(logoO, endYZoo, animationDuration).setEase(LeanTweenType.easeInOutQuad).setOnComplete(() => PlayLogoPop()));
         sequence.append(LeanTween.moveY(logoO2, endYZoo, animationDuration).setEase(LeanTweenType.easeInOutQuad).setOnComplete(() => {
+            PlayLogoPop();
             logoO2Anim.SetTrigger("isCracked");
         }));
 
         // Animate Sponsor logos
-        sequence.append(LeanTween.moveY(logoRagunan, endYSponsor, animationDuration).setEase(LeanTweenType.easeInOutQuad));
-        sequence.append(LeanTween.moveY(logoTripledot, endYSponsor, animationDuration).setEase(LeanTweenType.easeInOutQuad));
-        sequence.append(LeanTween.moveY(logoDkv, endYSponsor, animationDuration).setEase(LeanTweenType.easeInOutQuad));
+        sequence.append(LeanTween.moveY(logoRagunan, endYSponsor, animationDuration).setEase(LeanTweenType.easeInOutQuad).setOnComplete(() => PlayLogoPop2()));
+        sequence.append(LeanTween.moveY(logoTripledot, endYSponsor, animationDuration).setEase(LeanTweenType.easeInOutQuad).setOnComplete(() => PlayLogoPop2()));
+        sequence.append(LeanTween.moveY(logoDkv, endYSponsor, animationDuration).setEase(LeanTweenType.easeInOutQuad).setOnComplete(() => PlayLogoPop2()));
 
         // Activate combined logo and fade out Sponsor logos
         sequence.append(() =>
@@ -217,6 +223,22 @@ public class InitialscreenManager : MonoBehaviour
             loadingSlider.value = progress;
 
             yield return null;
+        }
+    }
+
+    private void PlayLogoPop()
+    {
+        if (audioSource != null && logoPop != null)
+        {
+            audioSource.PlayOneShot(logoPop);
+        }
+    }
+
+    private void PlayLogoPop2()
+    {
+        if (audioSource != null && logoPop2 != null)
+        {
+            audioSource.PlayOneShot(logoPop2);
         }
     }
 }

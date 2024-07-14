@@ -35,16 +35,17 @@ public class MainmenuManager : MonoBehaviour
 
     public void Setting()
     {
-
+        AudioManager.instance.PlaySound(clickSFX);
     }
 
     public void Information()
     {
-
+        AudioManager.instance.PlaySound(clickSFX);
     }
 
     public void Quit()
     {
+        AudioManager.instance.PlaySound(clickSFX);
         Application.Quit();
     }
 
