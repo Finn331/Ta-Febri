@@ -22,7 +22,8 @@ public class PuzzleHolder : MonoBehaviour
         if (holderImage != null)
         {
             // Fade out the image over 0.8 seconds
-            LeanTween.alpha(gameObject, 0f, 0.8f).setOnComplete(() => {
+            LeanTween.alpha(gameObject, 0f, 0.8f).setOnComplete(() =>
+            {
                 holderImage.enabled = false; // Menonaktifkan gambar holder setelah delay
                 // Reset the alpha to 1 for potential future use
                 Color color = holderImage.color;

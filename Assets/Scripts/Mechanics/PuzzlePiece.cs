@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Rendering;
 
 public class PuzzlePiece : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class PuzzlePiece : MonoBehaviour
     private float snapDistance = 0.5f; // Jarak untuk deteksi collider
     private Collider2D spawnAreaCollider; // Collider untuk area spawn
     private Vector3 lastValidPosition; // Posisi terakhir sebelum diangkat
+
+
 
     private void Start()
     {
@@ -81,6 +84,7 @@ public class PuzzlePiece : MonoBehaviour
                     offset = transform.position - inputPosition;
                     lastValidPosition = transform.position; // Simpan posisi terakhir sebelum diangkat
                     Debug.Log("Dragging started");
+                    GetComponent<SortingGroup>().sortingOrder = 5;
 
                     // Pindahkan objek ke atas (di atas semua objek lain)
                     transform.SetAsLastSibling();
@@ -105,6 +109,7 @@ public class PuzzlePiece : MonoBehaviour
                         ResetToInitialPosition();
                     }
                     isDragging = false;
+                    GetComponent<SortingGroup>().sortingOrder = 2;
                 }
                 break;
         }
@@ -147,6 +152,7 @@ public class PuzzlePiece : MonoBehaviour
 
                     // Menonaktifkan gambar holder jika ada
                     holderScript.DisableHolderImage();
+                    PuzzleManager.Instance.CheckAllSnapped();
 
                     break;
                 }
