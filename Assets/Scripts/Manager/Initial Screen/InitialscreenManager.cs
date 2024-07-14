@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InitialscreenManager : MonoBehaviour
 {
@@ -23,11 +24,25 @@ public class InitialscreenManager : MonoBehaviour
 
     [Header("Combined Logo")]
     [SerializeField] private GameObject logoMiniZoo;
+    [SerializeField] private Image[] logoSatuan; // Array of Images to be set to black
+
+    [Header("Header Before Loading")]
+    [SerializeField] private GameObject headerImage;
+
+    [Header("Backgrounds")]
+    [SerializeField] private GameObject initialBackground;
+    [SerializeField] private GameObject background;
+
+    [Header("Loading UI")]
+    [SerializeField] private Slider loadingSlider; // Reference to your loading slider UI
+
+    [Header("Scene Name")]
+    [SerializeField] private string sceneToLoad = "YourNextSceneNameHere"; // The name of the scene to load
 
     private float startYMini = 900f;
     private float endYMini = 247.5f;
     private float endYZoo = 50f;
-    private float startYSponsor = -590f;
+    private float startYSponsor = -900f;
     private float endYSponsor = -183f;
     private float animationDuration = 1f; // Durasi animasi dalam detik
     private float fadeDuration = 0.5f; // Durasi fade out dalam detik
@@ -111,7 +126,37 @@ public class InitialscreenManager : MonoBehaviour
 
                     RectTransform logoMiniZooRect = logoMiniZoo.GetComponent<RectTransform>();
                     LeanTween.scale(logoMiniZoo, new Vector3(0.3f, 0.3f, 0.3f), combinedLogoAnimationDuration).setEase(LeanTweenType.easeInOutQuad);
-                    LeanTween.move(logoMiniZooRect, new Vector3(677, 318.31f, 0), combinedLogoAnimationDuration).setEase(LeanTweenType.easeInOutQuad);
+                    LeanTween.move(logoMiniZooRect, new Vector3(677, 318.31f, 0), combinedLogoAnimationDuration).setEase(LeanTweenType.easeInOutQuad).setOnComplete(() => {
+                        // Activate header image with fade in
+                        headerImage.SetActive(true);
+                        SetAlpha(headerImage, 0f); // Ensure headerImage starts fully transparent
+                        LeanTween.alpha(headerImage, 1f, fadeDuration).setOnComplete(() =>
+                        {
+                            // Delay before deactivating header image
+                            LeanTween.delayedCall(1f, () =>
+                            {
+                                LeanTween.alpha(headerImage, 0f, fadeDuration).setOnComplete(() => {
+                                    headerImage.SetActive(false);
+
+                                    // Change logoMiniZoo and its children color to black
+                                    ChangeColorToBlack(logoMiniZoo);
+
+                                    // Fade out Initial Background and activate Background
+                                    LeanTween.alpha(initialBackground, 0f, fadeDuration).setOnComplete(() => {
+                                        initialBackground.SetActive(false);
+                                        background.SetActive(true);
+                                        SetAlpha(background, 0f);
+                                        LeanTween.alpha(background, 1f, fadeDuration).setOnComplete(() =>
+                                        {
+                                            // Start loading the next scene
+                                            loadingSlider.gameObject.SetActive(true);
+                                            StartCoroutine(LoadLevel(sceneToLoad));
+                                        });
+                                    });
+                                });
+                            });
+                        });
+                    });
                 });
             });
         });
@@ -126,16 +171,52 @@ public class InitialscreenManager : MonoBehaviour
 
     private void FadeOutLogo(RectTransform logo)
     {
-        CanvasGroup canvasGroup = logo.GetComponent<CanvasGroup>();
-        if (canvasGroup == null)
-        {
-            canvasGroup = logo.gameObject.AddComponent<CanvasGroup>();
-        }
-        LeanTween.alphaCanvas(canvasGroup, 0, fadeDuration);
+        LeanTween.alpha(logo, 0, fadeDuration).setOnComplete(() => logo.gameObject.SetActive(false));
     }
 
     private void DeactivateLogo(RectTransform logo)
     {
         logo.gameObject.SetActive(false);
+    }
+
+    private void SetAlpha(GameObject obj, float alpha)
+    {
+        SpriteRenderer sr = obj.GetComponent<SpriteRenderer>();
+        if (sr != null)
+        {
+            Color color = sr.color;
+            color.a = alpha;
+            sr.color = color;
+        }
+    }
+
+    private void ChangeColorToBlack(GameObject obj)
+    {
+        // Change the main GameObject's color to black
+        SpriteRenderer sr = obj.GetComponent<SpriteRenderer>();
+        if (sr != null)
+        {
+            sr.color = Color.black;
+        }
+
+        // Change color of all Image components in children GameObjects
+        Image[] images = obj.GetComponentsInChildren<Image>();
+        foreach (Image image in images)
+        {
+            image.color = Color.black;
+        }
+    }
+
+    private IEnumerator LoadLevel(string levelToLoad)
+    {
+        AsyncOperation operation = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(levelToLoad);
+        Time.timeScale = 1;
+        while (!operation.isDone)
+        {
+            float progress = Mathf.Clamp01(operation.progress / 0.9f);
+            loadingSlider.value = progress;
+
+            yield return null;
+        }
     }
 }

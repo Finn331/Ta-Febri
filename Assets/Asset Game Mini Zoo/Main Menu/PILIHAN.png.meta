@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -134,7 +134,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: PILIHAN_0
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 1053
+        width: 339
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21817d630c25044429e6473a2b90bb0d
+      internalID: 1117862210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PILIHAN_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 865
+        width: 505
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90b1918dc22301a4db92faa41e3f2da8
+      internalID: -1414890951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PILIHAN_13
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 681
+        width: 412
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7431a0ebbe0bb274d9966ae705f3c867
+      internalID: 1543796505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PILIHAN_21
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 511
+        width: 280
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33660881b53c090449b73d6c743c0633
+      internalID: -1985245969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -145,7 +229,32 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PILIHAN_0: 1117862210
+      PILIHAN_1: 2001845820
+      PILIHAN_10: -633152410
+      PILIHAN_11: 1575230500
+      PILIHAN_12: 510767119
+      PILIHAN_13: 1543796505
+      PILIHAN_14: -1937647810
+      PILIHAN_15: -68390616
+      PILIHAN_16: -208799745
+      PILIHAN_17: -1703904867
+      PILIHAN_18: -1965660668
+      PILIHAN_19: 1456128234
+      PILIHAN_2: -1232339140
+      PILIHAN_20: 1612745969
+      PILIHAN_21: -1985245969
+      PILIHAN_22: 294456550
+      PILIHAN_23: -1990508783
+      PILIHAN_24: -1719538923
+      PILIHAN_3: 1940171974
+      PILIHAN_4: 1644489025
+      PILIHAN_5: -559765736
+      PILIHAN_6: -1414890951
+      PILIHAN_7: 125386704
+      PILIHAN_8: -339016097
+      PILIHAN_9: 769248092
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
