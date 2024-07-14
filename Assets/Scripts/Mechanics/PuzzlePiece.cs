@@ -69,10 +69,12 @@ public class PuzzlePiece : MonoBehaviour
 
     private void HandleInput(TouchPhase touchPhase, Vector3 inputPosition)
     {
+        int puzzlePieceLayerMask = LayerMask.GetMask("PuzzlePiece"); // Sesuaikan dengan nama layer
+
         switch (touchPhase)
         {
             case TouchPhase.Began:
-                RaycastHit2D hit = Physics2D.Raycast(inputPosition, Vector2.zero);
+                RaycastHit2D hit = Physics2D.Raycast(inputPosition, Vector2.zero, Mathf.Infinity, puzzlePieceLayerMask);
                 if (hit.collider != null && hit.collider == GetComponent<Collider2D>())
                 {
                     isDragging = true;
@@ -141,7 +143,7 @@ public class PuzzlePiece : MonoBehaviour
                     Debug.Log("Snapped to holder: " + holderScript.holderID);
 
                     // Animasi scaling menggunakan LeanTween
-                    LeanTween.scale(gameObject, new Vector3(1, 1, 1), 0.5f).setEase(LeanTweenType.easeOutBack);
+                    LeanTween.scale(gameObject, new Vector3(1.5f, 1.5f, 1.5f), 0.5f).setEase(LeanTweenType.easeOutBack);
 
                     // Menonaktifkan gambar holder jika ada
                     holderScript.DisableHolderImage();
