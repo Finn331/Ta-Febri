@@ -11,6 +11,11 @@ public class PuzzleManager : MonoBehaviour
 
     private void Awake()
     {
+        if (pict == true)
+        {
+            pict.SetActive(false);
+        }
+
         if (Instance == null)
         {
             Instance = this;
@@ -34,15 +39,15 @@ public class PuzzleManager : MonoBehaviour
     {
         if (pict != null)
         {
-            SpriteRenderer spriteRenderer = pict.GetComponent<SpriteRenderer>();
-            if (spriteRenderer != null)
+            CanvasGroup canvasGroup = pict.GetComponent<CanvasGroup>();
+            if (canvasGroup == null)
             {
-                pict.SetActive(true);
-                Color color = spriteRenderer.color;
-                color.a = 0f; // Set alpha ke 0 untuk memulai fade in
-                spriteRenderer.color = color;
-                LeanTween.alpha(pict, 1f, 2f).setEase(LeanTweenType.easeInOutQuad); // Fade in dalam 1 detik
+                canvasGroup = pict.AddComponent<CanvasGroup>();
             }
+
+            pict.SetActive(true);
+            canvasGroup.alpha = 0f; // Set alpha ke 0 untuk memulai fade in
+            LeanTween.alphaCanvas(canvasGroup, 1f, 2f).setEase(LeanTweenType.easeInOutQuad); // Fade in dalam 1 detik
         }
     }
 }

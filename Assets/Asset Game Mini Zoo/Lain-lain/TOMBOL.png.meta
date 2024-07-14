@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -134,7 +134,553 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: TOMBOL_0
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 778
+        width: 155
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a38f27db10ef7774db8fe7d43d9e1330
+      internalID: -1889901903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOMBOL_1
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 781
+        width: 155
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa180d08c80231b4686f2d725364fdde
+      internalID: -1741587035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOMBOL_2
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 778
+        width: 157
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7675157de265bcb4aa32232db92efffe
+      internalID: -1041927324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOMBOL_3
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 776
+        width: 156
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2922761e1d1e76f4ab283716d6e81533
+      internalID: 1452346732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOMBOL_4
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 779
+        width: 157
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4f1f86fd2efa554797b0a994c40be77
+      internalID: 816454240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOMBOL_5
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 781
+        width: 155
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d26f36908d9e04458f917c692fd3763
+      internalID: 584689744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOMBOL_6
+      rect:
+        serializedVersion: 2
+        x: 1690
+        y: 776
+        width: 155
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87e01cbb25b0a974d9bb22655e68df44
+      internalID: -1474751562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOMBOL_7
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 532
+        width: 157
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e1e6a999218bdc4a9ad3504266c8c17
+      internalID: 415177985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOMBOL_8
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 532
+        width: 157
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a391e5907fbdf045a30aaebde648791
+      internalID: -1027594288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOMBOL_9
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 532
+        width: 156
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a839672b799f64c4882c90a0434af10a
+      internalID: -198080911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOMBOL_10
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 532
+        width: 157
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab02aa5c4b432894f83c46236fe9acde
+      internalID: -11103493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOMBOL_11
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 532
+        width: 157
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0241d49be1def854fbd2e6aeb711e0e1
+      internalID: -195154754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOMBOL_12
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 532
+        width: 157
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f9b088cfab558d448e4106834745304
+      internalID: -705021777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOMBOL_13
+      rect:
+        serializedVersion: 2
+        x: 1685
+        y: 532
+        width: 157
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09fb33ed39b489c49b975e914bb29a09
+      internalID: 638267890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOMBOL_14
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 286
+        width: 157
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 673cffd6a29874f4194e72c2336f443b
+      internalID: 1889172962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOMBOL_15
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 284
+        width: 157
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 762fc44b66c315d4aa5bce80444ea7d4
+      internalID: -68426957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOMBOL_16
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 286
+        width: 156
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6a513cacb518954fb865f47efe8bf48
+      internalID: 801224854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOMBOL_17
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 286
+        width: 157
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ad5c379c3a60d7449d5f3db65802af3
+      internalID: -413975965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOMBOL_18
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 286
+        width: 157
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2368931e9796da046940e38fdaa935d4
+      internalID: 300116064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOMBOL_19
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 286
+        width: 157
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dfdca4205f5b114ca2525b027838ee2
+      internalID: 839464870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOMBOL_20
+      rect:
+        serializedVersion: 2
+        x: 1685
+        y: 286
+        width: 157
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b4c43e1a6d57ac40b9f02b12196ee52
+      internalID: -1649216697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOMBOL_21
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 39
+        width: 157
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f349d0329f5fff4ca3e4eb63a92e000
+      internalID: 1572265450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOMBOL_22
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 39
+        width: 157
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6f6c6dd173e12349a5e9cf9c4f6d84c
+      internalID: -1587312602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOMBOL_23
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 39
+        width: 156
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5612b922c1b1fa4e9b3155472b643b4
+      internalID: 409909637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOMBOL_24
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 39
+        width: 157
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c449c57289f2e2f469edbcea46b3aa3c
+      internalID: 263755806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOMBOL_25
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 39
+        width: 157
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 733e0ea7cfb64f04c9c6d38a5bd37096
+      internalID: -1548995234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -145,7 +691,33 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TOMBOL_0: -1889901903
+      TOMBOL_1: -1741587035
+      TOMBOL_10: -11103493
+      TOMBOL_11: -195154754
+      TOMBOL_12: -705021777
+      TOMBOL_13: 638267890
+      TOMBOL_14: 1889172962
+      TOMBOL_15: -68426957
+      TOMBOL_16: 801224854
+      TOMBOL_17: -413975965
+      TOMBOL_18: 300116064
+      TOMBOL_19: 839464870
+      TOMBOL_2: -1041927324
+      TOMBOL_20: -1649216697
+      TOMBOL_21: 1572265450
+      TOMBOL_22: -1587312602
+      TOMBOL_23: 409909637
+      TOMBOL_24: 263755806
+      TOMBOL_25: -1548995234
+      TOMBOL_3: 1452346732
+      TOMBOL_4: 816454240
+      TOMBOL_5: 584689744
+      TOMBOL_6: -1474751562
+      TOMBOL_7: 415177985
+      TOMBOL_8: -1027594288
+      TOMBOL_9: -198080911
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
