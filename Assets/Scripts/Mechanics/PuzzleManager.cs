@@ -11,10 +11,6 @@ public class PuzzleManager : MonoBehaviour
 
     private void Awake()
     {
-        if (pict == true)
-        {
-            pict.SetActive(false);
-        }
 
         if (Instance == null)
         {
@@ -39,15 +35,20 @@ public class PuzzleManager : MonoBehaviour
     {
         if (pict != null)
         {
-            CanvasGroup canvasGroup = pict.GetComponent<CanvasGroup>();
-            if (canvasGroup == null)
+            // Memastikan komponen RectTransform terpasang
+            RectTransform rectTransform = pict.GetComponent<RectTransform>();
+            if (rectTransform != null)
             {
-                canvasGroup = pict.AddComponent<CanvasGroup>();
+                // Atur posisi dan ukuran
+                rectTransform.anchoredPosition = new Vector2(400, 4.7f);
+                rectTransform.sizeDelta = new Vector2(593, 460);
+
+                // Memainkan animasi scaling menggunakan LeanTween
+                LeanTween.scale(rectTransform, new Vector3(593, 460, 1), 2f).setEase(LeanTweenType.easeInOutQuad); // Scale in dalam 2 detik
             }
 
+            // Aktifkan GameObject pict
             pict.SetActive(true);
-            canvasGroup.alpha = 0f; // Set alpha ke 0 untuk memulai fade in
-            LeanTween.alphaCanvas(canvasGroup, 1f, 2f).setEase(LeanTweenType.easeInOutQuad); // Fade in dalam 1 detik
         }
     }
 }
