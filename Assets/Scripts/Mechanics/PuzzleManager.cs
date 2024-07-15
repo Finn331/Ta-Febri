@@ -47,7 +47,7 @@ public class PuzzleManager : MonoBehaviour
             if (rectTransform != null)
             {
                 // Memainkan animasi menggunakan LeanTween
-                LeanTween.move(rectTransform, new Vector2(398f, 0f), 2f).setEase(LeanTweenType.easeInOutQuad);
+                LeanTween.move(rectTransform, new Vector2(398f, 435f), 2f).setEase(LeanTweenType.easeInOutQuad);
                 LeanTween.size(rectTransform, new Vector2(580f, 470f), 2f).setEase(LeanTweenType.easeInOutQuad).setOnComplete(() =>
                 {
                     // Menunggu 2 detik setelah animasi selesai
