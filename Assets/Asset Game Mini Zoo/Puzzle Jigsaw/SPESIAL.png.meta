@@ -134,7 +134,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: SPESIAL_0
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 1623
+        width: 461
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99643875c1506044c900a32d94c7b3dd
+      internalID: 1159422220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPESIAL_1
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1496
+        width: 346
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c2fefb2965401445af18c092ed0eb24
+      internalID: 830655041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPESIAL_2
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 1620
+        width: 582
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 763e952e2eeb65a499256cc1a1f213b7
+      internalID: -2119995658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPESIAL_3
+      rect:
+        serializedVersion: 2
+        x: 2137
+        y: 1500
+        width: 343
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4646385d684df8439766effd20bba9a
+      internalID: 666152120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPESIAL_4
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 728
+        width: 343
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb146c9006397134497061818861164c
+      internalID: 1286631104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPESIAL_5
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 870
+        width: 583
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2d5c1bea6618fe47813787b9ab3c51b
+      internalID: -1948657949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPESIAL_6
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 743
+        width: 347
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a361a2e0dd470be48aa1e8edd9130d2e
+      internalID: -1845865262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPESIAL_7
+      rect:
+        serializedVersion: 2
+        x: 2015
+        y: 866
+        width: 461
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a76df0baccb137e4a8819173f9fd83be
+      internalID: -1023616029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPESIAL_8
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 139
+        width: 460
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7448a22311ea2024aa4183812c8ca2a6
+      internalID: -1898366518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPESIAL_9
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 120
+        width: 347
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ddd4f0a6ebe4948bb4eced7fdef410
+      internalID: -78069018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPESIAL_10
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 120
+        width: 581
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe59df708bee1524aacd74e4ea05ce95
+      internalID: -813982753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPESIAL_11
+      rect:
+        serializedVersion: 2
+        x: 2137
+        y: 120
+        width: 343
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1728e9d0dc4748b4fb0b1437feb2045f
+      internalID: -251208404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -145,7 +397,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SPESIAL_0: 1159422220
+      SPESIAL_1: 830655041
+      SPESIAL_10: -813982753
+      SPESIAL_11: -251208404
+      SPESIAL_2: -2119995658
+      SPESIAL_3: 666152120
+      SPESIAL_4: 1286631104
+      SPESIAL_5: -1948657949
+      SPESIAL_6: -1845865262
+      SPESIAL_7: -1023616029
+      SPESIAL_8: -1898366518
+      SPESIAL_9: -78069018
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

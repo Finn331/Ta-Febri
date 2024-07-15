@@ -4,7 +4,9 @@ using UnityEngine.Rendering;
 
 public class PuzzlePiece : MonoBehaviour
 {
+    [Header("Puzzle Piece Setting")]
     public int objectID; // ID untuk GameObject yang di-drag
+    [SerializeField] AudioClip snappedClip;
     private bool isDragging = false;
     private bool isSnapped = false; // Menandai apakah GameObject sudah tersnap atau belum
     private Vector3 offset;
@@ -147,6 +149,8 @@ public class PuzzlePiece : MonoBehaviour
 
                     Debug.Log("Snapped to holder: " + holderScript.holderID);
 
+                    // memainkan audio ketika snapped
+                    AudioManager.instance.PlaySound(snappedClip);
                     // Animasi scaling menggunakan LeanTween
                     LeanTween.scale(gameObject, new Vector3(1.5f, 1.5f, 1.5f), 0.5f).setEase(LeanTweenType.easeOutBack);
 

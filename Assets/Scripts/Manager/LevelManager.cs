@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour
 {
@@ -52,4 +53,5 @@ public class LevelManager : MonoBehaviour
         isCompleted = false;
         rewardBox.SetActive(false); // Contoh tindakan ketika level direset
     }
+
 }

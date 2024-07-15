@@ -145,6 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectID: 1
+  snappedClip: {fileID: 8300000, guid: 8703b205be640a04db291bd9053cbe01, type: 3}
 --- !u!210 &-1805993738561450425
 SortingGroup:
   m_ObjectHideFlags: 0

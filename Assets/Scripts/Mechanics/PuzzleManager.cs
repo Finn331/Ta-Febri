@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI; // Untuk menggunakan UI
 
 public class PuzzleManager : MonoBehaviour
 {
@@ -12,10 +13,11 @@ public class PuzzleManager : MonoBehaviour
     public GameObject deskripsiHolder;
     public GameObject titleHolder;
     public GameObject buttonHolder;
+    public GameObject rewardButton; // GameObject untuk reward button
+    public Button closeButton; // Tombol untuk menutup deskripsiHolder
 
     private void Awake()
     {
-
         if (Instance == null)
         {
             Instance = this;
@@ -23,6 +25,12 @@ public class PuzzleManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
+        }
+
+        // Pastikan closeButton terhubung dan menambahkan listener untuk menutup deskripsiHolder
+        if (closeButton != null)
+        {
+            closeButton.onClick.AddListener(CloseDeskripsiHolder);
         }
     }
 
@@ -75,7 +83,7 @@ public class PuzzleManager : MonoBehaviour
         }
     }
 
-    private void FadeOutObject(GameObject obj)
+    private void FadeOutObject(GameObject obj, System.Action onComplete = null)
     {
         if (obj != null)
         {
@@ -88,7 +96,29 @@ public class PuzzleManager : MonoBehaviour
             LeanTween.alphaCanvas(canvasGroup, 0f, 1f).setEase(LeanTweenType.easeInOutQuad).setOnComplete(() =>
             {
                 obj.SetActive(false); // Menonaktifkan objek setelah fade out selesai
+                onComplete?.Invoke();
             });
+        }
+    }
+
+    public void CloseDeskripsiHolder()
+    {
+        // Melakukan fade out pada deskripsiHolder
+        if (deskripsiHolder != null)
+        {
+            FadeOutObject(deskripsiHolder, MoveRewardButton);
+        }
+    }
+
+    private void MoveRewardButton()
+    {
+        if (rewardButton != null)
+        {
+            RectTransform rectTransform = rewardButton.GetComponent<RectTransform>();
+            if (rectTransform != null)
+            {
+                LeanTween.move(rectTransform, new Vector3(-383f, 0f, 0f), 1f).setEase(LeanTweenType.easeInOutQuad);
+            }
         }
     }
 }

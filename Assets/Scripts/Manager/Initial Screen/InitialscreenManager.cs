@@ -94,7 +94,10 @@ public class InitialscreenManager : MonoBehaviour
         }));
 
         // Animate Sponsor logos
-        sequence.append(LeanTween.moveY(logoRagunan, endYSponsor, animationDuration).setEase(LeanTweenType.easeInOutQuad).setOnComplete(() => PlayLogoPop2()));
+        sequence.append(LeanTween.moveY(logoRagunan, endYSponsor, animationDuration).setEase(LeanTweenType.easeInOutQuad).setOnComplete(() => {
+            PlayLogoPop2();
+            logoMiniZoo.SetActive(true); // Activate logoMiniZoo when sponsor logo starts to move
+        }));
         sequence.append(LeanTween.moveY(logoTripledot, endYSponsor, animationDuration).setEase(LeanTweenType.easeInOutQuad).setOnComplete(() => PlayLogoPop2()));
         sequence.append(LeanTween.moveY(logoDkv, endYSponsor, animationDuration).setEase(LeanTweenType.easeInOutQuad).setOnComplete(() => PlayLogoPop2()));
 
