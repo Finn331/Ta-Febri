@@ -1306,7 +1306,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 4.8863635
+  orthographic size: 4.772727
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1350,7 +1350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wireColor: {r: 1, g: 1, b: 1, a: 1}
-  UnitsSize: 21.5
+  UnitsSize: 21
   constraint: 0
   camera: {fileID: 519420031}
   executeInUpdate: 1
@@ -1386,10 +1386,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 881954930}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 825.1453, y: -18.0013}
-  m_SizeDelta: {x: 165.4709, y: 420.8848}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 825.1455, y: -18.00122}
+  m_SizeDelta: {x: -1754.529, y: -451.1152}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &535580101
 MonoBehaviour:
@@ -1751,7 +1751,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 818, y: 261.6}
+  m_AnchoredPosition: {x: 818, y: 385.32}
   m_SizeDelta: {x: 235.6804, y: 138.3167}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &647898577
@@ -6446,6 +6446,7 @@ GameObject:
   - component: {fileID: 2039101460}
   - component: {fileID: 2039101459}
   - component: {fileID: 2039101458}
+  - component: {fileID: 2039101462}
   m_Layer: 5
   m_Name: Pict
   m_TagString: Untagged
@@ -6517,11 +6518,26 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 881954930}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 230, y: 327}
-  m_SizeDelta: {x: 221.2732, y: 171.6453}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: -744.94543, y: -714.78345}
+  m_SizeDelta: {x: 221.2732, y: 172.64526}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2039101462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039101457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61e45dee1a2079047928e55357581d9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  executeInUpdate: 1
+  anchorType: 7
+  anchorOffset: {x: 295.7, y: 212.4, z: 0}
 --- !u!1 &2088008408
 GameObject:
   m_ObjectHideFlags: 0
