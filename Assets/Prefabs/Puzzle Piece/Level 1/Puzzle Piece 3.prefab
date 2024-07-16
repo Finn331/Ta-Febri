@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2892491293965463305}
   - component: {fileID: 7810411412480423394}
   - component: {fileID: 1348835907717953596}
+  - component: {fileID: 7339060626274667791}
   m_Layer: 3
   m_Name: Puzzle Piece 3
   m_TagString: Untagged
@@ -158,3 +159,15 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortAtRoot: 0
+--- !u!225 &7339060626274667791
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2236489217048421457}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0

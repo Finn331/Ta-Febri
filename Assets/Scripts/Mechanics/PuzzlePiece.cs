@@ -36,6 +36,18 @@ public class PuzzlePiece : MonoBehaviour
 
         // Pindahkan objek ke atas (di atas semua objek lain)
         transform.SetAsLastSibling();
+
+        // Cari GameObject "level"
+        GameObject levelObject = GameObject.Find("HolderPuzzleClone");
+        if (levelObject != null)
+        {
+            // Set game object ini menjadi child dari "level"
+            transform.SetParent(levelObject.transform);
+        }
+        else
+        {
+            Debug.LogError("Level GameObject not found.");
+        }
     }
 
     private void Update()
@@ -152,7 +164,7 @@ public class PuzzlePiece : MonoBehaviour
                     // memainkan audio ketika snapped
                     AudioManager.instance.PlaySound(snappedClip);
                     // Animasi scaling menggunakan LeanTween
-                    LeanTween.scale(gameObject, new Vector3(1.5f, 1.5f, 1.5f), 0.5f).setEase(LeanTweenType.easeOutBack);
+                    LeanTween.scale(gameObject, new Vector3(1.73f, 1.73f, 1.14f), 0.5f).setEase(LeanTweenType.easeOutBack);
 
                     // Menonaktifkan gambar holder jika ada
                     holderScript.DisableHolderImage();

@@ -14,6 +14,7 @@ public class PuzzleManager : MonoBehaviour
     public GameObject titleHolder;
     public GameObject buttonHolder;
     public GameObject rewardButton; // GameObject untuk reward button
+    public GameObject level;
     public Button closeButton; // Tombol untuk menutup deskripsiHolder
 
     private void Awake()
@@ -55,7 +56,8 @@ public class PuzzleManager : MonoBehaviour
             if (rectTransform != null)
             {
                 // Memainkan animasi menggunakan LeanTween
-                LeanTween.move(rectTransform, new Vector2(398f, 435f), 2f).setEase(LeanTweenType.easeInOutQuad);
+                LeanTween.move(rectTransform, new Vector2(398f, -435f), 2f).setEase(LeanTweenType.easeInOutQuad);
+                FadeOutChildren(level);
                 LeanTween.size(rectTransform, new Vector2(580f, 470f), 2f).setEase(LeanTweenType.easeInOutQuad).setOnComplete(() =>
                 {
                     // Menunggu 2 detik setelah animasi selesai
@@ -98,6 +100,32 @@ public class PuzzleManager : MonoBehaviour
                 obj.SetActive(false); // Menonaktifkan objek setelah fade out selesai
                 onComplete?.Invoke();
             });
+        }
+    }
+
+    private void FadeOutChildren(GameObject parentObject, System.Action onComplete = null)
+    {
+        if (parentObject != null)
+        {
+            // Ambil semua child dari parentObject
+            foreach (Transform child in parentObject.transform)
+            {
+                SpriteRenderer spriteRenderer = child.GetComponent<SpriteRenderer>();
+                if (spriteRenderer != null)
+                {
+                    // Fading out child menggunakan LeanTween
+                    Color color = spriteRenderer.color;
+                    LeanTween.value(child.gameObject, color.a, 0f, 2f).setEase(LeanTweenType.easeInOutQuad).setOnUpdate((float val) =>
+                    {
+                        color.a = val;
+                        spriteRenderer.color = color;
+                    }).setOnComplete(() =>
+                    {
+                        child.gameObject.SetActive(false); // Menonaktifkan child setelah fade out selesai
+                        onComplete?.Invoke();
+                    });
+                }
+            }
         }
     }
 
