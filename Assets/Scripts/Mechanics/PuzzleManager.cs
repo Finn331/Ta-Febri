@@ -1,21 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UI; // Untuk menggunakan UI
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PuzzleManager : MonoBehaviour
 {
     public static PuzzleManager Instance;
     private int totalPieces = 12; // Jumlah total puzzle pieces yang harus tersnap
     private int snappedPieces = 0; // Counter untuk puzzle pieces yang sudah tersnap
+    public bool rewardClaimed = false; // Status apakah reward sudah di-claimed
+    public bool levelFinished = false; // Status apakah level sudah selesai
     public GameObject pict; // GameObject yang akan diaktifkan
     public GameObject deskripsiHolder;
     public GameObject titleHolder;
-    public GameObject buttonHolder;
+    public GameObject buttonPrev;
+    public GameObject buttonNext;
     public GameObject rewardButton; // GameObject untuk reward button
     public GameObject level;
     public Button closeButton; // Tombol untuk menutup deskripsiHolder
+    public GameObject rewardHolder;
 
     private void Awake()
     {
@@ -41,6 +45,8 @@ public class PuzzleManager : MonoBehaviour
         if (snappedPieces >= totalPieces)
         {
             ActivatePict();
+            rewardClaimed = true;  // Set reward sudah di-claimed menjadi true
+            levelFinished = true;
         }
     }
 
@@ -67,16 +73,21 @@ public class PuzzleManager : MonoBehaviour
                         if (deskripsiHolder != null)
                         {
                             deskripsiHolder.SetActive(true);
+                            rewardHolder.SetActive(true);
                             CanvasGroup canvasGroup = deskripsiHolder.GetComponent<CanvasGroup>();
+                            CanvasGroup canvasGroup1 = rewardHolder.GetComponent<CanvasGroup>();
                             if (canvasGroup == null)
                             {
                                 canvasGroup = deskripsiHolder.AddComponent<CanvasGroup>();
+                                canvasGroup1 = rewardHolder.AddComponent<CanvasGroup>();
                             }
                             canvasGroup.alpha = 0f; // Set alpha ke 0 untuk memulai fade in
                             LeanTween.alphaCanvas(canvasGroup, 1f, 1f).setEase(LeanTweenType.easeInOutQuad); // Fade in dalam 1 detik
+                            LeanTween.alphaCanvas(canvasGroup1, 1f, 1f).setEase(LeanTweenType.easeInOutQuad); // Fade in dalam 1 detik
 
                             FadeOutObject(titleHolder);
-                            FadeOutObject(buttonHolder);
+                            FadeOutObject(buttonNext);
+                            FadeOutObject(buttonPrev);
                             FadeOutObject(pict);
                         }
                     });
@@ -145,8 +156,48 @@ public class PuzzleManager : MonoBehaviour
             RectTransform rectTransform = rewardButton.GetComponent<RectTransform>();
             if (rectTransform != null)
             {
-                LeanTween.move(rectTransform, new Vector3(-383f, 0f, 0f), 1f).setEase(LeanTweenType.easeInOutQuad);
+                LeanTween.move(rectTransform, new Vector3(-24.89f, 0f, 0f), 1f).setEase(LeanTweenType.easeInOutQuad);
             }
         }
+    }
+
+    public void PulseRewardButton()
+    {
+        if (rewardButton != null)
+        {
+            // Animasi pulse dengan menggunakan LeanTween
+            LeanTween.scale(rewardButton, new Vector3(0.3f, 0.3f, 0.3f), 0.8f)
+            .setEasePunch()
+            .setLoopPingPong(1);
+        }
+    }
+
+    // Metode untuk mengatur reward claimed menjadi true
+    public void SetRewardClaimed(bool claimed)
+    {
+        rewardClaimed = claimed;
+    }
+
+    // Metode untuk mengatur level finished menjadi true
+    public void SetLevelFinished(bool finished)
+    {
+        levelFinished = finished;
+    }
+
+    // Metode untuk restart level
+    public void RestartLevel()
+    {
+        // Reset snappedPieces
+        snappedPieces = 0;
+
+        // Cek dan reset rewardClaimed dan levelFinished
+        if (rewardClaimed && levelFinished)
+        {
+            rewardClaimed = true;  // Set reward sudah di-claimed menjadi true
+            levelFinished = false; // Set level sudah selesai menjadi false
+        }
+
+        // Load ulang scene saat ini
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

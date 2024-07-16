@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: TOMBOL TAMBAHAN_0
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 675
+        width: 156
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90a09fcea912b6a4a9f3be18a6d57cb6
+      internalID: -672175473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOMBOL TAMBAHAN_1
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 675
+        width: 157
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8a98c1b5cf54b24ebcbbaeda93acc48
+      internalID: 665673957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOMBOL TAMBAHAN_2
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 421
+        width: 156
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1494f38fdd222ea42b1accaf1cc76910
+      internalID: -865031877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOMBOL TAMBAHAN_3
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 421
+        width: 157
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0fe56fc6351ad04eaf49f45703c1374
+      internalID: -2048901176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +203,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TOMBOL TAMBAHAN_0: -672175473
+      TOMBOL TAMBAHAN_1: 665673957
+      TOMBOL TAMBAHAN_2: -865031877
+      TOMBOL TAMBAHAN_3: -2048901176
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
