@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -134,7 +134,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: puzlle hitam_0
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 168
+        width: 296
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac2db08b48973694f98f39e5d519cf13
+      internalID: -790714240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puzlle hitam_1
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 103
+        width: 223
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b78534c48af1231458a96fe61a3fcd68
+      internalID: 1736766199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puzlle hitam_2
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 144
+        width: 373
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbe5e9a2770afae44835c2cf217c6072
+      internalID: 1979218680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puzlle hitam_3
+      rect:
+        serializedVersion: 2
+        x: 1558
+        y: 103
+        width: 223
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fdb5b44ef9b7d841900084eda567826
+      internalID: -1153676560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puzlle hitam_4
+      rect:
+        serializedVersion: 2
+        x: 1987
+        y: 62
+        width: 221
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31686eb378f457e47ba6974b792ccb34
+      internalID: 1295960524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puzlle hitam_5
+      rect:
+        serializedVersion: 2
+        x: 2373
+        y: 141
+        width: 373
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd69e595544f068458bfd4ee0f5dce86
+      internalID: 1968822319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puzlle hitam_6
+      rect:
+        serializedVersion: 2
+        x: 2947
+        y: 62
+        width: 223
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ddfadcb5667e1d488c7e2d3f6d82e06
+      internalID: 677911719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puzlle hitam_7
+      rect:
+        serializedVersion: 2
+        x: 3349
+        y: 141
+        width: 297
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb88e1824faa61847bc33a54126b986b
+      internalID: 1198954562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puzlle hitam_8
+      rect:
+        serializedVersion: 2
+        x: 3861
+        y: 144
+        width: 296
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 906f38c26fdec2049ac66a641090f99f
+      internalID: 850318007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puzlle hitam_9
+      rect:
+        serializedVersion: 2
+        x: 4301
+        y: 103
+        width: 226
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6c5abef7fd25d44ab76d62d93a4c813
+      internalID: -333402616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puzlle hitam_10
+      rect:
+        serializedVersion: 2
+        x: 4660
+        y: 144
+        width: 372
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a45ff9c8b1138740b441494ccb04515
+      internalID: -187682036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puzlle hitam_11
+      rect:
+        serializedVersion: 2
+        x: 5138
+        y: 103
+        width: 221
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ad4e94e8d874584ca4f64973b3ed1c6
+      internalID: 1924345367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -145,7 +397,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      puzlle hitam_0: -790714240
+      puzlle hitam_1: 1736766199
+      puzlle hitam_10: -187682036
+      puzlle hitam_11: 1924345367
+      puzlle hitam_2: 1979218680
+      puzlle hitam_3: -1153676560
+      puzlle hitam_4: 1295960524
+      puzlle hitam_5: 1968822319
+      puzlle hitam_6: 677911719
+      puzlle hitam_7: 1198954562
+      puzlle hitam_8: 850318007
+      puzlle hitam_9: -333402616
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

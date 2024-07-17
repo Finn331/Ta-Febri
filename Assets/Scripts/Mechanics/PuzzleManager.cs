@@ -45,7 +45,7 @@ public class PuzzleManager : MonoBehaviour
         if (snappedPieces >= totalPieces)
         {
             ActivatePict();
-            rewardClaimed = true;  // Set reward sudah di-claimed menjadi true
+            // rewardClaimed = true;  // Set reward sudah di-claimed menjadi true
             levelFinished = true;
         }
     }
@@ -70,7 +70,7 @@ public class PuzzleManager : MonoBehaviour
                     LeanTween.delayedCall(2f, () =>
                     {
                         // Melakukan fade in pada deskripsi holder
-                        if (deskripsiHolder != null)
+                        if (deskripsiHolder != null && rewardHolder != null)
                         {
                             deskripsiHolder.SetActive(true);
                             rewardHolder.SetActive(true);
@@ -82,6 +82,7 @@ public class PuzzleManager : MonoBehaviour
                                 canvasGroup1 = rewardHolder.AddComponent<CanvasGroup>();
                             }
                             canvasGroup.alpha = 0f; // Set alpha ke 0 untuk memulai fade in
+                            canvasGroup1.alpha = 0f;
                             LeanTween.alphaCanvas(canvasGroup, 1f, 1f).setEase(LeanTweenType.easeInOutQuad); // Fade in dalam 1 detik
                             LeanTween.alphaCanvas(canvasGroup1, 1f, 1f).setEase(LeanTweenType.easeInOutQuad); // Fade in dalam 1 detik
 
@@ -166,7 +167,7 @@ public class PuzzleManager : MonoBehaviour
         if (rewardButton != null)
         {
             // Animasi pulse dengan menggunakan LeanTween
-            LeanTween.scale(rewardButton, new Vector3(0.3f, 0.3f, 0.3f), 0.8f)
+            LeanTween.scale(rewardButton, new Vector3(0.3f, 0.3f, 0.3f), 0.4f)
             .setEasePunch()
             .setLoopPingPong(1);
         }
