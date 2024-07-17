@@ -42,16 +42,29 @@ public class LevelManager : MonoBehaviour
             }
             piecesCanvasGroup.alpha = 0;
             LeanTween.alphaCanvas(piecesCanvasGroup, 1, 0.4f);
-            LeanTween.scale(pieces, new Vector3(0.5f, 0.5f, 0.5f), 0.5f).setEasePunch().setOnComplete(() =>
+            LeanTween.scale(pieces, new Vector3(0.5f, 0.5f, 0.5f), 1f).setEasePunch().setOnComplete(() =>
             {
                 LeanTween.delayedCall(1f, () =>
                 {
-                    RectTransform targetRect = targetGameObjectPosition.GetComponent<RectTransform>();
-                    Vector2 targetPosition = targetRect.anchoredPosition;
-                    Vector2 targetSize = targetRect.sizeDelta;
-                    RectTransform rectTransform = pieces.GetComponent<RectTransform>();
-                    LeanTween.move(pieces, targetPosition, 2f).setEase(LeanTweenType.easeInOutQuad);
-                    LeanTween.size(rectTransform, new Vector2(174f, 121f), 2f).setEase(LeanTweenType.easeInOutQuad);
+                    // Mendapatkan posisi dan ukuran dari targetObject
+                    Vector3 targetPosition = targetGameObjectPosition.transform.position;
+                    // Vector2 targetScale = targetGameObjectPosition.transform.localScale;
+
+                    // Menggunakan LeanTween untuk animasi perpindahan
+                    LeanTween.move(pieces, targetPosition, 1.5f).setEase(LeanTweenType.easeOutQuad);
+                    LeanTween.scale(pieces, new Vector3(1f, 1f, 1f), 1.5f).setEase(LeanTweenType.easeOutQuad).setOnComplete(() =>
+            {
+                LeanTween.delayedCall(0.1f, () =>
+                {
+                    CanvasGroup canvasTargetObject = targetGameObjectPosition.GetComponent<CanvasGroup>();
+                    if (canvasTargetObject == null)
+                    {
+                        canvasTargetObject = targetGameObjectPosition.AddComponent<CanvasGroup>();
+                    }
+                    canvasTargetObject.alpha = 1f;
+                    LeanTween.alphaCanvas(canvasTargetObject, 0, 0.4f);
+                });
+            }); ;
                 });
             });
         });
