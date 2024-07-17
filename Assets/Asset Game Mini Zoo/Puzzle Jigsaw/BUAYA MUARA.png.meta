@@ -134,7 +134,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: BUAYA MUARA_0
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1619
+        width: 462
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab7089de92531f04da4e5367bf0cc98d
+      internalID: -1740206095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BUAYA MUARA_1
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 1497
+        width: 347
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b46361894e7b5240a5ecb882566dacc
+      internalID: 773630310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BUAYA MUARA_2
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 1619
+        width: 584
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d19905863b339747968ac3ac865fdf3
+      internalID: 1826512351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BUAYA MUARA_3
+      rect:
+        serializedVersion: 2
+        x: 2137
+        y: 1496
+        width: 343
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a8a8f8e0ffaecc4a9ed8271610a3531
+      internalID: -1213270517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BUAYA MUARA_4
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 726
+        width: 344
+        height: 612
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83b4aecc9faaa4e459e7f1943febe87b
+      internalID: -243844181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BUAYA MUARA_5
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 873
+        width: 582
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67402152945b61343804a20cc207a88a
+      internalID: 822457732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BUAYA MUARA_6
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 743
+        width: 347
+        height: 612
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 859bb19342796954d9d59c1690e24087
+      internalID: 820669172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BUAYA MUARA_7
+      rect:
+        serializedVersion: 2
+        x: 2019
+        y: 873
+        width: 462
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff59c00a5989db84397767b9432986c7
+      internalID: 967676845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BUAYA MUARA_8
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 139
+        width: 462
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b86fb3c6f1ba7034baa4b454ef0e0c5d
+      internalID: -1280661311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BUAYA MUARA_9
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 123
+        width: 347
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce7f36b8be08084c8f6f8a70df26d99
+      internalID: 211250428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BUAYA MUARA_10
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 120
+        width: 584
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa09080fc5857874cb321111e0e4f3a9
+      internalID: 418537628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BUAYA MUARA_11
+      rect:
+        serializedVersion: 2
+        x: 2137
+        y: 120
+        width: 344
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cda03bce30c8a3e4c9c741c24e21d268
+      internalID: -1925598953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -145,7 +397,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BUAYA MUARA_0: -1740206095
+      BUAYA MUARA_1: 773630310
+      BUAYA MUARA_10: 418537628
+      BUAYA MUARA_11: -1925598953
+      BUAYA MUARA_2: 1826512351
+      BUAYA MUARA_3: -1213270517
+      BUAYA MUARA_4: -243844181
+      BUAYA MUARA_5: 822457732
+      BUAYA MUARA_6: 820669172
+      BUAYA MUARA_7: 967676845
+      BUAYA MUARA_8: -1280661311
+      BUAYA MUARA_9: 211250428
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

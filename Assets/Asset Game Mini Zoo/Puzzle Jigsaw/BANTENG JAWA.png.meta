@@ -134,7 +134,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: BANTENG JAWA_0
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1626
+        width: 456
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc7e64bc6f55ec54b9ae225819b0542b
+      internalID: 314269171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BANTENG JAWA_1
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1504
+        width: 347
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79da57bb42aafac40a0f70ac77fe2694
+      internalID: 2086138736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BANTENG JAWA_2
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 1626
+        width: 574
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06ce71549c176384e9721b8b73be32f4
+      internalID: -1561474248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BANTENG JAWA_3
+      rect:
+        serializedVersion: 2
+        x: 2137
+        y: 1504
+        width: 341
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e920bfe0d43c5604fb3746b1b804989b
+      internalID: 1618836411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BANTENG JAWA_4
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 726
+        width: 341
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 764f101f132a8e946a712bae25facd14
+      internalID: -1502466810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BANTENG JAWA_5
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 870
+        width: 578
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8773ffec818c09d478b2401ecccad450
+      internalID: 1056311191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BANTENG JAWA_6
+      rect:
+        serializedVersion: 2
+        x: 1459
+        y: 745
+        width: 344
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4dbde59d06533146bbea4a50427081b
+      internalID: -874720971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BANTENG JAWA_7
+      rect:
+        serializedVersion: 2
+        x: 2022
+        y: 872
+        width: 456
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c03cfe212f40dfe4fa0bb0b36f378663
+      internalID: -903340909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BANTENG JAWA_8
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 135
+        width: 456
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7255ff19f61108f49bbaefd4aae7f338
+      internalID: 1457896371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BANTENG JAWA_9
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 126
+        width: 347
+        height: 479
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 071f70888be591742968f40268fd9145
+      internalID: 1580834356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BANTENG JAWA_10
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 126
+        width: 575
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2063127f5b4c684e99edd74ed5bd632
+      internalID: -215638306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BANTENG JAWA_11
+      rect:
+        serializedVersion: 2
+        x: 2137
+        y: 123
+        width: 341
+        height: 479
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9626578970189643b44aa2ef1c8f9a5
+      internalID: -1450183806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -145,7 +397,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BANTENG JAWA_0: 314269171
+      BANTENG JAWA_1: 2086138736
+      BANTENG JAWA_10: -215638306
+      BANTENG JAWA_11: -1450183806
+      BANTENG JAWA_2: -1561474248
+      BANTENG JAWA_3: 1618836411
+      BANTENG JAWA_4: -1502466810
+      BANTENG JAWA_5: 1056311191
+      BANTENG JAWA_6: -874720971
+      BANTENG JAWA_7: -903340909
+      BANTENG JAWA_8: 1457896371
+      BANTENG JAWA_9: 1580834356
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

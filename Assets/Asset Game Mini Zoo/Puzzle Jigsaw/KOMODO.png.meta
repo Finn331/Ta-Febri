@@ -134,7 +134,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: KOMODO_0
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1619
+        width: 462
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eaaaefa1576d9e46ad9a2f9ef1a7fce
+      internalID: 2002247270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KOMODO_1
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1496
+        width: 348
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1fffa90ef25cd54badea98b8aa84695
+      internalID: 1710099218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KOMODO_2
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 1619
+        width: 584
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0768d0e8984e57f4293eb3b785f3a8db
+      internalID: 573102163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KOMODO_3
+      rect:
+        serializedVersion: 2
+        x: 2137
+        y: 1497
+        width: 344
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64e35101fb6376949a1b8a7938ebcb35
+      internalID: 106391239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KOMODO_4
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 726
+        width: 344
+        height: 612
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba1065a338ff6884099f24119a16b927
+      internalID: 1613321109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KOMODO_5
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 869
+        width: 584
+        height: 365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da9923f9a20f6fe44987af75c7c39884
+      internalID: -1406435573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KOMODO_6
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 746
+        width: 348
+        height: 611
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7117f8687a201c349a199d784d7f22a5
+      internalID: -28099355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KOMODO_7
+      rect:
+        serializedVersion: 2
+        x: 2018
+        y: 873
+        width: 462
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c20e6427911af439e17ca1cac284ad
+      internalID: -1540565331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KOMODO_8
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 139
+        width: 462
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e99e7466998667548867fc32968d8ab6
+      internalID: 842198966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KOMODO_9
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 120
+        width: 348
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f228067c4d2d7a84fba53e3ba0a504fe
+      internalID: 918509422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KOMODO_10
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 120
+        width: 583
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78645a752a630ed469e181d78ed7bb5a
+      internalID: -2133379201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KOMODO_11
+      rect:
+        serializedVersion: 2
+        x: 2137
+        y: 120
+        width: 344
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfe85c4b4d24e8a4c8ea773b6d1d0dc8
+      internalID: -1220775753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -145,7 +397,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      KOMODO_0: 2002247270
+      KOMODO_1: 1710099218
+      KOMODO_10: -2133379201
+      KOMODO_11: -1220775753
+      KOMODO_2: 573102163
+      KOMODO_3: 106391239
+      KOMODO_4: 1613321109
+      KOMODO_5: -1406435573
+      KOMODO_6: -28099355
+      KOMODO_7: -1540565331
+      KOMODO_8: 842198966
+      KOMODO_9: 918509422
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

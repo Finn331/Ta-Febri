@@ -134,7 +134,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: RUSA SULAWESI_0
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1619
+        width: 464
+        height: 361
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0edfc6d383f481d41bd422d6a3a823ac
+      internalID: 833729423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUSA SULAWESI_1
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 1495
+        width: 350
+        height: 484
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee20f5528aae9b74cb1ec6cc5ab6fa58
+      internalID: -1705862665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUSA SULAWESI_2
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 1619
+        width: 585
+        height: 361
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e873e2e5001f8f43b1e666340fe6f7b
+      internalID: 1627182527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUSA SULAWESI_3
+      rect:
+        serializedVersion: 2
+        x: 2137
+        y: 1495
+        width: 345
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 832e6422f8283d34286cd9e6e9742aec
+      internalID: -2034702517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUSA SULAWESI_4
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 724
+        width: 347
+        height: 614
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 008240e19f7add047a790b4bb29c5489
+      internalID: -1084400975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUSA SULAWESI_5
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 869
+        width: 585
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de31e004c1905d74690fb4175c193671
+      internalID: 1986957982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUSA SULAWESI_6
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 742
+        width: 350
+        height: 614
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f1159c9293ba8142af5e70fe2903a8a
+      internalID: 862052540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUSA SULAWESI_7
+      rect:
+        serializedVersion: 2
+        x: 2018
+        y: 866
+        width: 462
+        height: 366
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e0f54837db356c42aa7a2bfc17a77e5
+      internalID: -1528848269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUSA SULAWESI_8
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 137
+        width: 463
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31d1b127ad0aac64885e64a6d97b1f94
+      internalID: -1195230768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUSA SULAWESI_9
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 119
+        width: 350
+        height: 486
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 545cd923cb376e740a626ff7b869d740
+      internalID: -1976913298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUSA SULAWESI_10
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 119
+        width: 585
+        height: 361
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a95ed4cdb05e69f4a8ad355fbd29c0ea
+      internalID: 374558104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUSA SULAWESI_11
+      rect:
+        serializedVersion: 2
+        x: 2137
+        y: 119
+        width: 345
+        height: 486
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a3381dd097cc394e9dd299b3dee16a1
+      internalID: 86569917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -145,7 +397,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      RUSA SULAWESI_0: 833729423
+      RUSA SULAWESI_1: -1705862665
+      RUSA SULAWESI_10: 374558104
+      RUSA SULAWESI_11: 86569917
+      RUSA SULAWESI_2: 1627182527
+      RUSA SULAWESI_3: -2034702517
+      RUSA SULAWESI_4: -1084400975
+      RUSA SULAWESI_5: 1986957982
+      RUSA SULAWESI_6: 862052540
+      RUSA SULAWESI_7: -1528848269
+      RUSA SULAWESI_8: -1195230768
+      RUSA SULAWESI_9: -1976913298
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

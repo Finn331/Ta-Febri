@@ -134,7 +134,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: KASUARI GELAMBIR SATU_0
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 1619
+        width: 461
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d4a7f5200e70d94bbd4bb4334dd87fa
+      internalID: 1606774279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KASUARI GELAMBIR SATU_1
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 1496
+        width: 348
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5efd54e7bf5eec34692543d8ce02bffa
+      internalID: -1780921512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KASUARI GELAMBIR SATU_2
+      rect:
+        serializedVersion: 2
+        x: 1339
+        y: 1619
+        width: 581
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17f905ab5675f4643840bc144c03bb74
+      internalID: -1007464709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KASUARI GELAMBIR SATU_3
+      rect:
+        serializedVersion: 2
+        x: 2133
+        y: 1500
+        width: 344
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b6d4c45d64cc974cbd8f3d2a162446f
+      internalID: -1685267618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KASUARI GELAMBIR SATU_4
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 726
+        width: 345
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3edd01c9385f4044fb8abf56d2972d60
+      internalID: 920881186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KASUARI GELAMBIR SATU_5
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 870
+        width: 583
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6464c09fe596c444cb03c05e057e5df1
+      internalID: 621469292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KASUARI GELAMBIR SATU_6
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 747
+        width: 347
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b89d7e70f9d194b4d86e65be599f4b09
+      internalID: 1848168108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KASUARI GELAMBIR SATU_7
+      rect:
+        serializedVersion: 2
+        x: 2017
+        y: 870
+        width: 460
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c27c3aae5409ba449a7e66e4ce07e496
+      internalID: -392698000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KASUARI GELAMBIR SATU_8
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 139
+        width: 460
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bc0abb6a1233c84594f8cc339b38046
+      internalID: -261815867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KASUARI GELAMBIR SATU_9
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 120
+        width: 348
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff83b75115f809d49a7bf26b66db12d7
+      internalID: 1130284305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KASUARI GELAMBIR SATU_10
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 122
+        width: 582
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50881f31b7aabed4eb2fbe40915475d8
+      internalID: 1465923141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KASUARI GELAMBIR SATU_11
+      rect:
+        serializedVersion: 2
+        x: 2133
+        y: 120
+        width: 344
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52a51dd3d4e1936449699f1c59a188e3
+      internalID: -423382755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -145,7 +397,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      KASUARI GELAMBIR SATU_0: 1606774279
+      KASUARI GELAMBIR SATU_1: -1780921512
+      KASUARI GELAMBIR SATU_10: 1465923141
+      KASUARI GELAMBIR SATU_11: -423382755
+      KASUARI GELAMBIR SATU_2: -1007464709
+      KASUARI GELAMBIR SATU_3: -1685267618
+      KASUARI GELAMBIR SATU_4: 920881186
+      KASUARI GELAMBIR SATU_5: 621469292
+      KASUARI GELAMBIR SATU_6: 1848168108
+      KASUARI GELAMBIR SATU_7: -392698000
+      KASUARI GELAMBIR SATU_8: -261815867
+      KASUARI GELAMBIR SATU_9: 1130284305
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: GAJAH SUMATRA_0
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 1635
+        width: 446
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c98fa74dbf6cc74b902f41bf1a9833b
+      internalID: 1723723316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAJAH SUMATRA_1
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 1503
+        width: 338
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e59aec46780daa74297f4a9b1c2274f3
+      internalID: 1101235858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAJAH SUMATRA_2
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 1627
+        width: 564
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e55655cd9ba5af45b9db87a02c0a855
+      internalID: 317929817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAJAH SUMATRA_3
+      rect:
+        serializedVersion: 2
+        x: 2142
+        y: 1508
+        width: 334
+        height: 466
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98eb9da8a2f5dda42805cb2d19b3a711
+      internalID: -1187273844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAJAH SUMATRA_4
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 736
+        width: 332
+        height: 591
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47ac33078e29d144789c68e3b8b299f7
+      internalID: -106596780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAJAH SUMATRA_5
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 874
+        width: 565
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69c03ee788342d24cb583f8c94c48d60
+      internalID: 1348640627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAJAH SUMATRA_6
+      rect:
+        serializedVersion: 2
+        x: 1459
+        y: 746
+        width: 338
+        height: 592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 914b90bffdf565a4bba686ddfcd6d37d
+      internalID: -1704473190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAJAH SUMATRA_7
+      rect:
+        serializedVersion: 2
+        x: 2024
+        y: 876
+        width: 447
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba71f74a9150d7b42908fe98ba525741
+      internalID: 1789817239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAJAH SUMATRA_8
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 139
+        width: 447
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9ec96b5982afe84098f0f6fb8df7f33
+      internalID: 1910282568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAJAH SUMATRA_9
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 123
+        width: 338
+        height: 469
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 485ff06009d3bf445b30e25d628fc8d3
+      internalID: -526958005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAJAH SUMATRA_10
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 127
+        width: 565
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c86fbdaa948b4943b9cef0c195707eb
+      internalID: -678685580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAJAH SUMATRA_11
+      rect:
+        serializedVersion: 2
+        x: 2137
+        y: 122
+        width: 334
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b04d781604bdb14e87868dc8e97b489
+      internalID: 1354534326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -145,7 +397,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GAJAH SUMATRA_0: 1723723316
+      GAJAH SUMATRA_1: 1101235858
+      GAJAH SUMATRA_10: -678685580
+      GAJAH SUMATRA_11: 1354534326
+      GAJAH SUMATRA_2: 317929817
+      GAJAH SUMATRA_3: -1187273844
+      GAJAH SUMATRA_4: -106596780
+      GAJAH SUMATRA_5: 1348640627
+      GAJAH SUMATRA_6: -1704473190
+      GAJAH SUMATRA_7: 1789817239
+      GAJAH SUMATRA_8: 1910282568
+      GAJAH SUMATRA_9: -526958005
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ANOA_0
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 1619
+        width: 461
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ff2a0af61b76541b1ecb59b33178ad
+      internalID: -272174617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANOA_1
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 1496
+        width: 347
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 185ac5bcfc25b0c4ca53f311cf2fa91b
+      internalID: 732073474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANOA_2
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 1619
+        width: 584
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e445cf5df6543164d94584c9b5f7df4b
+      internalID: 1026335651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANOA_3
+      rect:
+        serializedVersion: 2
+        x: 2137
+        y: 1496
+        width: 343
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2668158500831734d9952e34e4b6233c
+      internalID: 121897645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANOA_4
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 726
+        width: 343
+        height: 612
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b78970b3cb808a940aee55daa265ef27
+      internalID: -828512015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANOA_5
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 869
+        width: 583
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc91212040a0afc4892a3c9fe2b528bf
+      internalID: -215492786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANOA_6
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 746
+        width: 347
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb06ca58fbc74c547b661c3b4e61dfea
+      internalID: 1085718219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANOA_7
+      rect:
+        serializedVersion: 2
+        x: 2019
+        y: 869
+        width: 461
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5012a41a571170499fd103e04a60fce
+      internalID: -804565199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANOA_8
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 139
+        width: 460
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08cc999218131ab4d849e576899912ce
+      internalID: 746481048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANOA_9
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 120
+        width: 347
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5dea7eb173dff94cb955f01b21492f0
+      internalID: -1354441115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANOA_10
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 123
+        width: 582
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07a03059faea22b44b71c40b3253b4ef
+      internalID: 504893912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANOA_11
+      rect:
+        serializedVersion: 2
+        x: 2137
+        y: 123
+        width: 343
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2508a5c267cc286458ee6b9c1fd08fd6
+      internalID: 1999078244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -145,7 +397,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ANOA_0: -272174617
+      ANOA_1: 732073474
+      ANOA_10: 504893912
+      ANOA_11: 1999078244
+      ANOA_2: 1026335651
+      ANOA_3: 121897645
+      ANOA_4: -828512015
+      ANOA_5: -215492786
+      ANOA_6: 1085718219
+      ANOA_7: -804565199
+      ANOA_8: 746481048
+      ANOA_9: -1354441115
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

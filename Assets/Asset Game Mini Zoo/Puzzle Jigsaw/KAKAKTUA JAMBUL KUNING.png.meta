@@ -134,7 +134,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: KAKAKTUA JAMBUL KUNING_0
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 1630
+        width: 461
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8079665c3fb7fb4aa0def3b3c261be6
+      internalID: -1364544698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KAKAKTUA JAMBUL KUNING_1
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1496
+        width: 346
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4308f470947ed64e953e92d7b503a29
+      internalID: -1387222562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KAKAKTUA JAMBUL KUNING_2
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 1619
+        width: 580
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f1ac33cd86fc9f4aa99103b42d1ff9a
+      internalID: -483125325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KAKAKTUA JAMBUL KUNING_3
+      rect:
+        serializedVersion: 2
+        x: 2137
+        y: 1499
+        width: 343
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f50b2235559b0484289fdf641b65ac90
+      internalID: 543097069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KAKAKTUA JAMBUL KUNING_4
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 726
+        width: 342
+        height: 609
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c851ea73b29c13c4fbd8e100b8a18a96
+      internalID: -1864675857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KAKAKTUA JAMBUL KUNING_5
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 872
+        width: 579
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15a0151164504b34d9d0722b2237c720
+      internalID: 1906448440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KAKAKTUA JAMBUL KUNING_6
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 749
+        width: 345
+        height: 608
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cdc2265f3e7aae43aa10396f0a2af05
+      internalID: 746376905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KAKAKTUA JAMBUL KUNING_7
+      rect:
+        serializedVersion: 2
+        x: 2022
+        y: 869
+        width: 459
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d94fffbfc83d1324f81de52eb77a0885
+      internalID: 226299421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KAKAKTUA JAMBUL KUNING_8
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 140
+        width: 459
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a682fef428c832408cc020fa456c7a9
+      internalID: 316899259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KAKAKTUA JAMBUL KUNING_9
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 120
+        width: 346
+        height: 481
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6be20e8c8ad5bba4981bc78e01058b86
+      internalID: 1979020219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KAKAKTUA JAMBUL KUNING_10
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 124
+        width: 579
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b51c7f0820a8ce04898bc29a625a1e2f
+      internalID: -1981354165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KAKAKTUA JAMBUL KUNING_11
+      rect:
+        serializedVersion: 2
+        x: 2137
+        y: 140
+        width: 343
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fbe2f0dc2db8fb4c8e4d97f11f12bb2
+      internalID: 748586778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -145,7 +397,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      KAKAKTUA JAMBUL KUNING_0: -1364544698
+      KAKAKTUA JAMBUL KUNING_1: -1387222562
+      KAKAKTUA JAMBUL KUNING_10: -1981354165
+      KAKAKTUA JAMBUL KUNING_11: 748586778
+      KAKAKTUA JAMBUL KUNING_2: -483125325
+      KAKAKTUA JAMBUL KUNING_3: 543097069
+      KAKAKTUA JAMBUL KUNING_4: -1864675857
+      KAKAKTUA JAMBUL KUNING_5: 1906448440
+      KAKAKTUA JAMBUL KUNING_6: 746376905
+      KAKAKTUA JAMBUL KUNING_7: 226299421
+      KAKAKTUA JAMBUL KUNING_8: 316899259
+      KAKAKTUA JAMBUL KUNING_9: 1979020219
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

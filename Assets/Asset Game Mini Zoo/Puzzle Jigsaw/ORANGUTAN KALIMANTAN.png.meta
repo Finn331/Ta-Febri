@@ -134,7 +134,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ORANGUTAN KALIMANTAN_0
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1619
+        width: 462
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b38e679e518785a44bfb349f8c2a9e34
+      internalID: 1293432086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ORANGUTAN KALIMANTAN_1
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 1496
+        width: 347
+        height: 484
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e241f0f5019e7146958cb278822c680
+      internalID: -818017672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ORANGUTAN KALIMANTAN_2
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 1623
+        width: 584
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 630c275620d1e0a41afa065125e21bbc
+      internalID: 277769627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ORANGUTAN KALIMANTAN_3
+      rect:
+        serializedVersion: 2
+        x: 2140
+        y: 1495
+        width: 344
+        height: 484
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d69fe5a862835934eb1eccf835d81131
+      internalID: 2080278122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ORANGUTAN KALIMANTAN_4
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 725
+        width: 344
+        height: 613
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76c954064efb712479c6e8c88693a622
+      internalID: -1709738084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ORANGUTAN KALIMANTAN_5
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 868
+        width: 584
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d59a7459fa1bfd34896a6b596c286c64
+      internalID: 1825524104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ORANGUTAN KALIMANTAN_6
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 749
+        width: 347
+        height: 611
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd142a0508b569545b01dea0d4a1a69c
+      internalID: -352096733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ORANGUTAN KALIMANTAN_7
+      rect:
+        serializedVersion: 2
+        x: 2022
+        y: 873
+        width: 462
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40172bd22cff94944b675c82e254b516
+      internalID: -1672648340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ORANGUTAN KALIMANTAN_8
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 139
+        width: 462
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bd71c4571fbd7d46bcbda1b179811cb
+      internalID: 353437404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ORANGUTAN KALIMANTAN_9
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 120
+        width: 347
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c0ce28103ac8214c8593d70bae69c02
+      internalID: -1837890161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ORANGUTAN KALIMANTAN_10
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 120
+        width: 584
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39594e609ca78194d95a792a331cc30a
+      internalID: -745997876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ORANGUTAN KALIMANTAN_11
+      rect:
+        serializedVersion: 2
+        x: 2140
+        y: 120
+        width: 344
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17012f96a253b6b40a3bf62321575111
+      internalID: 2065898013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -145,7 +397,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ORANGUTAN KALIMANTAN_0: 1293432086
+      ORANGUTAN KALIMANTAN_1: -818017672
+      ORANGUTAN KALIMANTAN_10: -745997876
+      ORANGUTAN KALIMANTAN_11: 2065898013
+      ORANGUTAN KALIMANTAN_2: 277769627
+      ORANGUTAN KALIMANTAN_3: 2080278122
+      ORANGUTAN KALIMANTAN_4: -1709738084
+      ORANGUTAN KALIMANTAN_5: 1825524104
+      ORANGUTAN KALIMANTAN_6: -352096733
+      ORANGUTAN KALIMANTAN_7: -1672648340
+      ORANGUTAN KALIMANTAN_8: 353437404
+      ORANGUTAN KALIMANTAN_9: -1837890161
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: KAKAKTUA RAJA_0
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1628
+        width: 464
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a5e7414cb74ba40995183face6e77e
+      internalID: 86652137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KAKAKTUA RAJA_1
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 1496
+        width: 347
+        height: 484
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6597bd1b6aa682d4692de6a58671298f
+      internalID: -956372770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KAKAKTUA RAJA_2
+      rect:
+        serializedVersion: 2
+        x: 1335
+        y: 1622
+        width: 583
+        height: 361
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceb67ae8d26c59d4386e23179c0967b5
+      internalID: 85767631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KAKAKTUA RAJA_3
+      rect:
+        serializedVersion: 2
+        x: 2136
+        y: 1496
+        width: 344
+        height: 484
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e03bb2269b4e4f5459d9d1c0ce04afc5
+      internalID: -1612036814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KAKAKTUA RAJA_4
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 728
+        width: 343
+        height: 611
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2521df0151fa79a42ac3b6aeed3782ec
+      internalID: 883335811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KAKAKTUA RAJA_5
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 868
+        width: 584
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dde82cf41b848f4caca6b05f7b44f58
+      internalID: 521102959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KAKAKTUA RAJA_6
+      rect:
+        serializedVersion: 2
+        x: 1458
+        y: 746
+        width: 347
+        height: 613
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31a19a18ae07f43479dc8b31a297fd22
+      internalID: -2097399492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KAKAKTUA RAJA_7
+      rect:
+        serializedVersion: 2
+        x: 2019
+        y: 872
+        width: 463
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2841756fc85d5d4489a1dd325b9b894
+      internalID: 1651740283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KAKAKTUA RAJA_8
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 139
+        width: 463
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f5996670716e524fbc33487dc2b5b34
+      internalID: 1931585997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KAKAKTUA RAJA_9
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 120
+        width: 347
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a860ea00b336434e9ea0fcd621bc621
+      internalID: -299784547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KAKAKTUA RAJA_10
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 120
+        width: 583
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c17f6cfd1ca57204ea2b2a674eeae8ef
+      internalID: -944900385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KAKAKTUA RAJA_11
+      rect:
+        serializedVersion: 2
+        x: 2136
+        y: 122
+        width: 344
+        height: 484
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6eab2fb5d30a7c428adc49b5150e4d8
+      internalID: -1445188290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -145,7 +397,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      KAKAKTUA RAJA_0: 86652137
+      KAKAKTUA RAJA_1: -956372770
+      KAKAKTUA RAJA_10: -944900385
+      KAKAKTUA RAJA_11: -1445188290
+      KAKAKTUA RAJA_2: 85767631
+      KAKAKTUA RAJA_3: -1612036814
+      KAKAKTUA RAJA_4: 883335811
+      KAKAKTUA RAJA_5: 521102959
+      KAKAKTUA RAJA_6: -2097399492
+      KAKAKTUA RAJA_7: 1651740283
+      KAKAKTUA RAJA_8: 1931585997
+      KAKAKTUA RAJA_9: -299784547
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
