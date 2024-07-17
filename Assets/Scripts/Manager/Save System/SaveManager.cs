@@ -13,6 +13,7 @@ public class SaveManager : MonoBehaviour
     //public int attack;
     //public int level;
     //public int health;
+    public bool level_1_RewardClaimed;
 
     public int levelSelected;
 
@@ -108,9 +109,21 @@ public class SaveManager : MonoBehaviour
     [Serializable]
     class PlayerData_Storage
     {
+        public int isRewardClaimed;
         //public int coin;
         //public int attack;
         //public int level;
         //public int health;
+    }
+
+    public void SetRewardClaimed_Level_1(bool claimed)
+    {
+        level_1_RewardClaimed = claimed;
+
+        if (level_1_RewardClaimed)
+        {
+            Debug.Log("Reward claimed!");
+            // Lakukan tindakan lain yang sesuai setelah klaim reward
+        }
     }
 }

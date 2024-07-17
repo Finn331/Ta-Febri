@@ -7,8 +7,8 @@ using UnityEngine.SceneManagement;
 public class PuzzleManager : MonoBehaviour
 {
     public static PuzzleManager Instance;
-    private int totalPieces = 12; // Jumlah total puzzle pieces yang harus tersnap
-    private int snappedPieces = 0; // Counter untuk puzzle pieces yang sudah tersnap
+    public int totalPieces = 12; // Jumlah total puzzle pieces yang harus tersnap
+    public int snappedPieces = 0; // Counter untuk puzzle pieces yang sudah tersnap
     public bool rewardClaimed = false; // Status apakah reward sudah di-claimed
     public bool levelFinished = false; // Status apakah level sudah selesai
     public GameObject pict; // GameObject yang akan diaktifkan
@@ -39,6 +39,19 @@ public class PuzzleManager : MonoBehaviour
         }
     }
 
+    void Start()
+    {
+        if (rewardClaimed == true)
+        {
+            rewardHolder.SetActive(false);
+            rewardButton.SetActive(false);
+
+            LevelManager.Instance.pieces.SetActive(false);
+            LevelManager.Instance.rewardHolder.SetActive(false);
+            LevelManager.Instance.textSelamatHolder.SetActive(true);
+        }
+    }
+
     public void CheckAllSnapped()
     {
         snappedPieces++;
@@ -46,7 +59,11 @@ public class PuzzleManager : MonoBehaviour
         {
             ActivatePict();
             // rewardClaimed = true;  // Set reward sudah di-claimed menjadi true
-            levelFinished = true;
+            // levelFinished = true;
+        }
+        if (snappedPieces >= totalPieces)
+        {
+            LevelManager.Instance.SetLevelFinished(true);
         }
     }
 
@@ -167,23 +184,23 @@ public class PuzzleManager : MonoBehaviour
         if (rewardButton != null)
         {
             // Animasi pulse dengan menggunakan LeanTween
-            LeanTween.scale(rewardButton, new Vector3(0.3f, 0.3f, 0.3f), 0.4f)
-            .setEasePunch()
-            .setLoopPingPong(1);
+            LeanTween.scale(rewardButton, new Vector3(0.3f, 0.3f, 0.3f), 0.4f).setEasePunch().setLoopPingPong(1);
+            rewardClaimed = true;
+            LevelManager.Instance.SetRewardClaimed(true);
         }
     }
 
     // Metode untuk mengatur reward claimed menjadi true
-    public void SetRewardClaimed(bool claimed)
-    {
-        rewardClaimed = claimed;
-    }
+    // public void SetRewardClaimed(bool claimed)
+    // {
+    //     rewardClaimed = claimed;
+    // }
 
-    // Metode untuk mengatur level finished menjadi true
-    public void SetLevelFinished(bool finished)
-    {
-        levelFinished = finished;
-    }
+    // // Metode untuk mengatur level finished menjadi true
+    // public void SetLevelFinished(bool finished)
+    // {
+    //     levelFinished = finished;
+    // }
 
     // Metode untuk restart level
     public void RestartLevel()
