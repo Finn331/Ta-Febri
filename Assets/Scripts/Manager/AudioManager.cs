@@ -12,8 +12,15 @@ public class AudioManager : MonoBehaviour
 
     private void Awake()
     {
+        // Get AudioSource components
         soundSource = GetComponent<AudioSource>();
-        musicSource = transform.GetChild(0).GetComponent<AudioSource>();
+
+        // Check if musicSource exists in a child GameObject
+        musicSource = transform.Find("MusicSource").GetComponent<AudioSource>();
+        if (musicSource == null)
+        {
+            Debug.LogError("No AudioSource found in children named 'MusicSource'.");
+        }
 
         // Keep this object even when we go to new scene
         if (instance == null)
@@ -23,7 +30,9 @@ public class AudioManager : MonoBehaviour
         }
         // Destroy duplicate gameobjects
         else if (instance != null && instance != this)
+        {
             Destroy(gameObject);
+        }
 
         // Check if volume preferences exist, otherwise set default values
         if (!PlayerPrefs.HasKey("musicVolume"))
@@ -43,6 +52,13 @@ public class AudioManager : MonoBehaviour
     public void PlaySound(AudioClip _sound)
     {
         soundSource.PlayOneShot(_sound);
+    }
+
+    public void PlayMusic(AudioClip _music, bool loop = false)
+    {
+        musicSource.clip = _music;
+        musicSource.loop = loop;
+        musicSource.Play();
     }
 
     public void ChangeSoundVolume(float _change)

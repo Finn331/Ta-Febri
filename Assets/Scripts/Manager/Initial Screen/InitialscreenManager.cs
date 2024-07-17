@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -19,8 +18,9 @@ public class InitialscreenManager : MonoBehaviour
 
     [Header("Logo Sponsor")]
     [SerializeField] private RectTransform logoRagunan;
-    [SerializeField] private RectTransform logoTripledot;
+    [SerializeField] private RectTransform logoEU;
     [SerializeField] private RectTransform logoDkv;
+    [SerializeField] private RectTransform logoTripledot;
 
     [Header("Combined Logo")]
     [SerializeField] private GameObject logoMiniZoo;
@@ -45,137 +45,245 @@ public class InitialscreenManager : MonoBehaviour
     [SerializeField] private AudioClip logoPop2;
 
     private float startYMini = 900f;
-    private float endYMini = 247.5f;
-    private float endYZoo = 50f;
-    private float startYSponsor = -900f;
-    private float endYSponsor = -183f;
+    private float endYMini = 273f;
+    private float endYZoo = 112f;
+    private float startXSponsor = -1700f;
     private float animationDuration = 1f; // Durasi animasi dalam detik
     private float fadeDuration = 0.5f; // Durasi fade out dalam detik
     private float combinedLogoAnimationDuration = 1.5f; // Durasi animasi untuk logoMiniZoo
     private float delayBeforeDeactivation = 1f; // Delay sebelum menonaktifkan logo "Mini" dan "Zoo"
 
+    // Posisi awal X untuk logo sponsor
+    private float startXLogoRagunan = -1700f; // Default start position for logoRagunan
+    private float startXLogoEU = -373f; // Initial position for logoEU
+    private float startXLogoDkv = 17f; // Initial position for logoDkv
+    private float startXLogoTripledot = 234.3f; // Initial position for logoTripledot
+
+    // Posisi akhir X untuk logo sponsor
+    private float endXLogoRagunan = -373.3f;
+    private float endXLogoEU = -156f;
+    private float endXLogoDkv = 234.3f;
+    private float endXLogoTripledot = 476.7f;
+
     // Start is called before the first frame update
     void Start()
     {
+        // Set initial positions for Mini and Zoo logos
+        SetInitialPositionY(logoM, startYMini);
+        SetInitialPositionY(logoI, startYMini);
+        SetInitialPositionY(logoN, startYMini);
+        SetInitialPositionY(logoI2, startYMini);
+        SetInitialPositionY(logoZ, startYMini);
+        SetInitialPositionY(logoO, startYMini);
+        SetInitialPositionY(logoO2, startYMini);
+
+        // Set initial positions for Sponsor logos and set alpha to 0
+        SetInitialPositionX(logoRagunan, startXLogoRagunan);
+        SetInitialPositionX(logoEU, startXLogoEU);
+        SetInitialPositionX(logoDkv, startXLogoDkv);
+        SetInitialPositionX(logoTripledot, startXLogoTripledot);
+
+        // Start animation sequence
         AnimateLogos();
     }
 
     private void AnimateLogos()
     {
-        // Set initial positions for Mini and Zoo logos
-        SetInitialPosition(logoM, startYMini);
-        SetInitialPosition(logoI, startYMini);
-        SetInitialPosition(logoN, startYMini);
-        SetInitialPosition(logoI2, startYMini);
-        SetInitialPosition(logoZ, startYMini);
-        SetInitialPosition(logoO, startYMini);
-        SetInitialPosition(logoO2, startYMini);
-
-        // Set initial positions for Sponsor logos
-        SetInitialPosition(logoRagunan, startYSponsor);
-        SetInitialPosition(logoTripledot, startYSponsor);
-        SetInitialPosition(logoDkv, startYSponsor);
-
         // Create a sequence for the animation
         LTSeq sequence = LeanTween.sequence();
 
-        // Animate "Mini"
+        // Animate "Mini" logos
+        AnimateMiniLogos(sequence);
+
+        // Animate "Zoo" logos
+        AnimateZooLogos(sequence);
+
+        // Animate Sponsor logos with new positions
+        AnimateSponsorLogos(sequence);
+
+        // Activate combined logo and fade out Sponsor logos
+        ActivateCombinedLogo(sequence);
+    }
+
+    private void AnimateMiniLogos(LTSeq sequence)
+    {
         sequence.append(LeanTween.moveY(logoM, endYMini, animationDuration).setEase(LeanTweenType.easeInOutQuad).setOnComplete(() => PlayLogoPop()));
         sequence.append(LeanTween.moveY(logoI, endYMini, animationDuration).setEase(LeanTweenType.easeInOutQuad).setOnComplete(() => PlayLogoPop()));
         sequence.append(LeanTween.moveY(logoN, endYMini, animationDuration).setEase(LeanTweenType.easeInOutQuad).setOnComplete(() => PlayLogoPop()));
         sequence.append(LeanTween.moveY(logoI2, endYMini, animationDuration).setEase(LeanTweenType.easeInOutQuad).setOnComplete(() => PlayLogoPop()));
+    }
 
-        // Animate "Zoo"
+    private void AnimateZooLogos(LTSeq sequence)
+    {
         sequence.append(LeanTween.moveY(logoZ, endYZoo, animationDuration).setEase(LeanTweenType.easeInOutQuad).setOnComplete(() => PlayLogoPop()));
         sequence.append(LeanTween.moveY(logoO, endYZoo, animationDuration).setEase(LeanTweenType.easeInOutQuad).setOnComplete(() => PlayLogoPop()));
-        sequence.append(LeanTween.moveY(logoO2, endYZoo, animationDuration).setEase(LeanTweenType.easeInOutQuad).setOnComplete(() => {
+        sequence.append(LeanTween.moveY(logoO2, endYZoo, animationDuration).setEase(LeanTweenType.easeInOutQuad).setOnComplete(() =>
+        {
             PlayLogoPop();
             logoO2Anim.SetTrigger("isCracked");
         }));
+    }
 
-        // Animate Sponsor logos
-        sequence.append(LeanTween.moveY(logoRagunan, endYSponsor, animationDuration).setEase(LeanTweenType.easeInOutQuad).setOnComplete(() => {
-            PlayLogoPop2();
-            logoMiniZoo.SetActive(true); // Activate logoMiniZoo when sponsor logo starts to move
-        }));
-        sequence.append(LeanTween.moveY(logoTripledot, endYSponsor, animationDuration).setEase(LeanTweenType.easeInOutQuad).setOnComplete(() => PlayLogoPop2()));
-        sequence.append(LeanTween.moveY(logoDkv, endYSponsor, animationDuration).setEase(LeanTweenType.easeInOutQuad).setOnComplete(() => PlayLogoPop2()));
+    private void AnimateSponsorLogos(LTSeq sequence)
+    {
+        // Animasi untuk logoRagunan
+        LTDescr ragunanTween = LeanTween.moveX(logoRagunan, endXLogoRagunan, animationDuration)
+            .setEase(LeanTweenType.easeInOutQuad)
+            .setOnComplete(() =>
+            {
+                PlayLogoPop2();
 
-        // Activate combined logo and fade out Sponsor logos
-        sequence.append(() =>
+                // Setelah logoRagunan selesai, mulai animasi untuk logoEU, logoDkv, dan logoTripledot
+                StartLogoAnimations();
+            });
+
+        void StartLogoAnimations()
         {
-            LeanTween.alpha(logoRagunan, 0, fadeDuration).setOnComplete(() => logoRagunan.gameObject.SetActive(false));
-            LeanTween.alpha(logoTripledot, 0, fadeDuration).setOnComplete(() => logoTripledot.gameObject.SetActive(false));
-            LeanTween.alpha(logoDkv, 0, fadeDuration).setOnComplete(() => logoDkv.gameObject.SetActive(false));
+            // Animasi untuk logoEU
+            LTDescr tweenEU = LeanTween.moveX(logoEU, endXLogoEU, animationDuration)
+                .setEase(LeanTweenType.easeInOutQuad)
+                .setOnStart(() => FadeInLogo(logoEU)); // Fade in logoEU at the start of animation
+
+            // Animasi untuk logoDkv
+            LTDescr tweenDkv = LeanTween.moveX(logoDkv, endXLogoDkv, animationDuration)
+                .setEase(LeanTweenType.easeInOutQuad)
+                .setOnStart(() => FadeInLogo(logoDkv)); // Fade in logoDkv at the start of animation
+
+            // Animasi untuk logoTripledot
+            LTDescr tweenTripledot = LeanTween.moveX(logoTripledot, endXLogoTripledot, animationDuration)
+                .setEase(LeanTweenType.easeInOutQuad)
+                .setOnStart(() => FadeInLogo(logoTripledot)); // Fade in logoTripledot at the start of animation
+
+            // Set onComplete untuk logoEU, logoDkv, dan logoTripledot untuk memainkan suara setelah animasi selesai
+            tweenEU.setOnComplete(() => PlayLogoPop2());
+            tweenDkv.setOnComplete(() => PlayLogoPop2());
+            tweenTripledot.setOnComplete(() => PlayLogoPop2());
+        }
+    }
+
+
+
+    private void FadeInLogo(RectTransform logo)
+    {
+        // Set alpha to 0 and then fade in
+        logo.gameObject.SetActive(true);
+        LeanTween.alpha(logo, 0f, 0f);
+        LeanTween.alpha(logo, 1f, fadeDuration);
+    }
+
+    private void ActivateCombinedLogo(LTSeq sequence)
+    {
+        // Menunggu semua logo sponsor selesai
+        sequence.append(() => StartCoroutine(WaitForSponsorLogosToEnd(() =>
+        {
+            // Fade out Sponsor logos
+            FadeOutSponsorLogos();
 
             // Delay before deactivating "Mini" and "Zoo" logos
-            LeanTween.delayedCall(delayBeforeDeactivation, () => {
+            LeanTween.delayedCall(delayBeforeDeactivation, () =>
+            {
                 // Fade out "Mini" and "Zoo" logos
-                FadeOutLogo(logoM);
-                FadeOutLogo(logoI);
-                FadeOutLogo(logoN);
-                FadeOutLogo(logoI2);
-                FadeOutLogo(logoZ);
-                FadeOutLogo(logoO);
-                FadeOutLogo(logoO2);
+                FadeOutMiniZooLogos();
 
                 // Activate combined logo after fading out
-                LeanTween.delayedCall(fadeDuration, () => {
-                    // Deactivate "Mini" and "Zoo" logos
-                    DeactivateLogo(logoM);
-                    DeactivateLogo(logoI);
-                    DeactivateLogo(logoN);
-                    DeactivateLogo(logoI2);
-                    DeactivateLogo(logoZ);
-                    DeactivateLogo(logoO);
-                    DeactivateLogo(logoO2);
+                ActivateCombinedLogoAfterFade();
+            });
+        })));
+    }
 
-                    // Activate and animate combined logo
-                    logoMiniZoo.SetActive(true);
+    private IEnumerator WaitForSponsorLogosToEnd(System.Action onComplete)
+    {
+        // Wait until all Sponsor logos' animations are completed
+        yield return new WaitForSeconds(animationDuration + 0.1f); // Adjust the wait time as needed
 
-                    RectTransform logoMiniZooRect = logoMiniZoo.GetComponent<RectTransform>();
-                    LeanTween.scale(logoMiniZoo, new Vector3(0.3f, 0.3f, 0.3f), combinedLogoAnimationDuration).setEase(LeanTweenType.easeInOutQuad);
-                    LeanTween.move(logoMiniZooRect, new Vector3(677, 318.31f, 0), combinedLogoAnimationDuration).setEase(LeanTweenType.easeInOutQuad).setOnComplete(() => {
-                        // Activate header image with fade in
-                        headerImage.SetActive(true);
-                        SetAlpha(headerImage, 0f); // Ensure headerImage starts fully transparent
-                        LeanTween.alpha(headerImage, 1f, fadeDuration).setOnComplete(() =>
-                        {
-                            // Delay before deactivating header image
-                            LeanTween.delayedCall(1f, () =>
-                            {
-                                LeanTween.alpha(headerImage, 0f, fadeDuration).setOnComplete(() => {
-                                    headerImage.SetActive(false);
+        // Callback when all logos are finished
+        onComplete?.Invoke();
+    }
 
-                                    // Change logoMiniZoo and its children color to black
-                                    ChangeColorToBlack(logoMiniZoo);
+    private void FadeOutSponsorLogos()
+    {
+        LeanTween.alpha(logoRagunan, 0, fadeDuration).setOnComplete(() => logoRagunan.gameObject.SetActive(false));
+        LeanTween.alpha(logoEU, 0, fadeDuration).setOnComplete(() => logoEU.gameObject.SetActive(false));
+        LeanTween.alpha(logoDkv, 0, fadeDuration).setOnComplete(() => logoDkv.gameObject.SetActive(false));
+        LeanTween.alpha(logoTripledot, 0, fadeDuration).setOnComplete(() => logoTripledot.gameObject.SetActive(false));
+    }
 
-                                    // Fade out Initial Background and activate Background
-                                    LeanTween.alpha(initialBackground, 0f, fadeDuration).setOnComplete(() => {
-                                        initialBackground.SetActive(false);
-                                        background.SetActive(true);
-                                        SetAlpha(background, 0f);
-                                        LeanTween.alpha(background, 1f, fadeDuration).setOnComplete(() =>
-                                        {
-                                            // Start loading the next scene
-                                            loadingSlider.gameObject.SetActive(true);
-                                            StartCoroutine(LoadLevel(sceneToLoad));
-                                        });
-                                    });
-                                });
-                            });
-                        });
+    private void FadeOutMiniZooLogos()
+    {
+        LeanTween.alpha(logoM, 0, fadeDuration).setOnComplete(() => DeactivateLogo(logoM));
+        LeanTween.alpha(logoI, 0, fadeDuration).setOnComplete(() => DeactivateLogo(logoI));
+        LeanTween.alpha(logoN, 0, fadeDuration).setOnComplete(() => DeactivateLogo(logoN));
+        LeanTween.alpha(logoI2, 0, fadeDuration).setOnComplete(() => DeactivateLogo(logoI2));
+        LeanTween.alpha(logoZ, 0, fadeDuration).setOnComplete(() => DeactivateLogo(logoZ));
+        LeanTween.alpha(logoO, 0, fadeDuration).setOnComplete(() => DeactivateLogo(logoO));
+        LeanTween.alpha(logoO2, 0, fadeDuration).setOnComplete(() => DeactivateLogo(logoO2));
+    }
+
+    private void ActivateCombinedLogoAfterFade()
+    {
+        // Activate and animate combined logo
+        logoMiniZoo.SetActive(true);
+        RectTransform logoMiniZooRect = logoMiniZoo.GetComponent<RectTransform>();
+        LeanTween.scale(logoMiniZoo, new Vector3(0.3f, 0.3f, 0.3f), combinedLogoAnimationDuration).setEase(LeanTweenType.easeInOutQuad);
+        LeanTween.move(logoMiniZooRect, new Vector3(677, 318.31f, 0), combinedLogoAnimationDuration).setEase(LeanTweenType.easeInOutQuad).setOnComplete(() =>
+        {
+            // Activate header image with fade in
+            headerImage.SetActive(true);
+            SetAlpha(headerImage, 0f); // Ensure headerImage starts fully transparent
+            LeanTween.alpha(headerImage, 1f, fadeDuration).setOnComplete(() =>
+            {
+                // Delay before deactivating header image
+                LeanTween.delayedCall(1f, () =>
+                {
+                    LeanTween.alpha(headerImage, 0f, fadeDuration).setOnComplete(() =>
+                    {
+                        headerImage.SetActive(false);
+
+                        // Change logoMiniZoo and its children color to black
+                        ChangeColorToBlack(logoMiniZoo);
+
+                        // Fade out Initial Background and activate Background
+                        FadeOutInitialBackgroundAndActivate();
                     });
                 });
             });
         });
     }
 
-    private void SetInitialPosition(RectTransform logo, float startY)
+    private void FadeOutInitialBackgroundAndActivate()
+    {
+        LeanTween.alpha(initialBackground, 0f, fadeDuration).setOnComplete(() =>
+        {
+            initialBackground.SetActive(false);
+            background.SetActive(true);
+            SetAlpha(background, 0f);
+            LeanTween.alpha(background, 1f, fadeDuration).setOnComplete(() =>
+            {
+                // Start loading the next scene
+                loadingSlider.gameObject.SetActive(true);
+                StartCoroutine(LoadLevel(sceneToLoad));
+            });
+        });
+    }
+
+    private void SetInitialPositionY(RectTransform logo, float startY)
     {
         Vector2 startPos = logo.anchoredPosition;
         startPos.y = startY;
         logo.anchoredPosition = startPos;
+    }
+
+    private void SetInitialPositionX(RectTransform logo, float startX)
+    {
+        Vector2 startPos = logo.anchoredPosition;
+        startPos.x = startX;
+        logo.anchoredPosition = startPos;
+    }
+
+    private void SetInitialAlpha(RectTransform logo)
+    {
+        // Set initial alpha to 0
+        LeanTween.alpha(logo, 0f, 0f);
     }
 
     private void FadeOutLogo(RectTransform logo)
@@ -190,29 +298,27 @@ public class InitialscreenManager : MonoBehaviour
 
     private void SetAlpha(GameObject obj, float alpha)
     {
-        SpriteRenderer sr = obj.GetComponent<SpriteRenderer>();
-        if (sr != null)
+        CanvasGroup canvasGroup = obj.GetComponent<CanvasGroup>();
+        if (canvasGroup != null)
         {
-            Color color = sr.color;
-            color.a = alpha;
-            sr.color = color;
+            canvasGroup.alpha = alpha;
         }
     }
 
     private void ChangeColorToBlack(GameObject obj)
     {
         // Change the main GameObject's color to black
-        SpriteRenderer sr = obj.GetComponent<SpriteRenderer>();
-        if (sr != null)
+        Image image = obj.GetComponent<Image>();
+        if (image != null)
         {
-            sr.color = Color.black;
+            image.color = Color.black;
         }
 
         // Change color of all Image components in children GameObjects
         Image[] images = obj.GetComponentsInChildren<Image>();
-        foreach (Image image in images)
+        foreach (Image img in images)
         {
-            image.color = Color.black;
+            img.color = Color.black;
         }
     }
 

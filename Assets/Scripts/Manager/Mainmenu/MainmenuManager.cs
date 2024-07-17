@@ -37,16 +37,18 @@ public class MainmenuManager : MonoBehaviour
             fadeOutPanel.color = color;
             fadeOutPanel.gameObject.SetActive(false);
         }
+        AudioManager.instance.PlayMusic(mainmenuSong, true);
     }
 
     // Awake is called when the script instance is being loaded
     void Awake()
     {
         // Setup AudioSource and play mainmenuSong
-        audioSource = gameObject.AddComponent<AudioSource>();
-        audioSource.loop = true;
-        audioSource.clip = mainmenuSong;
-        audioSource.Play();
+        //audioSource = gameObject.AddComponent<AudioSource>();
+        //audioSource.loop = true;
+        //audioSource.clip = mainmenuSong;
+        //audioSource.Play();
+        
     }
 
     // Update is called once per frame
