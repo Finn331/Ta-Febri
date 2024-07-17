@@ -5614,9 +5614,7 @@ MonoBehaviour:
   - {fileID: 102852779723192379, guid: 03d1d878fe4fc274ba1709492b0912f8, type: 3}
   - {fileID: 5957748104211716695, guid: ef6af97a2a003ec49b0c0d2ae16eec51, type: 3}
   instantiateArea: {fileID: 967992933}
-  delayBetweenInstantiates: 0.5
-  animationTime: 1
-  checkInterval: 1
+  delayBetweenSpawns: 0.6
   popSfx: {fileID: 8300000, guid: 3e399a38139b8a646bdb61e426f69e4a, type: 3}
 --- !u!212 &967992935
 SpriteRenderer:
