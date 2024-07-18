@@ -179,9 +179,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Berkembangbiak pada bulan Januari-Agustus dan Mei-Juli. Masa pengeraman
-    selama 18-35 hari. Anak mulai terbang umur 40-56 hari. Anak menjadi dewasa mandiri
-    setelah 2 bulan  kemudian.
+  m_text: Bertelur hanya satu kali dalam 2 tahun, dengan 1 butir telur. Keberhasilan
+    berkembangbiak sangat rendah
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
   m_sharedMaterial: {fileID: -587346571193639361, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
@@ -208,7 +207,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.9
+  m_fontSize: 32.45
   m_fontSizeBase: 37
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1800,7 +1799,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ': Haliastur'
+  m_text: ': Probosciger'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
   m_sharedMaterial: {fileID: -587346571193639361, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
@@ -1863,7 +1862,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -64.9249, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2221,7 +2220,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0872835b071ccc940998cb5507a1be83, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 219e3ad69cbfb344ebe1ad495fcca34b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3154,7 +3153,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ikan, kepiting, kerang, katak, pengerat, reptil dan serangga.
+  m_text: Biji-bijian, kacang-kacangan, buah-buahan, serangga, larva.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
   m_sharedMaterial: {fileID: -587346571193639361, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
@@ -3181,7 +3180,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26.35
+  m_fontSize: 25.65
   m_fontSizeBase: 37
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4579,7 +4578,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1159422220, guid: ad1a707c83169954289387a75b47a7d6, type: 3}
+  m_Sprite: {fileID: 830655041, guid: ad1a707c83169954289387a75b47a7d6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5333,8 +5332,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Area tepi laut yang berlumpur, seperti hutan mangrove, muara sungai dan
-    pesisir pantai.
+  m_text: Hutan hujan, hutan daratan rendah
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
   m_sharedMaterial: {fileID: -587346571193639361, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
@@ -6584,18 +6582,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabs:
-  - {fileID: 854211439723585694, guid: 8371ceaf747cc1e43af3fcaf49da5fcf, type: 3}
-  - {fileID: 5328274358785503516, guid: 8f80387f6ef2eb848bc96b158312a6d8, type: 3}
-  - {fileID: 2236489217048421457, guid: 88137c8e1722b654aaad3c7d7e2619e6, type: 3}
-  - {fileID: 8821220660441340267, guid: 9db12bc0f93a9f249a62cac8c0821bec, type: 3}
-  - {fileID: 4902372238703705490, guid: e08786bc754e60e47952a5921ea4b9c9, type: 3}
-  - {fileID: 7904626474543857091, guid: 00a082f1bc7d9424abd3af6b29d7a28a, type: 3}
-  - {fileID: 15728738638761973, guid: a6cdfea9e1ba9714e916b92c7b1131fa, type: 3}
-  - {fileID: 2955996659783476203, guid: 2c959044fab6c074aa84132ee98e37ca, type: 3}
-  - {fileID: 6927949019255224445, guid: dac0db9ca58566946b22bce18ab715d6, type: 3}
-  - {fileID: 7170534183722651950, guid: de8116828b6d22842b9d10bde6193822, type: 3}
-  - {fileID: 102852779723192379, guid: 03d1d878fe4fc274ba1709492b0912f8, type: 3}
-  - {fileID: 5957748104211716695, guid: ef6af97a2a003ec49b0c0d2ae16eec51, type: 3}
+  - {fileID: 854211439723585694, guid: fb7a98eb9ec32a64d92bbce3b77d2774, type: 3}
+  - {fileID: 5328274358785503516, guid: 3e1c711f9e2719a48ba6ae9a7f8ed169, type: 3}
+  - {fileID: 2236489217048421457, guid: 114cc8dac9622b541adb8c6af21df610, type: 3}
+  - {fileID: 8821220660441340267, guid: b1da1ab80d53efb40ad652f033baf74f, type: 3}
+  - {fileID: 4902372238703705490, guid: 17ee0257989021c4b923311b0db5028a, type: 3}
+  - {fileID: 7904626474543857091, guid: bcb1e30f89f50414185fea93cb5a2612, type: 3}
+  - {fileID: 15728738638761973, guid: cc2fa73a87e64c949963bfed02212361, type: 3}
+  - {fileID: 2955996659783476203, guid: 2015a8bad0ab5044d97bfc6aaf9db052, type: 3}
+  - {fileID: 6927949019255224445, guid: 1041cf1654799624e8d214638bd6ff81, type: 3}
+  - {fileID: 7170534183722651950, guid: 81852873311d13241afaebacae6cd84d, type: 3}
+  - {fileID: 102852779723192379, guid: e60afe2bf6d38a3489e3cca5954ef112, type: 3}
+  - {fileID: 5957748104211716695, guid: b7d4e208625f8ec42acfb2ea32f06305, type: 3}
   instantiateArea: {fileID: 967992933}
   delayBetweenSpawns: 0.6
   popSfx: {fileID: 8300000, guid: 3e399a38139b8a646bdb61e426f69e4a, type: 3}
@@ -7179,7 +7177,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ': Accipitriformes'
+  m_text: ': Psittaciformes'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
   m_sharedMaterial: {fileID: -587346571193639361, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
@@ -7389,7 +7387,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0872835b071ccc940998cb5507a1be83, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 219e3ad69cbfb344ebe1ad495fcca34b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7936,10 +7934,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Elang bondol berukuran sedang (43-51 cm), memiliki sayap yang lebar dengan
-    ekor pendek dan mempulat ketika membentang. Bagian kepala, leher dan dada bewarna
-    putih, sisanya bewarna merah bata pucat kuning. Satwa ini dilindungi UU No. 5
-    Tahun 1990 dan PP No. 7 tahun 1999.
+  m_text: Panjang sekitar 60 cm memiliki pipi berwarna merah dan paruh besar berwarna
+    kehitaman. Dikepala terdapat jambul besar yang ditegakkan. Burung betina serupa
+    jantan.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
   m_sharedMaterial: {fileID: -587346571193639361, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
@@ -7966,7 +7963,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.85
+  m_fontSize: 30.2
   m_fontSizeBase: 37
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -10084,7 +10081,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ': Acciptridae'
+  m_text: ': Cacatuidae'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
   m_sharedMaterial: {fileID: -587346571193639361, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
@@ -10147,7 +10144,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -16.576523, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -10932,6 +10929,7 @@ MonoBehaviour:
   settingPanel: {fileID: 1039713653}
   settingHolder: {fileID: 350507692}
   delaySetting: 0.5
+  disabledObject: []
 --- !u!1 &1795777565
 GameObject:
   m_ObjectHideFlags: 0
@@ -10989,7 +10987,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ': Haliastur Indus'
+  m_text: ': Probosciger Aterrimus'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
   m_sharedMaterial: {fileID: -587346571193639361, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
@@ -11052,7 +11050,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -136.75684, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -11261,7 +11259,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2e84e347fd6a20e4c8763e00e80d172b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9d4dbfa9d9850f240ae89b5236d51f64, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11461,7 +11459,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 816454240, guid: 7086fe4bce4366941b593e4d1be3c1e4, type: 3}
+  m_Sprite: {fileID: -1474751562, guid: 7086fe4bce4366941b593e4d1be3c1e4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11887,7 +11885,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1741587035, guid: 7086fe4bce4366941b593e4d1be3c1e4, type: 3}
+  m_Sprite: {fileID: -1041927324, guid: 7086fe4bce4366941b593e4d1be3c1e4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12730,7 +12728,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c8d3e0820ace70044ba52eba75f16074, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9a6182ba50a1d874c9cf05ac2bbe1db6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

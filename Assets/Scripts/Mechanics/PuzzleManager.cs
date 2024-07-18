@@ -84,6 +84,7 @@ public class PuzzleManager : MonoBehaviour
         // {
         //     NextButtons.interactable = false;
         // }
+
     }
 
     void Update()
@@ -453,13 +454,13 @@ public class PuzzleManager : MonoBehaviour
             rewardClaimed = true;  // Set reward sudah di-claimed menjadi true
             levelFinished = false; // Set level sudah selesai menjadi false
         }
-        for (int i = 0; i < disabledObject.Length; i++)
-        {
-            if (disabledObject[i] != null)
-            {
-                disabledObject[i].SetActive(true);
-            }
-        }
+        //for (int i = 0; i < disabledObject.Length; i++)
+        //{
+        //    if (disabledObject[i] != null)
+        //    {
+        //        disabledObject[i].SetActive(true);
+        //    }
+        //}
         // Load ulang scene saat ini
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
@@ -480,14 +481,15 @@ public class PuzzleManager : MonoBehaviour
             SaveManager.instance.LevelCompleted(1, true);
 
             // Mematikan semua Object yang akan di Disable
-            for (int i = 0; i < disabledObject.Length; i++)
-            {
-                if (disabledObject[i] != null)
-                {
-                    disabledObject[i].SetActive(false);
-                }
-            }
+            //for (int i = 0; i < disabledObject.Length; i++)
+            //{
+            //    if (disabledObject[i] != null)
+            //    {
+            //        disabledObject[i].SetActive(false);
+            //    }
+            //}
         }
+
 
         if (SaveManager.instance.level_1_completed == true)
         {

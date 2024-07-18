@@ -42,6 +42,9 @@ public class PuzzleManager2 : MonoBehaviour
     [SerializeField] private GameObject settingHolder;
     [SerializeField] private float delaySetting;
 
+    [Header("Object to disable")]
+    [SerializeField] private GameObject[] disabledObject;
+
     private void Awake()
     {
         if (Instance == null)
@@ -69,10 +72,24 @@ public class PuzzleManager2 : MonoBehaviour
             containerRewardHolder.SetActive(false);
 
         }
+        // if (rewardClaimed == true)
+        // {
+        //     NextButtons.interactable = true;
+
+        //     containerRewardHolder.SetActive(false);
+        //     rewardButton.SetActive(false);
+        //     containerRewardHolder.SetActive(false);
+        // }
+        // else
+        // {
+        //     NextButtons.interactable = false;
+        // }
+
     }
 
     void Update()
     {
+        LevelFinishedCheck();
         Checking();
         if (rewardClaimed == true)
         {
@@ -318,6 +335,7 @@ public class PuzzleManager2 : MonoBehaviour
 
     public void PulseRewardButton()
     {
+        levelFinished = true;
         if (rewardButton != null)
         {
             rewardButtons.interactable = false;
@@ -436,7 +454,13 @@ public class PuzzleManager2 : MonoBehaviour
             rewardClaimed = true;  // Set reward sudah di-claimed menjadi true
             levelFinished = false; // Set level sudah selesai menjadi false
         }
-
+        //for (int i = 0; i < disabledObject.Length; i++)
+        //{
+        //    if (disabledObject[i] != null)
+        //    {
+        //        disabledObject[i].SetActive(true);
+        //    }
+        //}
         // Load ulang scene saat ini
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
@@ -448,5 +472,28 @@ public class PuzzleManager2 : MonoBehaviour
         Destroy(rewardButton);
         // Destroy(pieces);
         Destroy(rewardHolder);
+    }
+
+    public void LevelFinishedCheck()
+    {
+        if (levelFinished == true)
+        {
+            SaveManager.instance.LevelCompleted(2, true);
+
+            // Mematikan semua Object yang akan di Disable
+            //for (int i = 0; i < disabledObject.Length; i++)
+            //{
+            //    if (disabledObject[i] != null)
+            //    {
+            //        disabledObject[i].SetActive(false);
+            //    }
+            //}
+        }
+
+
+        if (SaveManager.instance.level_2_completed == true)
+        {
+            levelFinished = true;
+        }
     }
 }
