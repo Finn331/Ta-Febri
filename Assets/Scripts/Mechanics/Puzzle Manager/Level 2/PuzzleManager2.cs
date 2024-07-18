@@ -41,6 +41,8 @@ public class PuzzleManager2 : MonoBehaviour
     [SerializeField] private GameObject settingPanel;
     [SerializeField] private GameObject settingHolder;
     [SerializeField] private float delaySetting;
+    [SerializeField] private AudioClip level2Song;
+    [SerializeField] private AudioClip clickSFX;
 
     [Header("Object to disable")]
     [SerializeField] private GameObject[] disabledObject;
@@ -65,6 +67,7 @@ public class PuzzleManager2 : MonoBehaviour
 
     void Start()
     {
+        AudioManager.instance.PlayMusic(level2Song, true);
         if (rewardClaimed)
         {
             containerRewardHolder.SetActive(false);
@@ -106,6 +109,7 @@ public class PuzzleManager2 : MonoBehaviour
         settingPanel.SetActive(true);
         settingHolder.SetActive(true);
         LeanTween.scale(settingHolder, new Vector3(1, 1, 1), delaySetting).setEase(LeanTweenType.easeOutBounce);
+        AudioManager.instance.PlaySound(clickSFX);
     }
 
     public void CloseSettingPanel()
@@ -115,6 +119,7 @@ public class PuzzleManager2 : MonoBehaviour
             settingPanel.SetActive(false);
             settingHolder.SetActive(false);
         });
+        AudioManager.instance.PlaySound(clickSFX);
     }
 
     public void CheckAllSnapped()
@@ -234,6 +239,7 @@ public class PuzzleManager2 : MonoBehaviour
 
     public void CloseDeskripsiHolder()
     {
+        AudioManager.instance.PlaySound(clickSFX);
         // Melakukan fade out pada deskripsiHolder
         if (deskripsiHolder != null)
         {
@@ -335,6 +341,7 @@ public class PuzzleManager2 : MonoBehaviour
 
     public void PulseRewardButton()
     {
+        AudioManager.instance.PlaySound(clickSFX);
         levelFinished = true;
         if (rewardButton != null)
         {
@@ -445,6 +452,7 @@ public class PuzzleManager2 : MonoBehaviour
     // Metode untuk restart level
     public void RestartLevel()
     {
+        AudioManager.instance.PlaySound(clickSFX);
         // Reset snappedPieces
         snappedPieces = 0;
 
