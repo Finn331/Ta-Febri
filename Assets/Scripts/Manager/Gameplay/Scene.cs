@@ -5,10 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class Scene : MonoBehaviour
 {
-    public GameObject homeButton;
     public GameObject pauseMenu;
-    public GameObject nextButton;
-    public GameObject prevButton;
+    public string sceneToLoad;
+    public string sceneToBack;
     private Vector3 pauseMenuOriginalPosition;
     public GameObject dimmer;
     // public GameObject penutup;
@@ -37,14 +36,14 @@ public class Scene : MonoBehaviour
         // penutup.SetActive(true);
     }
 
-    public void HomeButton()
+    public void NextScene()
     {
-        SceneManager.LoadScene("Mainmenu");
+        SceneManager.LoadScene(sceneToLoad);
     }
 
-    public void NextButton()
+    public void BackScene()
     {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene(sceneToBack);
     }
 
     public void QuitGame()

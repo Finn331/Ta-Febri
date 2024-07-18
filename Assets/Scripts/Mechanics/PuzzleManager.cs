@@ -26,12 +26,14 @@ public class PuzzleManager : MonoBehaviour
     public GameObject containerRewardHolder;
     public GameObject rewardHolder;
     public GameObject rewardBox;
+    public Button rewardButtons;
 
     [Header("Level Manager")]
     public GameObject containerTextSelamatHolder;
     public GameObject containerPiecesReward;
     public GameObject targetGameObjectPosition;
     public GameObject NextButton;
+    public Button NextButtons;
     public GameObject pieces;
     public GameObject PrevButton;
 
@@ -56,17 +58,35 @@ public class PuzzleManager : MonoBehaviour
     void Start()
     {
 
-        if (rewardClaimed == true)
-        {
-            containerRewardHolder.SetActive(false);
-            rewardButton.SetActive(false);
-            containerRewardHolder.SetActive(false);
-        }
+        // if (rewardClaimed == true)
+        // {
+        //     NextButtons.interactable = true;
+
+        //     containerRewardHolder.SetActive(false);
+        //     rewardButton.SetActive(false);
+        //     containerRewardHolder.SetActive(false);
+        // }
+        // else
+        // {
+        //     NextButtons.interactable = false;
+        // }
     }
 
     void Update()
     {
         Checking();
+        if (rewardClaimed == true)
+        {
+            NextButtons.interactable = true;
+
+            containerRewardHolder.SetActive(false);
+            rewardButton.SetActive(false);
+            containerRewardHolder.SetActive(false);
+        }
+        else
+        {
+            NextButtons.interactable = false;
+        }
     }
 
     public void CheckAllSnapped()
@@ -77,7 +97,7 @@ public class PuzzleManager : MonoBehaviour
             ActivatePict();
             // rewardClaimed = true;  // Set reward sudah di-claimed menjadi true
             // levelFinished = true;
-            levelFinished = true;
+
         }
     }
 
@@ -189,8 +209,29 @@ public class PuzzleManager : MonoBehaviour
         // Melakukan fade out pada deskripsiHolder
         if (deskripsiHolder != null)
         {
+            if (rewardClaimed)
+            {
+                FadeOutObject(deskripsiHolder, ToTextSelamat);
+            }
             FadeOutObject(deskripsiHolder, MoveRewardButton);
         }
+    }
+
+    public void ToTextSelamat()
+    {
+        containerTextSelamatHolder.SetActive(true);
+        RectTransform transformSelamat = containerTextSelamatHolder.GetComponent<RectTransform>();
+        if (transformSelamat == null)
+        {
+            transformSelamat = containerTextSelamatHolder.AddComponent<RectTransform>();
+        }
+        LeanTween.move(transformSelamat, new Vector3(-24.89f, 0f, 0f), 1f).setEase(LeanTweenType.easeInOutQuad);
+        NextButton.SetActive(true);
+        PrevButton.SetActive(true);
+        CanvasGroup canvasNextButton = NextButton.GetComponent<CanvasGroup>();
+        CanvasGroup canvasPrevButton = PrevButton.GetComponent<CanvasGroup>();
+        LeanTween.alphaCanvas(canvasNextButton, 1, 0.4f);
+        LeanTween.alphaCanvas(canvasPrevButton, 1, 0.4f);
     }
 
     private void MoveRewardButton()
@@ -268,9 +309,11 @@ public class PuzzleManager : MonoBehaviour
     {
         if (rewardButton != null)
         {
+            rewardButtons.interactable = false;
             // Animasi pulse dengan menggunakan LeanTween
             LeanTween.scale(rewardButton, new Vector3(0.3f, 0.3f, 0.3f), 0.4f).setEasePunch().setLoopPingPong(1);
             rewardClaimed = true;
+            NextButtons.interactable = true;
             // LevelManager.Instance.SetRewardClaimed(true);
             if (SaveManager.instance.level_1_RewardClaimed == true)
             {

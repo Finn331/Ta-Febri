@@ -4393,7 +4393,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1747903652}
         m_TargetAssemblyTypeName: Scene, Assembly-CSharp
-        m_MethodName: HomeButton
+        m_MethodName: BackScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9745,10 +9745,12 @@ MonoBehaviour:
   containerRewardHolder: {fileID: 1599238104}
   rewardHolder: {fileID: 432086157}
   rewardBox: {fileID: 691569065}
+  rewardButtons: {fileID: 691569066}
   containerTextSelamatHolder: {fileID: 656408753}
   containerPiecesReward: {fileID: 1957828029}
   targetGameObjectPosition: {fileID: 1318282855}
   NextButton: {fileID: 1904354769}
+  NextButtons: {fileID: 1904354771}
   pieces: {fileID: 707618417}
   PrevButton: {fileID: 1933448996}
 --- !u!114 &1747903652
@@ -9763,10 +9765,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 935ccded180ea9548a27961d7bee9b1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  homeButton: {fileID: 1933448996}
   pauseMenu: {fileID: 974916746}
-  nextButton: {fileID: 1904354769}
-  prevButton: {fileID: 2009235016}
+  sceneToLoad: Mainmenu
+  sceneToBack: InitialScreen
   dimmer: {fileID: 1276954862}
 --- !u!1 &1795777565
 GameObject:
@@ -10267,7 +10268,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1747903652}
         m_TargetAssemblyTypeName: Scene, Assembly-CSharp
-        m_MethodName: NextButton
+        m_MethodName: NextScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10618,7 +10619,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1747903652}
         m_TargetAssemblyTypeName: Scene, Assembly-CSharp
-        m_MethodName: HomeButton
+        m_MethodName: BackScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
