@@ -6845,7 +6845,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'SELAMAT KAMU TELAH MENYELESAIKAN PUZZLE
 
-    ELANG BONDOL'
+    KAKAKTUA RAJA'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e6bd5aaa6d42ac5458249dc1065d3673, type: 2}
   m_sharedMaterial: {fileID: -789796221199011153, guid: e6bd5aaa6d42ac5458249dc1065d3673, type: 2}
@@ -10874,8 +10874,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 974916746}
-  sceneToLoad: Mainmenu
-  sceneToBack: InitialScreen
+  sceneToLoad: Level 3
+  sceneToBack: Level 1
   dimmer: {fileID: 1276954862}
 --- !u!114 &1747903653
 MonoBehaviour:
