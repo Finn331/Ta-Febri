@@ -4880,7 +4880,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1747903652}
         m_TargetAssemblyTypeName: Scene, Assembly-CSharp
-        m_MethodName: BackScene
+        m_MethodName: HomeScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7618,8 +7618,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PuzzleManager, Assembly-CSharp
+      - m_Target: {fileID: 1747903654}
+        m_TargetAssemblyTypeName: PuzzleManager2, Assembly-CSharp
         m_MethodName: RestartLevel
         m_Mode: 1
         m_Arguments:
@@ -8170,8 +8170,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PuzzleManager, Assembly-CSharp
+      - m_Target: {fileID: 1747903654}
+        m_TargetAssemblyTypeName: PuzzleManager2, Assembly-CSharp
         m_MethodName: OpenSettingPanel
         m_Mode: 1
         m_Arguments:
@@ -10929,6 +10929,8 @@ MonoBehaviour:
   settingPanel: {fileID: 1039713653}
   settingHolder: {fileID: 350507692}
   delaySetting: 0.5
+  level2Song: {fileID: 0}
+  clickSFX: {fileID: 0}
   disabledObject: []
 --- !u!1 &1795777565
 GameObject:

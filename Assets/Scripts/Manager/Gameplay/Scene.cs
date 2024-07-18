@@ -36,6 +36,11 @@ public class Scene : MonoBehaviour
         // penutup.SetActive(true);
     }
 
+    public void HomeScene()
+    {
+       SceneManager.LoadScene("Mainmenu");
+    }
+
     public void NextScene()
     {
         SceneManager.LoadScene(sceneToLoad);
