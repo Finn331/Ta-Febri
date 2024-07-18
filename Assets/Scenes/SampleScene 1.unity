@@ -1243,7 +1243,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1747903651}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PuzzleManager, Assembly-CSharp
         m_MethodName: CloseSettingPanel
         m_Mode: 1
@@ -4453,8 +4453,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1747903651}
-        m_TargetAssemblyTypeName: PuzzleManager, Assembly-CSharp
+      - m_Target: {fileID: 1747903654}
+        m_TargetAssemblyTypeName: PuzzleManager2, Assembly-CSharp
         m_MethodName: PulseRewardButton
         m_Mode: 1
         m_Arguments:
@@ -7620,7 +7620,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1747903651}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PuzzleManager, Assembly-CSharp
         m_MethodName: RestartLevel
         m_Mode: 1
@@ -8173,7 +8173,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1747903651}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PuzzleManager, Assembly-CSharp
         m_MethodName: OpenSettingPanel
         m_Mode: 1
@@ -10839,7 +10839,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1747903650}
-  - component: {fileID: 1747903651}
+  - component: {fileID: 1747903654}
   - component: {fileID: 1747903652}
   - component: {fileID: 1747903653}
   m_Layer: 0
@@ -10864,7 +10864,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1747903651
+--- !u!114 &1747903652
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10873,7 +10873,37 @@ MonoBehaviour:
   m_GameObject: {fileID: 1747903649}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45a7b165e7362f04dadfd792414b42fc, type: 3}
+  m_Script: {fileID: 11500000, guid: 935ccded180ea9548a27961d7bee9b1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 974916746}
+  sceneToLoad: Mainmenu
+  sceneToBack: InitialScreen
+  dimmer: {fileID: 1276954862}
+--- !u!114 &1747903653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747903649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e190f82258b4864bab89247466846fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicSlider: {fileID: 608730908}
+  soundSlider: {fileID: 1660355536}
+--- !u!114 &1747903654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747903649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64b72ab393bd39e4ea6c1400e58713fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   totalPieces: 12
@@ -10894,7 +10924,7 @@ MonoBehaviour:
   rewardButtons: {fileID: 691569066}
   containerTextSelamatHolder: {fileID: 656408753}
   containerPiecesReward: {fileID: 1957828029}
-  targetGameObjectPosition: {fileID: 1318282855}
+  targetGameObjectPosition: {fileID: 745556599}
   NextButton: {fileID: 1904354769}
   NextButtons: {fileID: 1904354771}
   pieces: {fileID: 707618417}
@@ -10902,44 +10932,6 @@ MonoBehaviour:
   settingPanel: {fileID: 1039713653}
   settingHolder: {fileID: 350507692}
   delaySetting: 0.5
-  disabledObject:
-  - {fileID: 2039101457}
-  - {fileID: 1586041730}
-  - {fileID: 864433802}
-  - {fileID: 967992933}
-  - {fileID: 1064150462}
-  - {fileID: 1409756173}
-  - {fileID: 452219869}
---- !u!114 &1747903652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1747903649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 935ccded180ea9548a27961d7bee9b1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 974916746}
-  sceneToLoad: SampleScene 1
-  sceneToBack: Mainmenu
-  dimmer: {fileID: 1276954862}
---- !u!114 &1747903653
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1747903649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e190f82258b4864bab89247466846fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  musicSlider: {fileID: 608730908}
-  soundSlider: {fileID: 1660355536}
 --- !u!1 &1795777565
 GameObject:
   m_ObjectHideFlags: 0

@@ -168,7 +168,135 @@ public class PuzzlePiece : MonoBehaviour
 
                     // Menonaktifkan gambar holder jika ada
                     holderScript.DisableHolderImage();
-                    PuzzleManager.Instance.CheckAllSnapped();
+                    if (PuzzleManager.Instance != null)
+                    {
+                        PuzzleManager.Instance.CheckAllSnapped();
+                        Debug.Log("PuzzleManager ditemukan dan CheckAllSnapped() dipanggil.");
+                    }
+                    else
+                    {
+                        Debug.LogWarning("PuzzleManager tidak ditemukan.");
+                    }
+
+                    if (PuzzleManager2.Instance != null)
+                    {
+                        PuzzleManager2.Instance.CheckAllSnapped();
+                        Debug.Log("PuzzleManager2 ditemukan dan CheckAllSnapped() dipanggil.");
+                    }
+                    else
+                    {
+                        Debug.LogWarning("PuzzleManager2 tidak ditemukan.");
+                    }
+
+                    if (PuzzleManager3.Instance != null)
+                    {
+                        PuzzleManager3.Instance.CheckAllSnapped();
+                        Debug.Log("PuzzleManager3 ditemukan dan CheckAllSnapped() dipanggil.");
+                    }
+                    else
+                    {
+                        Debug.LogWarning("PuzzleManager3 tidak ditemukan.");
+                    }
+
+                    if (PuzzleManager4.Instance != null)
+                    {
+                        PuzzleManager4.Instance.CheckAllSnapped();
+                        Debug.Log("PuzzleManager4 ditemukan dan CheckAllSnapped() dipanggil.");
+                    }
+                    else
+                    {
+                        Debug.LogWarning("PuzzleManager4 tidak ditemukan.");
+                    }
+
+                    if (PuzzleManager5.Instance != null)
+                    {
+                        PuzzleManager5.Instance.CheckAllSnapped();
+                        Debug.Log("PuzzleManager5 ditemukan dan CheckAllSnapped() dipanggil.");
+                    }
+                    else
+                    {
+                        Debug.LogWarning("PuzzleManager5 tidak ditemukan.");
+                    }
+
+                    if (PuzzleManager6.Instance != null)
+                    {
+                        PuzzleManager6.Instance.CheckAllSnapped();
+                        Debug.Log("PuzzleManager6 ditemukan dan CheckAllSnapped() dipanggil.");
+                    }
+                    else
+                    {
+                        Debug.LogWarning("PuzzleManager6 tidak ditemukan.");
+                    }
+
+                    if (PuzzleManager7.Instance != null)
+                    {
+                        PuzzleManager7.Instance.CheckAllSnapped();
+                        Debug.Log("PuzzleManager7 ditemukan dan CheckAllSnapped() dipanggil.");
+                    }
+                    else
+                    {
+                        Debug.LogWarning("PuzzleManager7 tidak ditemukan.");
+                    }
+
+                    if (PuzzleManager8.Instance != null)
+                    {
+                        PuzzleManager8.Instance.CheckAllSnapped();
+                        Debug.Log("PuzzleManager8 ditemukan dan CheckAllSnapped() dipanggil.");
+                    }
+                    else
+                    {
+                        Debug.LogWarning("PuzzleManager8 tidak ditemukan.");
+                    }
+
+                    if (PuzzleManager9.Instance != null)
+                    {
+                        PuzzleManager9.Instance.CheckAllSnapped();
+                        Debug.Log("PuzzleManager9 ditemukan dan CheckAllSnapped() dipanggil.");
+                    }
+                    else
+                    {
+                        Debug.LogWarning("PuzzleManager9 tidak ditemukan.");
+                    }
+
+                    if (PuzzleManager10.Instance != null)
+                    {
+                        PuzzleManager10.Instance.CheckAllSnapped();
+                        Debug.Log("PuzzleManager10 ditemukan dan CheckAllSnapped() dipanggil.");
+                    }
+                    else
+                    {
+                        Debug.LogWarning("PuzzleManager10 tidak ditemukan.");
+                    }
+
+                    if (PuzzleManager11.Instance != null)
+                    {
+                        PuzzleManager11.Instance.CheckAllSnapped();
+                        Debug.Log("PuzzleManager11 ditemukan dan CheckAllSnapped() dipanggil.");
+                    }
+                    else
+                    {
+                        Debug.LogWarning("PuzzleManager11 tidak ditemukan.");
+                    }
+
+                    if (PuzzleManager12.Instance != null)
+                    {
+                        PuzzleManager12.Instance.CheckAllSnapped();
+                        Debug.Log("PuzzleManager12 ditemukan dan CheckAllSnapped() dipanggil.");
+                    }
+                    else
+                    {
+                        Debug.LogWarning("PuzzleManager12 tidak ditemukan.");
+                    }
+
+                    if (PuzzleManager13.Instance != null)
+                    {
+                        PuzzleManager13.Instance.CheckAllSnapped();
+                        Debug.Log("PuzzleManager13 ditemukan dan CheckAllSnapped() dipanggil.");
+                    }
+                    else
+                    {
+                        Debug.LogWarning("PuzzleManager13 tidak ditemukan.");
+                    }
 
                     break;
                 }

@@ -63,18 +63,13 @@ public class PuzzleManager10 : MonoBehaviour
     void Start()
     {
 
-        // if (rewardClaimed == true)
-        // {
-        //     NextButtons.interactable = true;
+        if (rewardClaimed)
+        {
+            containerRewardHolder.SetActive(false);
+            rewardButton.SetActive(false);
+            containerRewardHolder.SetActive(false);
 
-        //     containerRewardHolder.SetActive(false);
-        //     rewardButton.SetActive(false);
-        //     containerRewardHolder.SetActive(false);
-        // }
-        // else
-        // {
-        //     NextButtons.interactable = false;
-        // }
+        }
     }
 
     void Update()
@@ -83,10 +78,6 @@ public class PuzzleManager10 : MonoBehaviour
         if (rewardClaimed == true)
         {
             NextButtons.interactable = true;
-
-            containerRewardHolder.SetActive(false);
-            rewardButton.SetActive(false);
-            containerRewardHolder.SetActive(false);
         }
         else
         {

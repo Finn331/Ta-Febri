@@ -377,11 +377,58 @@ public class SaveManager : MonoBehaviour
                 Debug.Log("Invalid level");
                 break;
         }
-
         if (claimed)
         {
             Debug.Log("Reward claimed for level " + level + "!");
             // Perform any additional actions needed after claiming a reward
+        }
+    }
+    public void LevelCompleted(int levelComplete, bool complete)
+    {
+        switch (levelComplete)
+        {
+            case 1:
+                level_1_completed = complete;
+                break;
+            case 2:
+                level_2_completed = complete;
+                break;
+            case 3:
+                level_3_completed = complete;
+                break;
+            case 4:
+                level_4_completed = complete;
+                break;
+            case 5:
+                level_5_completed = complete;
+                break;
+            case 6:
+                level_6_completed = complete;
+                break;
+            case 7:
+                level_7_completed = complete;
+                break;
+            case 8:
+                level_8_completed = complete;
+                break;
+            case 9:
+                level_9_completed = complete;
+                break;
+            case 10:
+                level_10_completed = complete;
+                break;
+            case 11:
+                level_11_completed = complete;
+                break;
+            case 12:
+                level_12_completed = complete;
+                break;
+            case 13:
+                level_13_completed = complete;
+                break;
+            default:
+                Debug.LogWarning("Invalid level selected.");
+                break;
         }
     }
 }
