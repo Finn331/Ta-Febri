@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class PuzzleManager : MonoBehaviour
+public class PuzzleManager11 : MonoBehaviour
 {
-    public static PuzzleManager Instance;
+    public static PuzzleManager11 Instance;
 
     [Header("Integer & Boolean Checking")]
     public int totalPieces = 12; // Jumlah total puzzle pieces yang harus tersnap
@@ -280,7 +280,7 @@ public class PuzzleManager : MonoBehaviour
         if (rewardClaimed == true)
         {
 
-            SaveManager.instance.SetRewardClaimed(1, true);
+            SaveManager.instance.SetRewardClaimed(11, true);
 
             //SaveManager.instance.Save();
             StartCoroutine(DestroyRewardWithDelay(5f));
@@ -320,7 +320,7 @@ public class PuzzleManager : MonoBehaviour
             }
         }
 
-        if (SaveManager.instance.level_1_RewardClaimed == true)
+        if (SaveManager.instance.level_11_RewardClaimed == true)
         {
             rewardClaimed = true;
         }
@@ -336,7 +336,7 @@ public class PuzzleManager : MonoBehaviour
             rewardClaimed = true;
             NextButtons.interactable = true;
             // LevelManager.Instance.SetRewardClaimed(true);
-            if (SaveManager.instance.level_1_RewardClaimed == true)
+            if (SaveManager.instance.level_11_RewardClaimed == true)
             {
                 rewardClaimed = true;
             }
