@@ -7,6 +7,9 @@ public class SaveManager : MonoBehaviour
 {
     public static SaveManager instance { get; private set; }
 
+    [Header("Reward Counter")]
+    public int rewardPieces;
+
     public bool level_1_RewardClaimed;
     public bool level_1_completed;
     public int levelSelected;
@@ -33,6 +36,9 @@ public class SaveManager : MonoBehaviour
 
                 level_1_RewardClaimed = data.level_1_RewardClaimed;
                 level_1_completed = data.level_1_completed;
+
+                rewardPieces = data.rewardPieces;
+
                 file.Close();
             }
             else
@@ -45,6 +51,8 @@ public class SaveManager : MonoBehaviour
                 data.level_1_RewardClaimed = false;
                 data.level_1_completed = false;
 
+                data.rewardPieces = 0;
+
                 Debug.Log("Save Game");
 
                 bf.Serialize(file, data);
@@ -52,6 +60,8 @@ public class SaveManager : MonoBehaviour
 
                 level_1_RewardClaimed = data.level_1_RewardClaimed;
                 level_1_completed = data.level_1_completed;
+
+                rewardPieces = data.rewardPieces;
             }
         }
         catch
@@ -68,6 +78,8 @@ public class SaveManager : MonoBehaviour
 
         data.level_1_RewardClaimed = level_1_RewardClaimed;
         data.level_1_completed = level_1_completed;
+
+        data.rewardPieces = rewardPieces;
         Debug.Log("Save Game");
 
         bf.Serialize(file, data);
@@ -84,6 +96,7 @@ public class SaveManager : MonoBehaviour
     {
         public bool level_1_RewardClaimed;
         public bool level_1_completed;
+        public int rewardPieces;
     }
 
     public void SetRewardClaimed_Level_1(bool claimed)
