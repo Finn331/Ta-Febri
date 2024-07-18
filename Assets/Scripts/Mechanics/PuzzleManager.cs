@@ -7,10 +7,14 @@ using UnityEngine.SceneManagement;
 public class PuzzleManager : MonoBehaviour
 {
     public static PuzzleManager Instance;
+
+    [Header("Integer & Boolean Checking")]
     public int totalPieces = 12; // Jumlah total puzzle pieces yang harus tersnap
     public int snappedPieces = 0; // Counter untuk puzzle pieces yang sudah tersnap
-    public bool rewardClaimed = false; // Status apakah reward sudah di-claimed
-    public bool levelFinished = false; // Status apakah level sudah selesai
+    public bool rewardClaimed; // Status apakah reward sudah di-claimed
+    public bool levelFinished; // Status apakah level sudah selesai
+
+    [Header("GameObject")]
     public GameObject pict; // GameObject yang akan diaktifkan
     public GameObject deskripsiHolder;
     public GameObject titleHolder;
@@ -20,6 +24,14 @@ public class PuzzleManager : MonoBehaviour
     public GameObject level;
     public Button closeButton; // Tombol untuk menutup deskripsiHolder
     public GameObject rewardHolder;
+
+    [Header("Level Manager")]
+    public GameObject textSelamatHolder;
+    public GameObject targetGameObjectPosition;
+
+    public GameObject NextButton;
+    public GameObject pieces;
+    public GameObject PrevButton;
 
     private void Awake()
     {
@@ -41,15 +53,18 @@ public class PuzzleManager : MonoBehaviour
 
     void Start()
     {
+
         if (rewardClaimed == true)
         {
             rewardHolder.SetActive(false);
             rewardButton.SetActive(false);
-
-            LevelManager.Instance.pieces.SetActive(false);
-            LevelManager.Instance.rewardHolder.SetActive(false);
-            LevelManager.Instance.textSelamatHolder.SetActive(true);
+            rewardHolder.SetActive(false);
         }
+    }
+
+    void Update()
+    {
+        Checking();
     }
 
     public void CheckAllSnapped()
@@ -60,10 +75,7 @@ public class PuzzleManager : MonoBehaviour
             ActivatePict();
             // rewardClaimed = true;  // Set reward sudah di-claimed menjadi true
             // levelFinished = true;
-        }
-        if (snappedPieces >= totalPieces)
-        {
-            LevelManager.Instance.SetLevelFinished(true);
+            levelFinished = true;
         }
     }
 
@@ -74,11 +86,11 @@ public class PuzzleManager : MonoBehaviour
             // Mengaktifkan GameObject pict
             pict.SetActive(true);
 
-            // Mengatur RectTransform
+            // Mengatur RectTransform pict
             RectTransform rectTransform = pict.GetComponent<RectTransform>();
             if (rectTransform != null)
             {
-                // Memainkan animasi menggunakan LeanTween
+                // Memainkan animasi pict menggunakan LeanTween
                 LeanTween.move(rectTransform, new Vector2(398f, -435f), 2f).setEase(LeanTweenType.easeInOutQuad);
                 FadeOutChildren(level);
                 LeanTween.size(rectTransform, new Vector2(580f, 470f), 2f).setEase(LeanTweenType.easeInOutQuad).setOnComplete(() =>
@@ -87,21 +99,32 @@ public class PuzzleManager : MonoBehaviour
                     LeanTween.delayedCall(2f, () =>
                     {
                         // Melakukan fade in pada deskripsi holder
-                        if (deskripsiHolder != null && rewardHolder != null)
+                        if (deskripsiHolder != null)
                         {
+                            //check jika rewardclaimed == false maka rewardHolder akan di fade in
+                            if (rewardClaimed == false)
+                            {
+                                rewardHolder.SetActive(true);
+                                CanvasGroup canvasGroup1 = rewardHolder.GetComponent<CanvasGroup>();
+                                canvasGroup1 = rewardHolder.AddComponent<CanvasGroup>();
+                                canvasGroup1.alpha = 0f;
+                                LeanTween.alphaCanvas(canvasGroup1, 1f, 1f).setEase(LeanTweenType.easeInOutQuad); // Fade in dalam 1 detik
+                            }
+                            //jika rewardClaimed nya == true maka rewardHolder akan di destroyWithDelay 5f (5 detik)
+                            else
+                            {
+                                StartCoroutine(DestroyRewardWithDelay(5f));
+                                Debug.Log("Reward Claimed!");
+                                MoveRewardButton();
+                            }
                             deskripsiHolder.SetActive(true);
-                            rewardHolder.SetActive(true);
                             CanvasGroup canvasGroup = deskripsiHolder.GetComponent<CanvasGroup>();
-                            CanvasGroup canvasGroup1 = rewardHolder.GetComponent<CanvasGroup>();
                             if (canvasGroup == null)
                             {
                                 canvasGroup = deskripsiHolder.AddComponent<CanvasGroup>();
-                                canvasGroup1 = rewardHolder.AddComponent<CanvasGroup>();
                             }
                             canvasGroup.alpha = 0f; // Set alpha ke 0 untuk memulai fade in
-                            canvasGroup1.alpha = 0f;
                             LeanTween.alphaCanvas(canvasGroup, 1f, 1f).setEase(LeanTweenType.easeInOutQuad); // Fade in dalam 1 detik
-                            LeanTween.alphaCanvas(canvasGroup1, 1f, 1f).setEase(LeanTweenType.easeInOutQuad); // Fade in dalam 1 detik
 
                             FadeOutObject(titleHolder);
                             FadeOutObject(buttonNext);
@@ -169,13 +192,71 @@ public class PuzzleManager : MonoBehaviour
 
     private void MoveRewardButton()
     {
-        if (rewardButton != null)
+        if (rewardClaimed == false)
         {
-            RectTransform rectTransform = rewardButton.GetComponent<RectTransform>();
-            if (rectTransform != null)
+            if (rewardButton != null)
             {
-                LeanTween.move(rectTransform, new Vector3(-24.89f, 0f, 0f), 1f).setEase(LeanTweenType.easeInOutQuad);
+                RectTransform rectTransform = rewardButton.GetComponent<RectTransform>();
+                if (rectTransform != null)
+                {
+                    LeanTween.move(rectTransform, new Vector3(-24.89f, 0f, 0f), 1f).setEase(LeanTweenType.easeInOutQuad);
+                }
             }
+        }
+        else
+        {
+            Checking();
+            StartCoroutine(DestroyRewardWithDelay(5f));
+        }
+    }
+
+    public void Checking()
+    {
+        if (rewardClaimed == true)
+        {
+
+            SaveManager.instance.SetRewardClaimed_Level_1(true);
+
+            //SaveManager.instance.Save();
+            // StartCoroutine(DestroyRewardWithDelay(5f));
+            if (rewardButton && pieces == null)
+            {
+                Debug.Log("Reward Claimed");
+                textSelamatHolder.SetActive(true);
+                NextButton.SetActive(true);
+                PrevButton.SetActive(true);
+                rewardHolder.SetActive(false);
+                // Setelah animasi perpindahan selesai, fade out rewardHolder
+                CanvasGroup rewardHolderCanvasGroup = rewardHolder.GetComponent<CanvasGroup>();
+                if (rewardHolderCanvasGroup == null)
+                {
+                    rewardHolderCanvasGroup = rewardHolder.AddComponent<CanvasGroup>();
+                }
+                LeanTween.alphaCanvas(rewardHolderCanvasGroup, 0, 0.4f).setOnComplete(() =>
+                {
+                    rewardHolder.SetActive(false);
+
+                    textSelamatHolder.SetActive(true);
+                    NextButton.SetActive(true);
+                    PrevButton.SetActive(true);
+                    CanvasGroup canvasSelamat = textSelamatHolder.GetComponent<CanvasGroup>();
+                    CanvasGroup canvasNextButton = NextButton.GetComponent<CanvasGroup>();
+                    CanvasGroup canvasPrevButton = PrevButton.GetComponent<CanvasGroup>();
+                    if (canvasSelamat == null)
+                    {
+                        canvasSelamat = textSelamatHolder.AddComponent<CanvasGroup>();
+                    }
+                    canvasSelamat.alpha = 0;
+                    LeanTween.alphaCanvas(canvasSelamat, 1, 0.4f);
+                    LeanTween.alphaCanvas(canvasNextButton, 1, 0.4f);
+                    LeanTween.alphaCanvas(canvasPrevButton, 1, 0.4f);
+                });
+            }
+        }
+
+        if (SaveManager.instance.level_1_RewardClaimed == true)
+        {
+            rewardClaimed = true;
         }
     }
 
@@ -186,21 +267,103 @@ public class PuzzleManager : MonoBehaviour
             // Animasi pulse dengan menggunakan LeanTween
             LeanTween.scale(rewardButton, new Vector3(0.3f, 0.3f, 0.3f), 0.4f).setEasePunch().setLoopPingPong(1);
             rewardClaimed = true;
-            LevelManager.Instance.SetRewardClaimed(true);
+            // LevelManager.Instance.SetRewardClaimed(true);
+            if (SaveManager.instance.level_1_RewardClaimed == true)
+            {
+                rewardClaimed = true;
+            }
         }
+        CanvasGroup canvasGroup = rewardButton.GetComponent<CanvasGroup>();
+        if (canvasGroup == null)
+        {
+            canvasGroup = rewardButton.AddComponent<CanvasGroup>();
+        }
+        // Fade out rewardButton
+        LeanTween.alphaCanvas(canvasGroup, 0, 0.8f).setOnComplete(() =>
+        {
+            rewardButton.SetActive(false);
+
+            // Set active pieces and fade in
+            pieces.SetActive(true);
+            CanvasGroup piecesCanvasGroup = pieces.GetComponent<CanvasGroup>();
+            if (piecesCanvasGroup == null)
+            {
+                piecesCanvasGroup = pieces.AddComponent<CanvasGroup>();
+            }
+            piecesCanvasGroup.alpha = 0;
+            LeanTween.alphaCanvas(piecesCanvasGroup, 1, 0.4f);
+            LeanTween.scale(pieces, new Vector3(0.5f, 0.5f, 0.5f), 1f).setEasePunch().setOnComplete(() =>
+            {
+                LeanTween.delayedCall(1f, () =>
+                {
+                    // Mendapatkan posisi dan ukuran dari targetObject
+                    Vector3 targetPosition = targetGameObjectPosition.transform.position;
+
+                    // Menggunakan LeanTween untuk animasi perpindahan
+                    LeanTween.move(pieces, targetPosition, 1.5f).setEase(LeanTweenType.easeOutQuad)
+                        .setOnUpdate((float t) =>
+                        {
+                            // Menghitung alpha berdasarkan waktu t
+                            float alpha = 1.0f - t;
+                            SetAlpha(rewardHolder, alpha);
+                        })
+                        .setOnComplete(() =>
+                        {
+                            // Setelah animasi perpindahan selesai, fade out rewardHolder
+                            CanvasGroup rewardHolderCanvasGroup = rewardHolder.GetComponent<CanvasGroup>();
+                            if (rewardHolderCanvasGroup == null)
+                            {
+                                rewardHolderCanvasGroup = rewardHolder.AddComponent<CanvasGroup>();
+                            }
+                            LeanTween.alphaCanvas(rewardHolderCanvasGroup, 0, 0.4f).setOnComplete(() =>
+                            {
+                                rewardHolder.SetActive(false);
+
+                                textSelamatHolder.SetActive(true);
+                                NextButton.SetActive(true);
+                                PrevButton.SetActive(true);
+                                CanvasGroup canvasSelamat = textSelamatHolder.GetComponent<CanvasGroup>();
+                                CanvasGroup canvasNextButton = NextButton.GetComponent<CanvasGroup>();
+                                CanvasGroup canvasPrevButton = PrevButton.GetComponent<CanvasGroup>();
+                                if (canvasSelamat == null)
+                                {
+                                    canvasSelamat = textSelamatHolder.AddComponent<CanvasGroup>();
+                                }
+                                canvasSelamat.alpha = 0;
+                                LeanTween.alphaCanvas(canvasSelamat, 1, 0.4f);
+                                LeanTween.alphaCanvas(canvasNextButton, 1, 0.4f);
+                                LeanTween.alphaCanvas(canvasPrevButton, 1, 0.4f);
+                            });
+                        });
+
+                    LeanTween.scale(pieces, new Vector3(1f, 1f, 1f), 1.5f).setEase(LeanTweenType.easeOutQuad).setOnComplete(() =>
+                    {
+                        LeanTween.delayedCall(0.1f, () =>
+                        {
+                            CanvasGroup canvasTargetObject = targetGameObjectPosition.GetComponent<CanvasGroup>();
+                            if (canvasTargetObject == null)
+                            {
+                                canvasTargetObject = targetGameObjectPosition.AddComponent<CanvasGroup>();
+                            }
+                            canvasTargetObject.alpha = 1f;
+                            LeanTween.alphaCanvas(canvasTargetObject, 0, 0.4f);
+                        });
+                    });
+                });
+            });
+        });
+
     }
 
-    // Metode untuk mengatur reward claimed menjadi true
-    // public void SetRewardClaimed(bool claimed)
-    // {
-    //     rewardClaimed = claimed;
-    // }
-
-    // // Metode untuk mengatur level finished menjadi true
-    // public void SetLevelFinished(bool finished)
-    // {
-    //     levelFinished = finished;
-    // }
+    void SetAlpha(GameObject obj, float alpha)
+    {
+        CanvasGroup canvasGroup = obj.GetComponent<CanvasGroup>();
+        if (canvasGroup == null)
+        {
+            canvasGroup = obj.AddComponent<CanvasGroup>();
+        }
+        canvasGroup.alpha = alpha;
+    }
 
     // Metode untuk restart level
     public void RestartLevel()
@@ -218,4 +381,51 @@ public class PuzzleManager : MonoBehaviour
         // Load ulang scene saat ini
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
+    IEnumerator DestroyRewardWithDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        Destroy(rewardButton);
+        // Destroy(pieces);
+        Destroy(rewardHolder);
+    }
+
+    // public void RewardChecking()
+    // {
+    //     if (rewardClaimed == true)
+    //     {
+
+    //         SaveManager.instance.SetRewardClaimed_Level_1(true);
+
+    //         //SaveManager.instance.Save();
+    //         StartCoroutine(DestroyRewardWithDelay(5f));
+    //         if (rewardButton == null)
+    //         {
+    //             Debug.Log("Reward Claimed");
+    //             textSelamatHolder.SetActive(true);
+    //             NextButton.SetActive(true);
+    //             PrevButton.SetActive(true);
+    //             rewardHolder.SetActive(false);
+    //             // Setelah animasi perpindahan selesai, fade out rewardHolder
+    //             CanvasGroup rewardHolderCanvasGroup = rewardHolder.GetComponent<CanvasGroup>();
+    //             if (rewardHolderCanvasGroup == null)
+    //             {
+    //                 rewardHolderCanvasGroup = rewardHolder.AddComponent<CanvasGroup>();
+    //             }
+    //             LeanTween.alphaCanvas(rewardHolderCanvasGroup, 0, 0.4f).setOnComplete(() =>
+    //             {
+    //                 rewardHolder.SetActive(false);
+
+
+
+    //             });
+    //         }
+    //     }
+
+    //     if (SaveManager.instance.level_1_RewardClaimed == true)
+    //     {
+    //         rewardClaimed = true;
+    //     }
+    // }
 }

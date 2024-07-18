@@ -3778,18 +3778,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1518707432}
-        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: OnClickReward
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &691569067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8398,7 +8386,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1518707431
 Transform:
   m_ObjectHideFlags: 0
@@ -8905,10 +8893,15 @@ MonoBehaviour:
   titleHolder: {fileID: 1586041730}
   buttonPrev: {fileID: 1933448996}
   buttonNext: {fileID: 1904354769}
-  rewardButton: {fileID: 1599238104}
+  rewardButton: {fileID: 691569065}
   level: {fileID: 1409756173}
   closeButton: {fileID: 1325326284}
   rewardHolder: {fileID: 432086157}
+  textSelamatHolder: {fileID: 899752732}
+  targetGameObjectPosition: {fileID: 1318282855}
+  NextButton: {fileID: 1904354769}
+  pieces: {fileID: 707618417}
+  PrevButton: {fileID: 1933448996}
 --- !u!114 &1747903652
 MonoBehaviour:
   m_ObjectHideFlags: 0
