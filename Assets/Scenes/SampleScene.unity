@@ -8893,7 +8893,7 @@ MonoBehaviour:
   titleHolder: {fileID: 1586041730}
   buttonPrev: {fileID: 1933448996}
   buttonNext: {fileID: 1904354769}
-  rewardButton: {fileID: 691569065}
+  rewardButton: {fileID: 1599238104}
   level: {fileID: 1409756173}
   closeButton: {fileID: 1325326284}
   rewardHolder: {fileID: 432086157}

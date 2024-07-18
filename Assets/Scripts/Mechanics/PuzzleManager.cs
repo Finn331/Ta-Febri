@@ -232,6 +232,7 @@ public class PuzzleManager : MonoBehaviour
                 {
                     rewardHolderCanvasGroup = rewardHolder.AddComponent<CanvasGroup>();
                 }
+
                 LeanTween.alphaCanvas(rewardHolderCanvasGroup, 0, 0.4f).setOnComplete(() =>
                 {
                     rewardHolder.SetActive(false);
@@ -390,42 +391,4 @@ public class PuzzleManager : MonoBehaviour
         // Destroy(pieces);
         Destroy(rewardHolder);
     }
-
-    // public void RewardChecking()
-    // {
-    //     if (rewardClaimed == true)
-    //     {
-
-    //         SaveManager.instance.SetRewardClaimed_Level_1(true);
-
-    //         //SaveManager.instance.Save();
-    //         StartCoroutine(DestroyRewardWithDelay(5f));
-    //         if (rewardButton == null)
-    //         {
-    //             Debug.Log("Reward Claimed");
-    //             textSelamatHolder.SetActive(true);
-    //             NextButton.SetActive(true);
-    //             PrevButton.SetActive(true);
-    //             rewardHolder.SetActive(false);
-    //             // Setelah animasi perpindahan selesai, fade out rewardHolder
-    //             CanvasGroup rewardHolderCanvasGroup = rewardHolder.GetComponent<CanvasGroup>();
-    //             if (rewardHolderCanvasGroup == null)
-    //             {
-    //                 rewardHolderCanvasGroup = rewardHolder.AddComponent<CanvasGroup>();
-    //             }
-    //             LeanTween.alphaCanvas(rewardHolderCanvasGroup, 0, 0.4f).setOnComplete(() =>
-    //             {
-    //                 rewardHolder.SetActive(false);
-
-
-
-    //             });
-    //         }
-    //     }
-
-    //     if (SaveManager.instance.level_1_RewardClaimed == true)
-    //     {
-    //         rewardClaimed = true;
-    //     }
-    // }
 }
