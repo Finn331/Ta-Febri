@@ -11,30 +11,19 @@ public class PuzzleManager13 : MonoBehaviour
     [Header("Integer & Boolean Checking")]
     public int totalPieces = 12; // Jumlah total puzzle pieces yang harus tersnap
     public int snappedPieces = 0; // Counter untuk puzzle pieces yang sudah tersnap
-    public bool rewardClaimed; // Status apakah reward sudah di-claimed
     public bool levelFinished; // Status apakah level sudah selesai
 
     [Header("GameObject")]
     public GameObject pict; // GameObject yang akan diaktifkan
-    public GameObject deskripsiHolder;
     public GameObject titleHolder;
     public GameObject buttonPrev;
     public GameObject buttonNext;
-    public GameObject rewardButton; // GameObject untuk reward button
     public GameObject level;
-    public Button closeButton; // Tombol untuk menutup deskripsiHolder
-    public GameObject containerRewardHolder;
-    public GameObject rewardHolder;
-    public GameObject rewardBox;
-    public Button rewardButtons;
 
     [Header("Level Manager")]
     public GameObject containerTextSelamatHolder;
-    public GameObject containerPiecesReward;
-    public GameObject targetGameObjectPosition;
     public GameObject NextButton;
     public Button NextButtons;
-    public GameObject pieces;
     public GameObject PrevButton;
 
     [Header("Audio Setting")]
@@ -52,36 +41,16 @@ public class PuzzleManager13 : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
-        // Pastikan closeButton terhubung dan menambahkan listener untuk menutup deskripsiHolder
-        if (closeButton != null)
-        {
-            closeButton.onClick.AddListener(CloseDeskripsiHolder);
-        }
     }
 
     void Start()
     {
-        if (rewardClaimed)
-        {
-            containerRewardHolder.SetActive(false);
-            rewardButton.SetActive(false);
-            containerRewardHolder.SetActive(false);
 
-        }
     }
 
     void Update()
     {
-        Checking();
-        if (rewardClaimed == true)
-        {
-            NextButtons.interactable = true;
-        }
-        else
-        {
-            NextButtons.interactable = false;
-        }
+
     }
 
     public void OpenSettingPanel()
@@ -131,40 +100,9 @@ public class PuzzleManager13 : MonoBehaviour
                     // Menunggu 2 detik setelah animasi selesai
                     LeanTween.delayedCall(2f, () =>
                     {
-                        // Melakukan fade in pada deskripsi holder
-                        if (deskripsiHolder != null)
-                        {
-                            //check jika rewardclaimed == false maka containerRewardHolder akan di fade in
-                            if (rewardClaimed == false)
-                            {
-                                // containerRewardHolder.SetActive(true);
-                                rewardHolder.SetActive(true);
-                                CanvasGroup canvasGroup1 = rewardHolder.GetComponent<CanvasGroup>();
-                                canvasGroup1 = rewardHolder.AddComponent<CanvasGroup>();
-                                canvasGroup1.alpha = 0f;
-                                LeanTween.alphaCanvas(canvasGroup1, 1f, 1f).setEase(LeanTweenType.easeInOutQuad); // Fade in dalam 1 detik
-                            }
-                            //jika rewardClaimed nya == true maka containerRewardHolder akan di destroyWithDelay 5f (5 detik)
-                            else
-                            {
-                                Debug.Log("Reward Claimed!");
-                                Checking();
-
-                            }
-                            deskripsiHolder.SetActive(true);
-                            CanvasGroup canvasGroup = deskripsiHolder.GetComponent<CanvasGroup>();
-                            if (canvasGroup == null)
-                            {
-                                canvasGroup = deskripsiHolder.AddComponent<CanvasGroup>();
-                            }
-                            canvasGroup.alpha = 0f; // Set alpha ke 0 untuk memulai fade in
-                            LeanTween.alphaCanvas(canvasGroup, 1f, 1f).setEase(LeanTweenType.easeInOutQuad); // Fade in dalam 1 detik
-
-                            FadeOutObject(titleHolder);
-                            FadeOutObject(buttonNext);
-                            FadeOutObject(buttonPrev);
-                            FadeOutObject(pict);
-                        }
+                        ToTextSelamat();
+                        FadeOutObject(titleHolder);
+                        FadeOutObject(pict);
                     });
                 });
             }
@@ -215,18 +153,6 @@ public class PuzzleManager13 : MonoBehaviour
         }
     }
 
-    public void CloseDeskripsiHolder()
-    {
-        // Melakukan fade out pada deskripsiHolder
-        if (deskripsiHolder != null)
-        {
-            if (rewardClaimed)
-            {
-                FadeOutObject(deskripsiHolder, ToTextSelamat);
-            }
-            FadeOutObject(deskripsiHolder, MoveRewardButton);
-        }
-    }
 
     public void ToTextSelamat()
     {
@@ -241,178 +167,18 @@ public class PuzzleManager13 : MonoBehaviour
         PrevButton.SetActive(true);
         CanvasGroup canvasNextButton = NextButton.GetComponent<CanvasGroup>();
         CanvasGroup canvasPrevButton = PrevButton.GetComponent<CanvasGroup>();
+        if (canvasNextButton == null)
+        {
+            canvasNextButton = NextButton.AddComponent<CanvasGroup>();
+        }
+        if (canvasPrevButton == null)
+        {
+            canvasPrevButton = PrevButton.AddComponent<CanvasGroup>();
+        }
         LeanTween.alphaCanvas(canvasNextButton, 1, 0.4f);
         LeanTween.alphaCanvas(canvasPrevButton, 1, 0.4f);
     }
 
-    private void MoveRewardButton()
-    {
-        if (rewardClaimed == false)
-        {
-            if (containerRewardHolder != null)
-            {
-                RectTransform rectTransform = rewardButton.GetComponent<RectTransform>();
-                RectTransform rectTransform1 = containerPiecesReward.GetComponent<RectTransform>();
-                RectTransform rectTransform2 = containerTextSelamatHolder.GetComponent<RectTransform>();
-                if (rectTransform && rectTransform1 && rectTransform2 != null)
-                {
-                    LeanTween.move(rectTransform, new Vector3(-24.89f, 0f, 0f), 1f).setEase(LeanTweenType.easeInOutQuad);
-                    LeanTween.move(rectTransform1, new Vector3(-24.89f, 0f, 0f), 1f).setEase(LeanTweenType.easeInOutQuad);
-                    LeanTween.move(rectTransform2, new Vector3(-24.89f, 0f, 0f), 1f).setEase(LeanTweenType.easeInOutQuad);
-                }
-                Checking();
-            }
-        }
-    }
-
-    public void Checking()
-    {
-        if (rewardClaimed == true)
-        {
-
-            SaveManager.instance.SetRewardClaimed(13, true);
-
-            //SaveManager.instance.Save();
-            StartCoroutine(DestroyRewardWithDelay(5f));
-            if (containerRewardHolder && pieces == null)
-            {
-                Debug.Log("Reward Claimed");
-                containerTextSelamatHolder.SetActive(true);
-                NextButton.SetActive(true);
-                PrevButton.SetActive(true);
-                containerRewardHolder.SetActive(false);
-                // Setelah animasi perpindahan selesai, fade out containerRewardHolder
-                CanvasGroup containerRewardBoxCanvasGroup = rewardBox.GetComponent<CanvasGroup>();
-                if (containerRewardBoxCanvasGroup == null)
-                {
-                    containerRewardBoxCanvasGroup = rewardBox.AddComponent<CanvasGroup>();
-                }
-
-                LeanTween.alphaCanvas(containerRewardBoxCanvasGroup, 0, 0.4f).setOnComplete(() =>
-                {
-                    rewardBox.SetActive(false);
-
-                    // containerTextSelamatHolder.SetActive(true);
-                    // NextButton.SetActive(true);
-                    // PrevButton.SetActive(true);
-                    CanvasGroup canvasSelamat = containerTextSelamatHolder.GetComponent<CanvasGroup>();
-                    CanvasGroup canvasNextButton = NextButton.GetComponent<CanvasGroup>();
-                    CanvasGroup canvasPrevButton = PrevButton.GetComponent<CanvasGroup>();
-                    if (canvasSelamat == null)
-                    {
-                        canvasSelamat = containerTextSelamatHolder.AddComponent<CanvasGroup>();
-                    }
-                    canvasSelamat.alpha = 0;
-                    LeanTween.alphaCanvas(canvasSelamat, 1, 0.4f);
-                    LeanTween.alphaCanvas(canvasNextButton, 1, 0.4f);
-                    LeanTween.alphaCanvas(canvasPrevButton, 1, 0.4f);
-                });
-            }
-        }
-
-        if (SaveManager.instance.level_13_RewardClaimed == true)
-        {
-            rewardClaimed = true;
-        }
-    }
-
-    public void PulseRewardButton()
-    {
-        if (rewardButton != null)
-        {
-            rewardButtons.interactable = false;
-            // Animasi pulse dengan menggunakan LeanTween
-            LeanTween.scale(rewardButton, new Vector3(0.3f, 0.3f, 0.3f), 0.4f).setEasePunch().setLoopPingPong(1);
-            rewardClaimed = true;
-            NextButtons.interactable = true;
-            // LevelManager.Instance.SetRewardClaimed(true);
-            if (SaveManager.instance.level_13_RewardClaimed == true)
-            {
-                rewardClaimed = true;
-            }
-
-            CanvasGroup canvasGroup = rewardButton.GetComponent<CanvasGroup>();
-            if (canvasGroup == null)
-            {
-                canvasGroup = rewardButton.AddComponent<CanvasGroup>();
-            }
-            // Fade out rewardButton
-            LeanTween.alphaCanvas(canvasGroup, 0, 0.8f).setOnComplete(() =>
-            {
-                rewardButton.SetActive(false);
-
-                // Set active pieces and fade in
-                pieces.SetActive(true);
-                CanvasGroup piecesCanvasGroup = pieces.GetComponent<CanvasGroup>();
-                if (piecesCanvasGroup == null)
-                {
-                    piecesCanvasGroup = pieces.AddComponent<CanvasGroup>();
-                }
-                piecesCanvasGroup.alpha = 0;
-                LeanTween.alphaCanvas(piecesCanvasGroup, 1, 0.4f);
-                LeanTween.scale(pieces, new Vector3(0.5f, 0.5f, 0.5f), 1f).setEasePunch().setOnComplete(() =>
-                {
-                    LeanTween.delayedCall(1f, () =>
-                    {
-                        // Mendapatkan posisi dan ukuran dari targetObject
-                        Vector3 targetPosition = targetGameObjectPosition.transform.position;
-
-                        // Menggunakan LeanTween untuk animasi perpindahan
-                        LeanTween.move(pieces, targetPosition, 1.5f).setEase(LeanTweenType.easeOutQuad)
-                            .setOnUpdate((float t) =>
-                            {
-                                // Menghitung alpha berdasarkan waktu t
-                                float alpha = 1.0f - t;
-                                SetAlpha(rewardHolder, alpha);
-                            })
-                            .setOnComplete(() =>
-                            {
-                                // Setelah animasi perpindahan selesai, fade out rewardHolder
-                                CanvasGroup rewardHolderCanvasGroup = rewardHolder.GetComponent<CanvasGroup>();
-                                if (rewardHolderCanvasGroup == null)
-                                {
-                                    rewardHolderCanvasGroup = rewardHolder.AddComponent<CanvasGroup>();
-                                }
-                                LeanTween.alphaCanvas(rewardHolderCanvasGroup, 0, 0.4f).setOnComplete(() =>
-                                {
-                                    rewardHolder.SetActive(false);
-
-                                    containerTextSelamatHolder.SetActive(true);
-                                    NextButton.SetActive(true);
-                                    PrevButton.SetActive(true);
-                                    CanvasGroup canvasSelamat = containerTextSelamatHolder.GetComponent<CanvasGroup>();
-                                    CanvasGroup canvasNextButton = NextButton.GetComponent<CanvasGroup>();
-                                    CanvasGroup canvasPrevButton = PrevButton.GetComponent<CanvasGroup>();
-                                    if (canvasSelamat == null)
-                                    {
-                                        canvasSelamat = containerTextSelamatHolder.AddComponent<CanvasGroup>();
-                                    }
-                                    canvasSelamat.alpha = 0;
-                                    LeanTween.alphaCanvas(canvasSelamat, 1, 0.4f);
-                                    LeanTween.alphaCanvas(canvasNextButton, 1, 0.4f);
-                                    LeanTween.alphaCanvas(canvasPrevButton, 1, 0.4f);
-                                });
-                            });
-
-                        LeanTween.scale(pieces, new Vector2(0.20f, 0.20f), 1.5f).setEase(LeanTweenType.easeOutQuad).setOnComplete(() =>
-                        {
-                            LeanTween.delayedCall(0.1f, () =>
-                            {
-                                SaveManager.instance.rewardPieces++;
-                                CanvasGroup canvasTargetObject = targetGameObjectPosition.GetComponent<CanvasGroup>();
-                                if (canvasTargetObject == null)
-                                {
-                                    canvasTargetObject = targetGameObjectPosition.AddComponent<CanvasGroup>();
-                                }
-                                canvasTargetObject.alpha = 1f;
-                                LeanTween.alphaCanvas(canvasTargetObject, 0, 0.4f);
-                            });
-                        });
-                    });
-                });
-            });
-        }
-    }
 
     void SetAlpha(GameObject obj, float alpha)
     {
@@ -431,22 +197,12 @@ public class PuzzleManager13 : MonoBehaviour
         snappedPieces = 0;
 
         // Cek dan reset rewardClaimed dan levelFinished
-        if (rewardClaimed && levelFinished)
+        if (levelFinished)
         {
-            rewardClaimed = true;  // Set reward sudah di-claimed menjadi true
             levelFinished = false; // Set level sudah selesai menjadi false
         }
 
         // Load ulang scene saat ini
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
-
-    IEnumerator DestroyRewardWithDelay(float delay)
-    {
-        yield return new WaitForSeconds(delay);
-
-        Destroy(rewardButton);
-        // Destroy(pieces);
-        Destroy(rewardHolder);
     }
 }
