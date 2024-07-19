@@ -179,7 +179,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Masa hamil 10 bulan
+  m_text: Harimau Sumatera dapat berbiak kapan saja. Masa kehamilan adalah sekitar
+    103 hari. Biasanya Harimau betina melahirkan 2 atau 3 ekor anak sekaligus.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
   m_sharedMaterial: {fileID: -587346571193639361, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
@@ -206,14 +207,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 66.1
+  m_fontSize: 27.3
   m_fontSizeBase: 37
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 8
+  m_HorizontalAlignment: 16
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -673,7 +674,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0.0001, y: 0}
-  m_SizeDelta: {x: 3203.58, y: 379}
+  m_SizeDelta: {x: 3.580017, y: 379}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &57384528
 MonoBehaviour:
@@ -1798,7 +1799,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ': Pongo pygmaeus'
+  m_text: ': Panthera'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
   m_sharedMaterial: {fileID: -587346571193639361, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
@@ -2219,7 +2220,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 80e5583ec49867b459b60b1b56234d9b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e041bbde47c8f2d4593b042bc53732f5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3152,7 +3153,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Rumput, daun dan buah
+  m_text: Mamalia kecil, unggas, ikan.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
   m_sharedMaterial: {fileID: -587346571193639361, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
@@ -3179,7 +3180,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32.9
+  m_fontSize: 28.75
   m_fontSizeBase: 37
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3550,7 +3551,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &625583927
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3568,7 +3569,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1200, y: -189.5}
+  m_AnchoredPosition: {x: 400, y: -189.5}
   m_SizeDelta: {x: 800, y: 376}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &629648724
@@ -3586,7 +3587,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &629648725
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4330,7 +4331,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1747903655}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PuzzleManager10, Assembly-CSharp
         m_MethodName: PulseRewardButton
         m_Mode: 1
@@ -4456,7 +4457,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -78069018, guid: ad1a707c83169954289387a75b47a7d6, type: 3}
+  m_Sprite: {fileID: -251208404, guid: ad1a707c83169954289387a75b47a7d6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4536,8 +4537,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 719014040}
   m_HandleRect: {fileID: 0}
   m_Direction: 0
-  m_Value: -0.000000038104346
-  m_Size: 0.19910501
+  m_Value: -0.00003409711
+  m_Size: 0.9955249
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -5210,7 +5211,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hutan hujan tropis.
+  m_text: Hutan dataran rendah, hutan pegunungan.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
   m_sharedMaterial: {fileID: -587346571193639361, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
@@ -6326,18 +6327,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabs:
-  - {fileID: 854211439723585694, guid: 512604438622ace418c6accd12cfd35f, type: 3}
-  - {fileID: 5328274358785503516, guid: 512835fe16654524f8c67f083b3880a4, type: 3}
-  - {fileID: 2236489217048421457, guid: f48204ae277c7c74b85194430c84ebfd, type: 3}
-  - {fileID: 8821220660441340267, guid: bac807b144a689840ae06b07007d8175, type: 3}
-  - {fileID: 4902372238703705490, guid: 435eaf54b0fa23d43bfde925bf58f310, type: 3}
-  - {fileID: 7904626474543857091, guid: f79da152303777840b7fbb72259734a0, type: 3}
-  - {fileID: 15728738638761973, guid: c125e9250f25b8f42b1e3871353bc768, type: 3}
-  - {fileID: 2955996659783476203, guid: 245ea3c02562dbe4bb63a385fcb4b9d2, type: 3}
-  - {fileID: 6927949019255224445, guid: 27f6188c3e2e03745a8420f9611b8e8b, type: 3}
-  - {fileID: 7170534183722651950, guid: 672920c25c231a042ac21b484068c6df, type: 3}
-  - {fileID: 102852779723192379, guid: 0a4de6b7fc7aa1347b06630c11132d3a, type: 3}
-  - {fileID: 5957748104211716695, guid: f7235813ed07d544583962ae424aec12, type: 3}
+  - {fileID: 854211439723585694, guid: d4e45c31aaaf21d44b9a32f41bb47714, type: 3}
+  - {fileID: 5328274358785503516, guid: 8d3b80837b17e42438bceca1a93561f9, type: 3}
+  - {fileID: 2236489217048421457, guid: a3e233765449a9a42a619282e3b990f3, type: 3}
+  - {fileID: 8821220660441340267, guid: b54e1f8d2f1ecf94c9af6748064a4684, type: 3}
+  - {fileID: 4902372238703705490, guid: 1bb9c936e4a20f14c8fc3502f32cae8b, type: 3}
+  - {fileID: 7904626474543857091, guid: 5a12b8f9a6a9d444fb569ad2eaadf2fc, type: 3}
+  - {fileID: 15728738638761973, guid: 3c1dd22cdd0627c43ab2215534c73079, type: 3}
+  - {fileID: 2955996659783476203, guid: 979946f352ab8594485b6c984745c96c, type: 3}
+  - {fileID: 6927949019255224445, guid: 32c0139029ff9c347a7a2f20d244b8f3, type: 3}
+  - {fileID: 7170534183722651950, guid: 8dafb07938a8da94d9ca6acefdaf81f8, type: 3}
+  - {fileID: 102852779723192379, guid: b95c761887908aa48825fb95764182a3, type: 3}
+  - {fileID: 5957748104211716695, guid: 5a600a6f88571864ea00caed3eee36df, type: 3}
   instantiateArea: {fileID: 967992933}
   delayBetweenSpawns: 0.6
   popSfx: {fileID: 8300000, guid: 3e399a38139b8a646bdb61e426f69e4a, type: 3}
@@ -6589,7 +6590,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'SELAMAT KAMU TELAH MENYELESAIKAN PUZZLE
 
-    ORANGUTAN KALIMANTAN'
+    HARIMAU SUMATERA'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e6bd5aaa6d42ac5458249dc1065d3673, type: 2}
   m_sharedMaterial: {fileID: -789796221199011153, guid: e6bd5aaa6d42ac5458249dc1065d3673, type: 2}
@@ -6921,7 +6922,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ': Primata'
+  m_text: ': Carnivora'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
   m_sharedMaterial: {fileID: -587346571193639361, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
@@ -7131,7 +7132,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 80e5583ec49867b459b60b1b56234d9b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e041bbde47c8f2d4593b042bc53732f5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7362,7 +7363,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1747903655}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PuzzleManager10, Assembly-CSharp
         m_MethodName: RestartLevel
         m_Mode: 1
@@ -7655,7 +7656,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 146.7992, y: -185.81258}
+  m_AnchoredPosition: {x: 146.8, y: -170.2}
   m_SizeDelta: {x: 548.4632, y: 269}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1194224532
@@ -7678,9 +7679,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Banteng merupakan spesies ruminasia besar liar Asia. Banteng jantan memiliki
-    warna lebih gelap lebih besar dan lebih besar dari pada betina. Tanduk jantan
-    keatas dantumbuh hingga 75 cm, sedangkan tanduk betina lebih kecil.
+  m_text: Harimau Sumatera adalah subspecies harimau terkecil. Harimau Sumatera mempunyai
+    warna paling gelap di atara semua subspecies harimau lainnya. Harimau Sumatera
+    jantan memiliki panjang sekitar250 cm. berat 140kg dan tinggi badan mencapai
+    60cm.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
   m_sharedMaterial: {fileID: -587346571193639361, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
@@ -7707,7 +7709,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 29.05
+  m_fontSize: 25.85
   m_fontSizeBase: 37
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -7914,7 +7916,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1747903655}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PuzzleManager10, Assembly-CSharp
         m_MethodName: OpenSettingPanel
         m_Mode: 1
@@ -9076,7 +9078,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1420033154
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9094,7 +9096,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 2800, y: -189.5}
+  m_AnchoredPosition: {x: 400, y: -189.5}
   m_SizeDelta: {x: 800, y: 376}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1423648450
@@ -9282,7 +9284,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 3600, y: -189.5}
+  m_AnchoredPosition: {x: 400, y: -189.5}
   m_SizeDelta: {x: 800, y: 376}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1460458709
@@ -9825,7 +9827,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ': Pongidae'
+  m_text: ': Felidae'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
   m_sharedMaterial: {fileID: -587346571193639361, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
@@ -10580,7 +10582,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1747903650}
-  - component: {fileID: 1747903655}
+  - component: {fileID: 1747903654}
   - component: {fileID: 1747903652}
   - component: {fileID: 1747903653}
   m_Layer: 0
@@ -10618,8 +10620,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 974916746}
-  sceneToLoad: Level 11
-  sceneToBack: Level 9
+  sceneToLoad: Level 13
+  sceneToBack: Level 11
   dimmer: {fileID: 1276954862}
 --- !u!114 &1747903653
 MonoBehaviour:
@@ -10635,7 +10637,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSlider: {fileID: 608730908}
   soundSlider: {fileID: 1660355536}
---- !u!114 &1747903655
+--- !u!114 &1747903654
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10644,7 +10646,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1747903649}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ca2b49ff3f404a4f9d9a1a97a25466d, type: 3}
+  m_Script: {fileID: 11500000, guid: 1d802ab649c00314687bfc4d283d6e0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   totalPieces: 12
@@ -10665,15 +10667,15 @@ MonoBehaviour:
   rewardButtons: {fileID: 691569066}
   containerTextSelamatHolder: {fileID: 656408753}
   containerPiecesReward: {fileID: 1957828029}
-  targetGameObjectPosition: {fileID: 104189578}
+  targetGameObjectPosition: {fileID: 2028865193}
   NextButton: {fileID: 1904354769}
   NextButtons: {fileID: 1904354771}
-  pieces: {fileID: 1480779862}
+  pieces: {fileID: 707618417}
   PrevButton: {fileID: 1933448996}
   settingPanel: {fileID: 1039713653}
   settingHolder: {fileID: 350507692}
   delaySetting: 0.5
-  level10Song: {fileID: 0}
+  level12Song: {fileID: 0}
   clickSFX: {fileID: 0}
   disabledObject: []
 --- !u!1 &1795777565
@@ -10733,7 +10735,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ': Bos javanicus'
+  m_text: ': Panthera tigris sumatrae'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
   m_sharedMaterial: {fileID: -587346571193639361, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
@@ -10760,10 +10762,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 30.65
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 30.65
   m_fontStyle: 2
@@ -11005,7 +11007,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 15a10952263fa0b4a9801909694e7f76, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 60ce6d76c931cc145b9b186a7086aae4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11150,7 +11152,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 0, g: 0, b: 0, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -11205,7 +11207,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1587312602, guid: 7086fe4bce4366941b593e4d1be3c1e4, type: 3}
+  m_Sprite: {fileID: 140202847, guid: 139a1935ce53b904faf0d3ba538263bc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11631,7 +11633,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 300116064, guid: 7086fe4bce4366941b593e4d1be3c1e4, type: 3}
+  m_Sprite: {fileID: 1572265450, guid: 7086fe4bce4366941b593e4d1be3c1e4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11736,7 +11738,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1975381814
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11754,7 +11756,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 2000, y: -189.5}
+  m_AnchoredPosition: {x: 400, y: -189.5}
   m_SizeDelta: {x: 800, y: 376}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1978579201
@@ -12474,7 +12476,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f4a4eaaaf86fbc84ca176bc61ef10d18, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9518516f65bbe304fb426d5ffdd3512f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
