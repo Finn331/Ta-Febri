@@ -26,6 +26,11 @@ public class MainmenuManager : MonoBehaviour
 
     private AudioSource audioSource; // AudioSource untuk memainkan mainmenuSong
 
+    void Awake()
+    {
+        
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,18 +42,8 @@ public class MainmenuManager : MonoBehaviour
             fadeOutPanel.color = color;
             fadeOutPanel.gameObject.SetActive(false);
         }
+        SaveManager.instance.Load();
         AudioManager.instance.PlayMusic(mainmenuSong, true);
-    }
-
-    // Awake is called when the script instance is being loaded
-    void Awake()
-    {
-        // Setup AudioSource and play mainmenuSong
-        //audioSource = gameObject.AddComponent<AudioSource>();
-        //audioSource.loop = true;
-        //audioSource.clip = mainmenuSong;
-        //audioSource.Play();
-
     }
 
     // Update is called once per frame
@@ -60,7 +55,75 @@ public class MainmenuManager : MonoBehaviour
     public void Play()
     {
         AudioManager.instance.PlaySound(clickSFX);
-        StartCoroutine(FadeOutAndLoadScene("Level 1"));
+
+        if(SaveManager.instance.currentLevel == 0)
+        {
+            StartCoroutine(FadeOutAndLoadScene("Level 1"));
+        }
+
+        if (SaveManager.instance.currentLevel == 1)
+        {
+            StartCoroutine(FadeOutAndLoadScene("Level 1"));
+        }
+
+        if (SaveManager.instance.currentLevel == 2)
+        {
+            StartCoroutine(FadeOutAndLoadScene("Level 2"));
+        }
+        if (SaveManager.instance.currentLevel == 3)
+        {
+            StartCoroutine(FadeOutAndLoadScene("Level 3"));
+        }
+
+        if (SaveManager.instance.currentLevel == 4)
+        {
+            StartCoroutine(FadeOutAndLoadScene("Level 4"));
+        }
+
+        if (SaveManager.instance.currentLevel == 5)
+        {
+            StartCoroutine(FadeOutAndLoadScene("Level 5"));
+        }
+
+        if (SaveManager.instance.currentLevel == 6)
+        {
+            StartCoroutine(FadeOutAndLoadScene("Level 6"));
+        }
+
+        if (SaveManager.instance.currentLevel == 7)
+        {
+            StartCoroutine(FadeOutAndLoadScene("Level 7"));
+        }
+
+        if (SaveManager.instance.currentLevel == 8)
+        {
+            StartCoroutine(FadeOutAndLoadScene("Level 8"));
+        }
+
+        if (SaveManager.instance.currentLevel == 9)
+        {
+            StartCoroutine(FadeOutAndLoadScene("Level 9"));
+        }
+
+        if (SaveManager.instance.currentLevel == 10)
+        {
+            StartCoroutine(FadeOutAndLoadScene("Level 10"));
+        }
+
+        if (SaveManager.instance.currentLevel == 11)
+        {
+            StartCoroutine(FadeOutAndLoadScene("Level 11"));
+        }
+
+        if (SaveManager.instance.currentLevel == 12)
+        {
+            StartCoroutine(FadeOutAndLoadScene("Level 12"));
+        }
+
+        if (SaveManager.instance.currentLevel == 13)
+        {
+            StartCoroutine(FadeOutAndLoadScene("Level 13"));
+        }
     }
 
     public void Setting()

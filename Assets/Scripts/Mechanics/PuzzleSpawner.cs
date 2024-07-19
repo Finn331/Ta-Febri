@@ -10,6 +10,12 @@ public class PuzzleSpawner : MonoBehaviour
 
     private void Start()
     {
+        StartCoroutine(StartInstantiationWithDelay());
+    }
+
+    private IEnumerator StartInstantiationWithDelay()
+    {
+        yield return new WaitForSeconds(1f); // Delay 1 detik
         StartCoroutine(InstantiatePrefabs());
     }
 
@@ -34,6 +40,7 @@ public class PuzzleSpawner : MonoBehaviour
             // Scale from 0 to 1
             LeanTween.scale(instantiatedPrefab, Vector3.one, 1f).setEase(LeanTweenType.easeInOutBack);
             AudioManager.instance.PlaySound(popSfx);
+
             // Wait for the delay before spawning the next prefab
             yield return new WaitForSeconds(delayBetweenSpawns);
         }

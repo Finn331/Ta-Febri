@@ -7,6 +7,9 @@ public class SaveManager : MonoBehaviour
 {
     public static SaveManager instance { get; private set; }
 
+    [Header("Mainmenu Setting")]
+    public int currentLevel;
+
     [Header("Reward Counter")]
     public int rewardPieces;
 
