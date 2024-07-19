@@ -339,7 +339,7 @@ public class PuzzleManager9 : MonoBehaviour
             }
         }
 
-        if (SaveManager.instance.level_7_RewardClaimed == true)
+        if (SaveManager.instance.level_9_RewardClaimed == true)
         {
             rewardClaimed = true;
 

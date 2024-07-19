@@ -3226,7 +3226,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: AYO SELESAIKAN PUZZLE BERIKUTNYA
+  m_text: MINI ZOO
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1477c8977762ab34a9da374bcd0b78ef, type: 2}
   m_sharedMaterial: {fileID: -8071532232587486054, guid: 1477c8977762ab34a9da374bcd0b78ef, type: 2}
@@ -6450,9 +6450,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'SELAMAT KAMU TELAH MENYELESAIKAN PUZZLE
-
-    ORANGUTAN KALIMANTAN'
+  m_text: SELAMAT KAMU TELAH MENYELESAIKAN PUZZLE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e6bd5aaa6d42ac5458249dc1065d3673, type: 2}
   m_sharedMaterial: {fileID: -789796221199011153, guid: e6bd5aaa6d42ac5458249dc1065d3673, type: 2}
@@ -6479,7 +6477,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 71.45
+  m_fontSize: 72
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
