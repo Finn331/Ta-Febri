@@ -8,6 +8,7 @@ public class PuzzleSpawner22 : MonoBehaviour
     public GameObject instantiateArea; // GameObject yang menentukan area instansiasi
     public float delayBetweenSpawns = 0.5f; // Delay antara instansiasi prefab
     public float fadeOutDuration = 1.0f; // Durasi fade out untuk setiap puzzle piece
+    [SerializeField] private AudioClip popSfx;
 
     private void Start()
     {
@@ -51,7 +52,7 @@ public class PuzzleSpawner22 : MonoBehaviour
             // Scale from 0 to 1
             LeanTween.scale(instantiatedPrefab, Vector3.one, 1f).setEase(LeanTweenType.easeInOutBack);
             // AudioManager.instance.PlaySound(popSfx);
-
+            AudioManager.instance.PlaySound(popSfx);
             // Wait for the delay before spawning the next prefab
             yield return new WaitForSeconds(delayBetweenSpawns);
         }

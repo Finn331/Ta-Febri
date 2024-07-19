@@ -576,6 +576,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrollBar: {fileID: 719014038}
+  clickSFX: {fileID: 8300000, guid: 7de2ad93f8c42984bb6f5609038d8495, type: 3}
 --- !u!224 &57384527
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6316,6 +6317,7 @@ MonoBehaviour:
   instantiateArea: {fileID: 967992933}
   delayBetweenSpawns: 0.5
   fadeOutDuration: 1
+  popSfx: {fileID: 8300000, guid: 3e399a38139b8a646bdb61e426f69e4a, type: 3}
 --- !u!1 &974916746
 GameObject:
   m_ObjectHideFlags: 0
@@ -10615,6 +10617,7 @@ MonoBehaviour:
   sceneToLoad: Mainmenu
   sceneToBack: Level 12
   dimmer: {fileID: 1276954862}
+  clickSFX: {fileID: 8300000, guid: 7de2ad93f8c42984bb6f5609038d8495, type: 3}
 --- !u!114 &1747903653
 MonoBehaviour:
   m_ObjectHideFlags: 0

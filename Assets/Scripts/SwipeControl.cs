@@ -9,7 +9,7 @@ public class SwipeControl : MonoBehaviour
     float scrollPos = 0;
     float[] pos;
     int posisi = 0;
-
+    [SerializeField] private AudioClip clickSFX;
     public void Next()
     {
         if (posisi < pos.Length - 1)
@@ -17,6 +17,7 @@ public class SwipeControl : MonoBehaviour
             posisi += 1;
             scrollPos = pos[posisi];
         }
+        AudioManager.instance.PlaySound(clickSFX);
     }
 
     public void Prev()
@@ -26,6 +27,7 @@ public class SwipeControl : MonoBehaviour
             posisi -= 1;
             scrollPos = pos[posisi];
         }
+        AudioManager.instance.PlaySound(clickSFX);
     }
     private void Update()
     {
