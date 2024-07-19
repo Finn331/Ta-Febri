@@ -10580,6 +10580,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1747903650}
+  - component: {fileID: 1747903656}
   - component: {fileID: 1747903655}
   - component: {fileID: 1747903652}
   - component: {fileID: 1747903653}
@@ -10676,6 +10677,44 @@ MonoBehaviour:
   level10Song: {fileID: 0}
   clickSFX: {fileID: 0}
   disabledObject: []
+--- !u!114 &1747903656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747903649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc9101f4e776f264fbe0953a7c47feeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalPieces: 12
+  snappedPieces: 0
+  rewardClaimed: 1
+  levelFinished: 0
+  pict: {fileID: 2039101457}
+  deskripsiHolder: {fileID: 1325326280}
+  titleHolder: {fileID: 1586041730}
+  buttonPrev: {fileID: 1933448996}
+  buttonNext: {fileID: 1904354769}
+  rewardButton: {fileID: 1599238104}
+  level: {fileID: 1409756173}
+  closeButton: {fileID: 1325326284}
+  containerRewardHolder: {fileID: 0}
+  rewardHolder: {fileID: 0}
+  rewardBox: {fileID: 0}
+  rewardButtons: {fileID: 0}
+  containerTextSelamatHolder: {fileID: 656408753}
+  containerPiecesReward: {fileID: 0}
+  targetGameObjectPosition: {fileID: 0}
+  NextButton: {fileID: 0}
+  NextButtons: {fileID: 0}
+  pieces: {fileID: 0}
+  PrevButton: {fileID: 0}
+  settingPanel: {fileID: 0}
+  settingHolder: {fileID: 0}
+  delaySetting: 0
 --- !u!1 &1795777565
 GameObject:
   m_ObjectHideFlags: 0
@@ -11205,7 +11244,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1587312602, guid: 7086fe4bce4366941b593e4d1be3c1e4, type: 3}
+  m_Sprite: {fileID: -1741587035, guid: 7086fe4bce4366941b593e4d1be3c1e4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11631,7 +11670,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 300116064, guid: 7086fe4bce4366941b593e4d1be3c1e4, type: 3}
+  m_Sprite: {fileID: 409909637, guid: 7086fe4bce4366941b593e4d1be3c1e4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
