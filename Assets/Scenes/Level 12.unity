@@ -652,6 +652,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrollBar: {fileID: 719014038}
+  clickSFX: {fileID: 8300000, guid: 7de2ad93f8c42984bb6f5609038d8495, type: 3}
 --- !u!224 &57384527
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10930,6 +10931,7 @@ MonoBehaviour:
   sceneToLoad: Level 13
   sceneToBack: Level 11
   dimmer: {fileID: 1276954862}
+  clickSFX: {fileID: 8300000, guid: 7de2ad93f8c42984bb6f5609038d8495, type: 3}
 --- !u!114 &1747903653
 MonoBehaviour:
   m_ObjectHideFlags: 0
