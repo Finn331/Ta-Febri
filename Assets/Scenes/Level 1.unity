@@ -10956,8 +10956,8 @@ MonoBehaviour:
   settingPanel: {fileID: 1039713653}
   settingHolder: {fileID: 350507692}
   delaySetting: 0.5
-  level1Song: {fileID: 0}
-  clickSFX: {fileID: 0}
+  level1Song: {fileID: 8300000, guid: 342177612d456334e85fc12993f6667c, type: 3}
+  clickSFX: {fileID: 8300000, guid: 7de2ad93f8c42984bb6f5609038d8495, type: 3}
   disabledObject:
   - {fileID: 2039101457}
   - {fileID: 1586041730}

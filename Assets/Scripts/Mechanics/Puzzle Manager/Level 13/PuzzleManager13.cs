@@ -30,6 +30,8 @@ public class PuzzleManager13 : MonoBehaviour
     [SerializeField] private GameObject settingPanel;
     [SerializeField] private GameObject settingHolder;
     [SerializeField] private float delaySetting;
+    [SerializeField] private AudioClip bgmSong;
+    [SerializeField] private AudioClip clickSFX;
 
     private void Awake()
     {
@@ -45,7 +47,7 @@ public class PuzzleManager13 : MonoBehaviour
 
     void Start()
     {
-
+        AudioManager.instance.PlayMusic(bgmSong, true);
     }
 
     void Update()
@@ -58,6 +60,7 @@ public class PuzzleManager13 : MonoBehaviour
         settingPanel.SetActive(true);
         settingHolder.SetActive(true);
         LeanTween.scale(settingHolder, new Vector3(1, 1, 1), delaySetting).setEase(LeanTweenType.easeOutBounce);
+        AudioManager.instance.PlaySound(clickSFX);
     }
 
     public void CloseSettingPanel()
@@ -67,6 +70,7 @@ public class PuzzleManager13 : MonoBehaviour
             settingPanel.SetActive(false);
             settingHolder.SetActive(false);
         });
+        AudioManager.instance.PlaySound(clickSFX);
     }
 
     public void CheckAllSnapped()
@@ -204,5 +208,6 @@ public class PuzzleManager13 : MonoBehaviour
 
         // Load ulang scene saat ini
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        AudioManager.instance.PlaySound(clickSFX);
     }
 }
