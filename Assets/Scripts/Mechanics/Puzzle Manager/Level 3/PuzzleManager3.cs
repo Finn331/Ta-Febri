@@ -41,6 +41,11 @@ public class PuzzleManager3 : MonoBehaviour
     [SerializeField] private GameObject settingPanel;
     [SerializeField] private GameObject settingHolder;
     [SerializeField] private float delaySetting;
+    [SerializeField] private AudioClip level3Song;
+    [SerializeField] private AudioClip clickSFX;
+
+    [Header("Object to disable")]
+    [SerializeField] private GameObject[] disabledObject;
 
     private void Awake()
     {
@@ -62,6 +67,7 @@ public class PuzzleManager3 : MonoBehaviour
 
     void Start()
     {
+        AudioManager.instance.PlayMusic(level3Song, true);
         if (rewardClaimed)
         {
             containerRewardHolder.SetActive(false);
@@ -69,10 +75,24 @@ public class PuzzleManager3 : MonoBehaviour
             containerRewardHolder.SetActive(false);
 
         }
+        // if (rewardClaimed == true)
+        // {
+        //     NextButtons.interactable = true;
+
+        //     containerRewardHolder.SetActive(false);
+        //     rewardButton.SetActive(false);
+        //     containerRewardHolder.SetActive(false);
+        // }
+        // else
+        // {
+        //     NextButtons.interactable = false;
+        // }
+
     }
 
     void Update()
     {
+        LevelFinishedCheck();
         Checking();
         if (rewardClaimed == true)
         {
@@ -89,6 +109,7 @@ public class PuzzleManager3 : MonoBehaviour
         settingPanel.SetActive(true);
         settingHolder.SetActive(true);
         LeanTween.scale(settingHolder, new Vector3(1, 1, 1), delaySetting).setEase(LeanTweenType.easeOutBounce);
+        AudioManager.instance.PlaySound(clickSFX);
     }
 
     public void CloseSettingPanel()
@@ -98,6 +119,7 @@ public class PuzzleManager3 : MonoBehaviour
             settingPanel.SetActive(false);
             settingHolder.SetActive(false);
         });
+        AudioManager.instance.PlaySound(clickSFX);
     }
 
     public void CheckAllSnapped()
@@ -217,6 +239,7 @@ public class PuzzleManager3 : MonoBehaviour
 
     public void CloseDeskripsiHolder()
     {
+        AudioManager.instance.PlaySound(clickSFX);
         // Melakukan fade out pada deskripsiHolder
         if (deskripsiHolder != null)
         {
@@ -318,6 +341,8 @@ public class PuzzleManager3 : MonoBehaviour
 
     public void PulseRewardButton()
     {
+        AudioManager.instance.PlaySound(clickSFX);
+        levelFinished = true;
         if (rewardButton != null)
         {
             rewardButtons.interactable = false;
@@ -427,6 +452,7 @@ public class PuzzleManager3 : MonoBehaviour
     // Metode untuk restart level
     public void RestartLevel()
     {
+        AudioManager.instance.PlaySound(clickSFX);
         // Reset snappedPieces
         snappedPieces = 0;
 
@@ -436,7 +462,13 @@ public class PuzzleManager3 : MonoBehaviour
             rewardClaimed = true;  // Set reward sudah di-claimed menjadi true
             levelFinished = false; // Set level sudah selesai menjadi false
         }
-
+        //for (int i = 0; i < disabledObject.Length; i++)
+        //{
+        //    if (disabledObject[i] != null)
+        //    {
+        //        disabledObject[i].SetActive(true);
+        //    }
+        //}
         // Load ulang scene saat ini
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
@@ -448,5 +480,28 @@ public class PuzzleManager3 : MonoBehaviour
         Destroy(rewardButton);
         // Destroy(pieces);
         Destroy(rewardHolder);
+    }
+
+    public void LevelFinishedCheck()
+    {
+        if (levelFinished == true)
+        {
+            SaveManager.instance.LevelCompleted(3, true);
+
+            // Mematikan semua Object yang akan di Disable
+            //for (int i = 0; i < disabledObject.Length; i++)
+            //{
+            //    if (disabledObject[i] != null)
+            //    {
+            //        disabledObject[i].SetActive(false);
+            //    }
+            //}
+        }
+
+
+        if (SaveManager.instance.level_3_completed == true)
+        {
+            levelFinished = true;
+        }
     }
 }
