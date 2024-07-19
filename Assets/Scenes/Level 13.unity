@@ -179,9 +179,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Berkembangbiak pada bulan Januari-Agustus dan Mei-Juli. Masa pengeraman
-    selama 18-35 hari. Anak mulai terbang umur 40-56 hari. Anak menjadi dewasa mandiri
-    setelah 2 bulan  kemudian.
+  m_text: Masa hamil 10 bulan
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
   m_sharedMaterial: {fileID: -587346571193639361, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
@@ -208,7 +206,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.9
+  m_fontSize: 66.1
   m_fontSizeBase: 37
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1243,7 +1241,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1747903651}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PuzzleManager, Assembly-CSharp
         m_MethodName: CloseSettingPanel
         m_Mode: 1
@@ -1800,7 +1798,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ': Haliastur'
+  m_text: ': Pongo pygmaeus'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
   m_sharedMaterial: {fileID: -587346571193639361, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
@@ -1863,7 +1861,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -64.9249, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2221,7 +2219,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0872835b071ccc940998cb5507a1be83, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 80e5583ec49867b459b60b1b56234d9b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3154,7 +3152,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ikan, kepiting, kerang, katak, pengerat, reptil dan serangga.
+  m_text: Rumput, daun dan buah
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
   m_sharedMaterial: {fileID: -587346571193639361, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
@@ -3181,7 +3179,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26.35
+  m_fontSize: 32.9
   m_fontSizeBase: 37
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3684,127 +3682,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 630137541}
   m_CullTransparentMesh: 1
---- !u!1 &639360060
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 639360064}
-  - component: {fileID: 639360063}
-  - component: {fileID: 639360062}
-  - component: {fileID: 639360061}
-  m_Layer: 5
-  m_Name: Button
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &639360061
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 639360060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 639360062}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &639360062
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 639360060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &639360063
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 639360060}
-  m_CullTransparentMesh: 1
---- !u!224 &639360064
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 639360060}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 903158486}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &647898575
 GameObject:
   m_ObjectHideFlags: 0
@@ -4453,8 +4330,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1747903651}
-        m_TargetAssemblyTypeName: PuzzleManager, Assembly-CSharp
+      - m_Target: {fileID: 1747903655}
+        m_TargetAssemblyTypeName: PuzzleManager10, Assembly-CSharp
         m_MethodName: PulseRewardButton
         m_Mode: 1
         m_Arguments:
@@ -4579,7 +4456,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1159422220, guid: ad1a707c83169954289387a75b47a7d6, type: 3}
+  m_Sprite: {fileID: -78069018, guid: ad1a707c83169954289387a75b47a7d6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4881,7 +4758,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1747903652}
         m_TargetAssemblyTypeName: Scene, Assembly-CSharp
-        m_MethodName: BackScene
+        m_MethodName: HomeScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5333,8 +5210,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Area tepi laut yang berlumpur, seperti hutan mangrove, muara sungai dan
-    pesisir pantai.
+  m_text: Hutan hujan tropis.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
   m_sharedMaterial: {fileID: -587346571193639361, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
@@ -6283,140 +6159,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &903158485
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 903158486}
-  - component: {fileID: 903158488}
-  - component: {fileID: 903158487}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &903158486
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 903158485}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 639360064}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &903158487
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 903158485}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Button
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &903158488
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 903158485}
-  m_CullTransparentMesh: 1
 --- !u!1 &942564357
 GameObject:
   m_ObjectHideFlags: 0
@@ -6584,18 +6326,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabs:
-  - {fileID: 854211439723585694, guid: 8371ceaf747cc1e43af3fcaf49da5fcf, type: 3}
-  - {fileID: 5328274358785503516, guid: 8f80387f6ef2eb848bc96b158312a6d8, type: 3}
-  - {fileID: 2236489217048421457, guid: 88137c8e1722b654aaad3c7d7e2619e6, type: 3}
-  - {fileID: 8821220660441340267, guid: 9db12bc0f93a9f249a62cac8c0821bec, type: 3}
-  - {fileID: 4902372238703705490, guid: e08786bc754e60e47952a5921ea4b9c9, type: 3}
-  - {fileID: 7904626474543857091, guid: 00a082f1bc7d9424abd3af6b29d7a28a, type: 3}
-  - {fileID: 15728738638761973, guid: a6cdfea9e1ba9714e916b92c7b1131fa, type: 3}
-  - {fileID: 2955996659783476203, guid: 2c959044fab6c074aa84132ee98e37ca, type: 3}
-  - {fileID: 6927949019255224445, guid: dac0db9ca58566946b22bce18ab715d6, type: 3}
-  - {fileID: 7170534183722651950, guid: de8116828b6d22842b9d10bde6193822, type: 3}
-  - {fileID: 102852779723192379, guid: 03d1d878fe4fc274ba1709492b0912f8, type: 3}
-  - {fileID: 5957748104211716695, guid: ef6af97a2a003ec49b0c0d2ae16eec51, type: 3}
+  - {fileID: 854211439723585694, guid: 512604438622ace418c6accd12cfd35f, type: 3}
+  - {fileID: 5328274358785503516, guid: 512835fe16654524f8c67f083b3880a4, type: 3}
+  - {fileID: 2236489217048421457, guid: f48204ae277c7c74b85194430c84ebfd, type: 3}
+  - {fileID: 8821220660441340267, guid: bac807b144a689840ae06b07007d8175, type: 3}
+  - {fileID: 4902372238703705490, guid: 435eaf54b0fa23d43bfde925bf58f310, type: 3}
+  - {fileID: 7904626474543857091, guid: f79da152303777840b7fbb72259734a0, type: 3}
+  - {fileID: 15728738638761973, guid: c125e9250f25b8f42b1e3871353bc768, type: 3}
+  - {fileID: 2955996659783476203, guid: 245ea3c02562dbe4bb63a385fcb4b9d2, type: 3}
+  - {fileID: 6927949019255224445, guid: 27f6188c3e2e03745a8420f9611b8e8b, type: 3}
+  - {fileID: 7170534183722651950, guid: 672920c25c231a042ac21b484068c6df, type: 3}
+  - {fileID: 102852779723192379, guid: 0a4de6b7fc7aa1347b06630c11132d3a, type: 3}
+  - {fileID: 5957748104211716695, guid: f7235813ed07d544583962ae424aec12, type: 3}
   instantiateArea: {fileID: 967992933}
   delayBetweenSpawns: 0.6
   popSfx: {fileID: 8300000, guid: 3e399a38139b8a646bdb61e426f69e4a, type: 3}
@@ -6847,7 +6589,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'SELAMAT KAMU TELAH MENYELESAIKAN PUZZLE
 
-    ELANG BONDOL'
+    ORANGUTAN KALIMANTAN'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e6bd5aaa6d42ac5458249dc1065d3673, type: 2}
   m_sharedMaterial: {fileID: -789796221199011153, guid: e6bd5aaa6d42ac5458249dc1065d3673, type: 2}
@@ -7179,7 +6921,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ': Accipitriformes'
+  m_text: ': Primata'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
   m_sharedMaterial: {fileID: -587346571193639361, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
@@ -7366,7 +7108,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.000022194, y: -76.07271}
+  m_AnchoredPosition: {x: 0.000022194, y: -68.691}
   m_SizeDelta: {x: 312.4299, y: 127.91}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1063407727
@@ -7389,7 +7131,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0872835b071ccc940998cb5507a1be83, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 80e5583ec49867b459b60b1b56234d9b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7620,8 +7362,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1747903651}
-        m_TargetAssemblyTypeName: PuzzleManager, Assembly-CSharp
+      - m_Target: {fileID: 1747903655}
+        m_TargetAssemblyTypeName: PuzzleManager10, Assembly-CSharp
         m_MethodName: RestartLevel
         m_Mode: 1
         m_Arguments:
@@ -7936,10 +7678,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Elang bondol berukuran sedang (43-51 cm), memiliki sayap yang lebar dengan
-    ekor pendek dan mempulat ketika membentang. Bagian kepala, leher dan dada bewarna
-    putih, sisanya bewarna merah bata pucat kuning. Satwa ini dilindungi UU No. 5
-    Tahun 1990 dan PP No. 7 tahun 1999.
+  m_text: Banteng merupakan spesies ruminasia besar liar Asia. Banteng jantan memiliki
+    warna lebih gelap lebih besar dan lebih besar dari pada betina. Tanduk jantan
+    keatas dantumbuh hingga 75 cm, sedangkan tanduk betina lebih kecil.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
   m_sharedMaterial: {fileID: -587346571193639361, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
@@ -7966,7 +7707,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.85
+  m_fontSize: 29.05
   m_fontSizeBase: 37
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -8173,8 +7914,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1747903651}
-        m_TargetAssemblyTypeName: PuzzleManager, Assembly-CSharp
+      - m_Target: {fileID: 1747903655}
+        m_TargetAssemblyTypeName: PuzzleManager10, Assembly-CSharp
         m_MethodName: OpenSettingPanel
         m_Mode: 1
         m_Arguments:
@@ -8854,7 +8595,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ': Aves'
+  m_text: ': Mammalia'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
   m_sharedMaterial: {fileID: -587346571193639361, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
@@ -8917,7 +8658,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -44.816315, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -10084,7 +9825,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ': Acciptridae'
+  m_text: ': Pongidae'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
   m_sharedMaterial: {fileID: -587346571193639361, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
@@ -10147,7 +9888,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -48.3181, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -10839,7 +10580,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1747903650}
-  - component: {fileID: 1747903651}
+  - component: {fileID: 1747903655}
   - component: {fileID: 1747903652}
   - component: {fileID: 1747903653}
   m_Layer: 0
@@ -10864,7 +10605,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1747903651
+--- !u!114 &1747903652
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10873,7 +10614,37 @@ MonoBehaviour:
   m_GameObject: {fileID: 1747903649}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45a7b165e7362f04dadfd792414b42fc, type: 3}
+  m_Script: {fileID: 11500000, guid: 935ccded180ea9548a27961d7bee9b1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 974916746}
+  sceneToLoad: Level 11
+  sceneToBack: Level 9
+  dimmer: {fileID: 1276954862}
+--- !u!114 &1747903653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747903649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e190f82258b4864bab89247466846fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicSlider: {fileID: 608730908}
+  soundSlider: {fileID: 1660355536}
+--- !u!114 &1747903655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747903649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca2b49ff3f404a4f9d9a1a97a25466d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   totalPieces: 12
@@ -10894,54 +10665,17 @@ MonoBehaviour:
   rewardButtons: {fileID: 691569066}
   containerTextSelamatHolder: {fileID: 656408753}
   containerPiecesReward: {fileID: 1957828029}
-  targetGameObjectPosition: {fileID: 1318282855}
+  targetGameObjectPosition: {fileID: 104189578}
   NextButton: {fileID: 1904354769}
   NextButtons: {fileID: 1904354771}
-  pieces: {fileID: 707618417}
+  pieces: {fileID: 1480779862}
   PrevButton: {fileID: 1933448996}
   settingPanel: {fileID: 1039713653}
   settingHolder: {fileID: 350507692}
   delaySetting: 0.5
-  level1Song: {fileID: 0}
+  level10Song: {fileID: 0}
   clickSFX: {fileID: 0}
-  disabledObject:
-  - {fileID: 2039101457}
-  - {fileID: 1586041730}
-  - {fileID: 864433802}
-  - {fileID: 967992933}
-  - {fileID: 1064150462}
-  - {fileID: 1409756173}
-  - {fileID: 452219869}
---- !u!114 &1747903652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1747903649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 935ccded180ea9548a27961d7bee9b1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 974916746}
-  sceneToLoad: Level 2
-  sceneToBack: Mainmenu
-  dimmer: {fileID: 1276954862}
---- !u!114 &1747903653
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1747903649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e190f82258b4864bab89247466846fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  musicSlider: {fileID: 608730908}
-  soundSlider: {fileID: 1660355536}
+  disabledObject: []
 --- !u!1 &1795777565
 GameObject:
   m_ObjectHideFlags: 0
@@ -10999,7 +10733,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ': Haliastur Indus'
+  m_text: ': Bos javanicus'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
   m_sharedMaterial: {fileID: -587346571193639361, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
@@ -11031,7 +10765,7 @@ MonoBehaviour:
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 30.65
   m_fontStyle: 2
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -11062,7 +10796,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -244.84595, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -11271,7 +11005,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2e84e347fd6a20e4c8763e00e80d172b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 15a10952263fa0b4a9801909694e7f76, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11471,7 +11205,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 816454240, guid: 7086fe4bce4366941b593e4d1be3c1e4, type: 3}
+  m_Sprite: {fileID: -1587312602, guid: 7086fe4bce4366941b593e4d1be3c1e4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11897,7 +11631,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1741587035, guid: 7086fe4bce4366941b593e4d1be3c1e4, type: 3}
+  m_Sprite: {fileID: 300116064, guid: 7086fe4bce4366941b593e4d1be3c1e4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12740,7 +12474,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c8d3e0820ace70044ba52eba75f16074, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f4a4eaaaf86fbc84ca176bc61ef10d18, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13595,4 +13329,3 @@ SceneRoots:
   - {fileID: 1460458710}
   - {fileID: 864433803}
   - {fileID: 1076510214}
-  - {fileID: 639360064}

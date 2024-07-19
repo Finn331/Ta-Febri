@@ -60,7 +60,7 @@ public class MainmenuManager : MonoBehaviour
     public void Play()
     {
         AudioManager.instance.PlaySound(clickSFX);
-        StartCoroutine(FadeOutAndLoadScene("SampleScene"));
+        StartCoroutine(FadeOutAndLoadScene("Level 1"));
     }
 
     public void Setting()

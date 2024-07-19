@@ -4331,8 +4331,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PuzzleManager2, Assembly-CSharp
+      - m_Target: {fileID: 1747903654}
+        m_TargetAssemblyTypeName: PuzzleManager8, Assembly-CSharp
         m_MethodName: PulseRewardButton
         m_Mode: 1
         m_Arguments:
@@ -7363,8 +7363,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PuzzleManager2, Assembly-CSharp
+      - m_Target: {fileID: 1747903654}
+        m_TargetAssemblyTypeName: PuzzleManager8, Assembly-CSharp
         m_MethodName: RestartLevel
         m_Mode: 1
         m_Arguments:
@@ -7915,8 +7915,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PuzzleManager2, Assembly-CSharp
+      - m_Target: {fileID: 1747903654}
+        m_TargetAssemblyTypeName: PuzzleManager8, Assembly-CSharp
         m_MethodName: OpenSettingPanel
         m_Mode: 1
         m_Arguments:
@@ -10669,7 +10669,7 @@ MonoBehaviour:
   targetGameObjectPosition: {fileID: 241589163}
   NextButton: {fileID: 1904354769}
   NextButtons: {fileID: 1904354771}
-  pieces: {fileID: 241589163}
+  pieces: {fileID: 707618417}
   PrevButton: {fileID: 1933448996}
   settingPanel: {fileID: 1039713653}
   settingHolder: {fileID: 350507692}

@@ -4330,8 +4330,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PuzzleManager2, Assembly-CSharp
+      - m_Target: {fileID: 1747903655}
+        m_TargetAssemblyTypeName: PuzzleManager10, Assembly-CSharp
         m_MethodName: PulseRewardButton
         m_Mode: 1
         m_Arguments:
@@ -6326,18 +6326,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabs:
-  - {fileID: 854211439723585694, guid: 512604438622ace418c6accd12cfd35f, type: 3}
-  - {fileID: 5328274358785503516, guid: 512835fe16654524f8c67f083b3880a4, type: 3}
-  - {fileID: 2236489217048421457, guid: f48204ae277c7c74b85194430c84ebfd, type: 3}
-  - {fileID: 8821220660441340267, guid: bac807b144a689840ae06b07007d8175, type: 3}
-  - {fileID: 4902372238703705490, guid: 435eaf54b0fa23d43bfde925bf58f310, type: 3}
-  - {fileID: 7904626474543857091, guid: f79da152303777840b7fbb72259734a0, type: 3}
-  - {fileID: 15728738638761973, guid: c125e9250f25b8f42b1e3871353bc768, type: 3}
-  - {fileID: 2955996659783476203, guid: 245ea3c02562dbe4bb63a385fcb4b9d2, type: 3}
-  - {fileID: 6927949019255224445, guid: 27f6188c3e2e03745a8420f9611b8e8b, type: 3}
-  - {fileID: 7170534183722651950, guid: 672920c25c231a042ac21b484068c6df, type: 3}
-  - {fileID: 102852779723192379, guid: 0a4de6b7fc7aa1347b06630c11132d3a, type: 3}
-  - {fileID: 5957748104211716695, guid: f7235813ed07d544583962ae424aec12, type: 3}
+  - {fileID: 854211439723585694, guid: 852c08ef6db87834f851afdf77e5c4ab, type: 3}
+  - {fileID: 5328274358785503516, guid: 910b49493b7e5614387b79a20427d789, type: 3}
+  - {fileID: 2236489217048421457, guid: 40f9d5d404887ba43a1f801c7a11ad4e, type: 3}
+  - {fileID: 8821220660441340267, guid: 878def9ab6038df40aba294dba03d1b2, type: 3}
+  - {fileID: 4902372238703705490, guid: 39fbf5231d6f09f41a231ab4f42abc07, type: 3}
+  - {fileID: 7904626474543857091, guid: 42e7c85a33bac2547acc823946bf104c, type: 3}
+  - {fileID: 15728738638761973, guid: 49df3044b965fe34593d459cdba8fb07, type: 3}
+  - {fileID: 2955996659783476203, guid: 9e78365bba278164d97b11ae0030b0db, type: 3}
+  - {fileID: 6927949019255224445, guid: c218518ccc4a18745bc20153e8d0a938, type: 3}
+  - {fileID: 7170534183722651950, guid: 6f35eeaba79cbab4b8f3b934ccaa5d26, type: 3}
+  - {fileID: 102852779723192379, guid: c22ea03e230881144832c6dfad8d000a, type: 3}
+  - {fileID: 5957748104211716695, guid: c429379a68ac22a4e9a4bdcc0033b51e, type: 3}
   instantiateArea: {fileID: 967992933}
   delayBetweenSpawns: 0.6
   popSfx: {fileID: 8300000, guid: 3e399a38139b8a646bdb61e426f69e4a, type: 3}
@@ -7362,8 +7362,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PuzzleManager2, Assembly-CSharp
+      - m_Target: {fileID: 1747903655}
+        m_TargetAssemblyTypeName: PuzzleManager10, Assembly-CSharp
         m_MethodName: RestartLevel
         m_Mode: 1
         m_Arguments:
@@ -7914,8 +7914,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PuzzleManager2, Assembly-CSharp
+      - m_Target: {fileID: 1747903655}
+        m_TargetAssemblyTypeName: PuzzleManager10, Assembly-CSharp
         m_MethodName: OpenSettingPanel
         m_Mode: 1
         m_Arguments:
@@ -10581,7 +10581,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1747903650}
   - component: {fileID: 1747903655}
-  - component: {fileID: 1747903654}
   - component: {fileID: 1747903652}
   - component: {fileID: 1747903653}
   m_Layer: 0
@@ -10619,8 +10618,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 974916746}
-  sceneToLoad: Level 10
-  sceneToBack: Level 8
+  sceneToLoad: Level 11
+  sceneToBack: Level 9
   dimmer: {fileID: 1276954862}
 --- !u!114 &1747903653
 MonoBehaviour:
@@ -10636,47 +10635,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSlider: {fileID: 608730908}
   soundSlider: {fileID: 1660355536}
---- !u!114 &1747903654
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1747903649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dea7e94f9d7124d41a7c9a762c9838c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  totalPieces: 12
-  snappedPieces: 0
-  rewardClaimed: 0
-  levelFinished: 0
-  pict: {fileID: 2039101457}
-  deskripsiHolder: {fileID: 1325326280}
-  titleHolder: {fileID: 1586041730}
-  buttonPrev: {fileID: 1933448996}
-  buttonNext: {fileID: 1904354769}
-  rewardButton: {fileID: 1599238104}
-  level: {fileID: 1409756173}
-  closeButton: {fileID: 1325326284}
-  containerRewardHolder: {fileID: 1599238104}
-  rewardHolder: {fileID: 432086157}
-  rewardBox: {fileID: 691569065}
-  rewardButtons: {fileID: 691569066}
-  containerTextSelamatHolder: {fileID: 656408753}
-  containerPiecesReward: {fileID: 1957828029}
-  targetGameObjectPosition: {fileID: 104189578}
-  NextButton: {fileID: 1904354769}
-  NextButtons: {fileID: 1904354771}
-  pieces: {fileID: 104189578}
-  PrevButton: {fileID: 1933448996}
-  settingPanel: {fileID: 1039713653}
-  settingHolder: {fileID: 350507692}
-  delaySetting: 0.5
-  level9Song: {fileID: 0}
-  clickSFX: {fileID: 0}
-  disabledObject: []
 --- !u!114 &1747903655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10707,10 +10665,10 @@ MonoBehaviour:
   rewardButtons: {fileID: 691569066}
   containerTextSelamatHolder: {fileID: 656408753}
   containerPiecesReward: {fileID: 1957828029}
-  targetGameObjectPosition: {fileID: 104189578}
+  targetGameObjectPosition: {fileID: 1480779862}
   NextButton: {fileID: 1904354769}
   NextButtons: {fileID: 1904354771}
-  pieces: {fileID: 1480779862}
+  pieces: {fileID: 707618417}
   PrevButton: {fileID: 1933448996}
   settingPanel: {fileID: 1039713653}
   settingHolder: {fileID: 350507692}
