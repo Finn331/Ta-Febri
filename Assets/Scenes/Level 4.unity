@@ -10814,7 +10814,12 @@ MonoBehaviour:
   delaySetting: 0.5
   bgmSong: {fileID: 8300000, guid: bccc9ae7e1ed18f4bae6aeee04bbdcd7, type: 3}
   clickSFX: {fileID: 8300000, guid: 7de2ad93f8c42984bb6f5609038d8495, type: 3}
-  disabledObject: []
+  disabledObject:
+  - {fileID: 864433802}
+  - {fileID: 967992933}
+  - {fileID: 1064150462}
+  - {fileID: 1409756173}
+  - {fileID: 452219869}
 --- !u!1 &1765152107
 GameObject:
   m_ObjectHideFlags: 0
