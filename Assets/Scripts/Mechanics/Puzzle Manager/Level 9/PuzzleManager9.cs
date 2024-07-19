@@ -30,6 +30,7 @@ public class PuzzleManager9 : MonoBehaviour
 
     [Header("Level Manager")]
     public GameObject containerTextSelamatHolder;
+    [SerializeField] private GameObject containerTextSelamatHolder2;
     public GameObject containerPiecesReward;
     public GameObject targetGameObjectPosition;
     public GameObject NextButton;
@@ -41,7 +42,7 @@ public class PuzzleManager9 : MonoBehaviour
     [SerializeField] private GameObject settingPanel;
     [SerializeField] private GameObject settingHolder;
     [SerializeField] private float delaySetting;
-    [SerializeField] private AudioClip level9Song;
+    [SerializeField] private AudioClip bgmSong;
     [SerializeField] private AudioClip clickSFX;
 
     [Header("Object to disable")]
@@ -63,11 +64,13 @@ public class PuzzleManager9 : MonoBehaviour
         {
             closeButton.onClick.AddListener(CloseDeskripsiHolder);
         }
+        SaveManager.instance.currentLevel = 9;
+        SaveManager.instance.Save();
     }
 
     void Start()
     {
-        AudioManager.instance.PlayMusic(level9Song, true);
+        AudioManager.instance.PlayMusic(bgmSong, true);
         if (rewardClaimed)
         {
             containerRewardHolder.SetActive(false);
@@ -75,6 +78,8 @@ public class PuzzleManager9 : MonoBehaviour
             containerRewardHolder.SetActive(false);
 
         }
+
+        LevelFinishedCheck();
         // if (rewardClaimed == true)
         // {
         //     NextButtons.interactable = true;
@@ -92,7 +97,6 @@ public class PuzzleManager9 : MonoBehaviour
 
     void Update()
     {
-        LevelFinishedCheck();
         Checking();
         if (rewardClaimed == true)
         {
@@ -240,6 +244,8 @@ public class PuzzleManager9 : MonoBehaviour
     public void CloseDeskripsiHolder()
     {
         AudioManager.instance.PlaySound(clickSFX);
+        SaveManager.instance.level_9_completed = true;
+        SaveManager.instance.Save();
         // Melakukan fade out pada deskripsiHolder
         if (deskripsiHolder != null)
         {
@@ -333,9 +339,10 @@ public class PuzzleManager9 : MonoBehaviour
             }
         }
 
-        if (SaveManager.instance.level_9_RewardClaimed == true)
+        if (SaveManager.instance.level_7_RewardClaimed == true)
         {
             rewardClaimed = true;
+
         }
     }
 
@@ -424,6 +431,7 @@ public class PuzzleManager9 : MonoBehaviour
                             LeanTween.delayedCall(0.1f, () =>
                             {
                                 SaveManager.instance.rewardPieces++;
+                                SaveManager.instance.Save();
                                 CanvasGroup canvasTargetObject = targetGameObjectPosition.GetComponent<CanvasGroup>();
                                 if (canvasTargetObject == null)
                                 {
@@ -461,14 +469,16 @@ public class PuzzleManager9 : MonoBehaviour
         {
             rewardClaimed = true;  // Set reward sudah di-claimed menjadi true
             levelFinished = false; // Set level sudah selesai menjadi false
+            SaveManager.instance.level_9_completed = false;
+            SaveManager.instance.Save();
         }
-        //for (int i = 0; i < disabledObject.Length; i++)
-        //{
-        //    if (disabledObject[i] != null)
-        //    {
-        //        disabledObject[i].SetActive(true);
-        //    }
-        //}
+        for (int i = 0; i < disabledObject.Length; i++)
+        {
+            if (disabledObject[i] != null)
+            {
+                disabledObject[i].SetActive(true);
+            }
+        }
         // Load ulang scene saat ini
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
@@ -484,24 +494,19 @@ public class PuzzleManager9 : MonoBehaviour
 
     public void LevelFinishedCheck()
     {
-        if (levelFinished == true)
-        {
-            SaveManager.instance.LevelCompleted(9, true);
-
-            // Mematikan semua Object yang akan di Disable
-            //for (int i = 0; i < disabledObject.Length; i++)
-            //{
-            //    if (disabledObject[i] != null)
-            //    {
-            //        disabledObject[i].SetActive(false);
-            //    }
-            //}
-        }
-
-
         if (SaveManager.instance.level_9_completed == true)
         {
             levelFinished = true;
+            //Mematikan semua Object yang akan di Disable
+            for (int i = 0; i < disabledObject.Length; i++)
+            {
+                if (disabledObject[i] != null)
+                {
+                    disabledObject[i].SetActive(false);
+                }
+            }
+            containerTextSelamatHolder2.SetActive(true);
+            LeanTween.scale(containerTextSelamatHolder2, new Vector3(1, 1, 1), 1f).setEase(LeanTweenType.easeInOutQuad);
         }
     }
 }
