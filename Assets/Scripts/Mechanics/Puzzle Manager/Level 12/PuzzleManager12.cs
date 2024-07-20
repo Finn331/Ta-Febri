@@ -244,8 +244,8 @@ public class PuzzleManager12 : MonoBehaviour
     public void CloseDeskripsiHolder()
     {
         AudioManager.instance.PlaySound(clickSFX);
-        SaveManager.instance.level_12_completed = true;
-        SaveManager.instance.Save();
+        // SaveManager.instance.level_12_completed = true;
+        // SaveManager.instance.Save();
         // Melakukan fade out pada deskripsiHolder
         if (deskripsiHolder != null)
         {
@@ -362,6 +362,8 @@ public class PuzzleManager12 : MonoBehaviour
             {
                 rewardClaimed = true;
             }
+            SaveManager.instance.level_12_completed = true;
+            SaveManager.instance.Save();
 
             CanvasGroup canvasGroup = rewardButton.GetComponent<CanvasGroup>();
             if (canvasGroup == null)
