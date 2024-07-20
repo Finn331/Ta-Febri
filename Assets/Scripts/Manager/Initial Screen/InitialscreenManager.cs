@@ -48,18 +48,18 @@ public class InitialscreenManager : MonoBehaviour
     private float endYMini = 273f;
     private float endYZoo = 112f;
     private float startXSponsor = -1700f;
-    private float animationDuration = 1f; // Durasi animasi dalam detik
-    private float fadeDuration = 0.5f; // Durasi fade out dalam detik
-    private float combinedLogoAnimationDuration = 1.5f; // Durasi animasi untuk logoMiniZoo
-    private float delayBeforeDeactivation = 1f; // Delay sebelum menonaktifkan logo "Mini" dan "Zoo"
+    private float animationDuration = 0.9f; // Duration of the animation in seconds
+    private float fadeDuration = 0.5f; // Duration of the fade out in seconds
+    private float combinedLogoAnimationDuration = 1.5f; // Duration of the combined logo animation
+    private float delayBeforeDeactivation = 1f; // Delay before deactivating "Mini" and "Zoo" logos
 
-    // Posisi awal X untuk logo sponsor
+    // Initial X positions for sponsor logos
     private float startXLogoRagunan = -1700f; // Default start position for logoRagunan
     private float startXLogoEU = -373f; // Initial position for logoEU
     private float startXLogoDkv = 17f; // Initial position for logoDkv
     private float startXLogoTripledot = 234.3f; // Initial position for logoTripledot
 
-    // Posisi akhir X untuk logo sponsor
+    // Final X positions for sponsor logos
     private float endXLogoRagunan = -373.3f;
     private float endXLogoEU = -156f;
     private float endXLogoDkv = 234.3f;
@@ -98,11 +98,17 @@ public class InitialscreenManager : MonoBehaviour
         // Animate "Zoo" logos
         AnimateZooLogos(sequence);
 
-        // Animate Sponsor logos with new positions
-        AnimateSponsorLogos(sequence);
+        // Animate Sponsor logos after "Mini" and "Zoo" logos
+        sequence.append(() =>
+        {
+            AnimateSponsorLogos(sequence);
+        });
 
         // Activate combined logo and fade out Sponsor logos
-        ActivateCombinedLogo(sequence);
+        sequence.append(() =>
+        {
+            ActivateCombinedLogo(sequence);
+        });
     }
 
     private void AnimateMiniLogos(LTSeq sequence)
@@ -126,42 +132,35 @@ public class InitialscreenManager : MonoBehaviour
 
     private void AnimateSponsorLogos(LTSeq sequence)
     {
-        // Animasi untuk logoRagunan
+        // Animate logoRagunan
         LTDescr ragunanTween = LeanTween.moveX(logoRagunan, endXLogoRagunan, animationDuration)
             .setEase(LeanTweenType.easeInOutQuad)
             .setOnComplete(() =>
             {
                 PlayLogoPop2();
 
-                // Setelah logoRagunan selesai, mulai animasi untuk logoEU, logoDkv, dan logoTripledot
-                StartLogoAnimations();
+                // After logoRagunan is done, start animating the rest of the sponsor logos
+                AnimateNextSponsorLogo(logoEU, endXLogoEU, () =>
+                {
+                    AnimateNextSponsorLogo(logoDkv, endXLogoDkv, () =>
+                    {
+                        AnimateNextSponsorLogo(logoTripledot, endXLogoTripledot, PlayLogoPop2);
+                    });
+                });
             });
-
-        void StartLogoAnimations()
-        {
-            // Animasi untuk logoEU
-            LTDescr tweenEU = LeanTween.moveX(logoEU, endXLogoEU, animationDuration)
-                .setEase(LeanTweenType.easeInOutQuad)
-                .setOnStart(() => FadeInLogo(logoEU)); // Fade in logoEU at the start of animation
-
-            // Animasi untuk logoDkv
-            LTDescr tweenDkv = LeanTween.moveX(logoDkv, endXLogoDkv, animationDuration)
-                .setEase(LeanTweenType.easeInOutQuad)
-                .setOnStart(() => FadeInLogo(logoDkv)); // Fade in logoDkv at the start of animation
-
-            // Animasi untuk logoTripledot
-            LTDescr tweenTripledot = LeanTween.moveX(logoTripledot, endXLogoTripledot, animationDuration)
-                .setEase(LeanTweenType.easeInOutQuad)
-                .setOnStart(() => FadeInLogo(logoTripledot)); // Fade in logoTripledot at the start of animation
-
-            // Set onComplete untuk logoEU, logoDkv, dan logoTripledot untuk memainkan suara setelah animasi selesai
-            tweenEU.setOnComplete(() => PlayLogoPop2());
-            tweenDkv.setOnComplete(() => PlayLogoPop2());
-            tweenTripledot.setOnComplete(() => PlayLogoPop2());
-        }
     }
 
-
+    private void AnimateNextSponsorLogo(RectTransform logo, float endX, System.Action onComplete)
+    {
+        LTDescr tween = LeanTween.moveX(logo, endX, animationDuration)
+            .setEase(LeanTweenType.easeInOutQuad)
+            .setOnStart(() => FadeInLogo(logo))
+            .setOnComplete(() =>
+            {
+                PlayLogoPop2();
+                onComplete?.Invoke();
+            });
+    }
 
     private void FadeInLogo(RectTransform logo)
     {
@@ -173,7 +172,7 @@ public class InitialscreenManager : MonoBehaviour
 
     private void ActivateCombinedLogo(LTSeq sequence)
     {
-        // Menunggu semua logo sponsor selesai
+        // Waiting for all sponsor logos to end
         sequence.append(() => StartCoroutine(WaitForSponsorLogosToEnd(() =>
         {
             // Fade out Sponsor logos
@@ -194,7 +193,7 @@ public class InitialscreenManager : MonoBehaviour
     private IEnumerator WaitForSponsorLogosToEnd(System.Action onComplete)
     {
         // Wait until all Sponsor logos' animations are completed
-        yield return new WaitForSeconds(animationDuration + 0.1f); // Adjust the wait time as needed
+        yield return new WaitForSeconds(animationDuration); // Adjust the wait time as needed
 
         // Callback when all logos are finished
         onComplete?.Invoke();

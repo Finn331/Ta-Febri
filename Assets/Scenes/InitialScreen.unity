@@ -2155,13 +2155,13 @@ MonoBehaviour:
   logoTripledot: {fileID: 1151134984}
   logoMiniZoo: {fileID: 1101043474}
   logoSatuan:
-  - {fileID: 1452187644}
-  - {fileID: 399124138}
-  - {fileID: 380710952}
-  - {fileID: 699049729}
-  - {fileID: 1773475351}
-  - {fileID: 2140130984}
-  - {fileID: 1759178717}
+  - {fileID: 1860110251}
+  - {fileID: 326994748}
+  - {fileID: 1716004517}
+  - {fileID: 592264756}
+  - {fileID: 899687700}
+  - {fileID: 44555035}
+  - {fileID: 561053415}
   headerImage: {fileID: 1554359926}
   initialBackground: {fileID: 1941321028}
   background: {fileID: 2105691970}
