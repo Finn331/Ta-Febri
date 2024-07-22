@@ -652,6 +652,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrollBar: {fileID: 719014038}
+  buttonNext: {fileID: 533601853}
   clickSFX: {fileID: 8300000, guid: 7de2ad93f8c42984bb6f5609038d8495, type: 3}
 --- !u!224 &57384527
 RectTransform:
@@ -10871,7 +10872,6 @@ MonoBehaviour:
   buttonNext: {fileID: 1904354769}
   rewardButton: {fileID: 1599238104}
   level: {fileID: 1409756173}
-  closeButton: {fileID: 1325326284}
   containerRewardHolder: {fileID: 1599238104}
   rewardHolder: {fileID: 432086157}
   rewardBox: {fileID: 691569065}
