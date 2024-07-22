@@ -272,6 +272,13 @@ public class PuzzleManager4 : MonoBehaviour
         CanvasGroup canvasPrevButton = PrevButton.GetComponent<CanvasGroup>();
         LeanTween.alphaCanvas(canvasNextButton, 1, 0.4f);
         LeanTween.alphaCanvas(canvasPrevButton, 1, 0.4f);
+
+        levelFinished = true;
+        if (levelFinished == true)
+        {
+            SaveManager.instance.level_4_completed = true;
+            SaveManager.instance.Save();
+        }
     }
 
     private void MoveRewardButton()
