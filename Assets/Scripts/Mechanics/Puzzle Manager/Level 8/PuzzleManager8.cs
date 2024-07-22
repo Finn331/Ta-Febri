@@ -22,7 +22,7 @@ public class PuzzleManager8 : MonoBehaviour
     public GameObject buttonNext;
     public GameObject rewardButton; // GameObject untuk reward button
     public GameObject level;
-    public Button closeButton; // Tombol untuk menutup deskripsiHolder
+    // public Button closeButton; // Tombol untuk menutup deskripsiHolder
     public GameObject containerRewardHolder;
     public GameObject rewardHolder;
     public GameObject rewardBox;
@@ -42,7 +42,7 @@ public class PuzzleManager8 : MonoBehaviour
     [SerializeField] private GameObject settingPanel;
     [SerializeField] private GameObject settingHolder;
     [SerializeField] private float delaySetting;
-    [SerializeField] private AudioClip bgmSong;
+    [SerializeField] private AudioClip level1Song;
     [SerializeField] private AudioClip clickSFX;
 
     [Header("Object to disable")]
@@ -60,17 +60,17 @@ public class PuzzleManager8 : MonoBehaviour
         }
 
         // Pastikan closeButton terhubung dan menambahkan listener untuk menutup deskripsiHolder
-        if (closeButton != null)
-        {
-            closeButton.onClick.AddListener(CloseDeskripsiHolder);
-        }
+        // if (closeButton != null)
+        // {
+        //     closeButton.onClick.AddListener(CloseDeskripsiHolder);
+        // }
         SaveManager.instance.currentLevel = 8;
         SaveManager.instance.Save();
     }
 
     void Start()
     {
-        AudioManager.instance.PlayMusic(bgmSong, true);
+        AudioManager.instance.PlayMusic(level1Song, true);
         if (rewardClaimed)
         {
             containerRewardHolder.SetActive(false);
@@ -244,7 +244,7 @@ public class PuzzleManager8 : MonoBehaviour
     public void CloseDeskripsiHolder()
     {
         AudioManager.instance.PlaySound(clickSFX);
-        // SaveManager.instance.level_8_completed = true;
+        // SaveManager.instance.level_1_completed = true;
         // SaveManager.instance.Save();
         // Melakukan fade out pada deskripsiHolder
         if (deskripsiHolder != null)
@@ -253,7 +253,10 @@ public class PuzzleManager8 : MonoBehaviour
             {
                 FadeOutObject(deskripsiHolder, ToTextSelamat);
             }
-            FadeOutObject(deskripsiHolder, MoveRewardButton);
+            else
+            {
+                FadeOutObject(deskripsiHolder, MoveRewardButton);
+            }
         }
     }
 
@@ -272,6 +275,13 @@ public class PuzzleManager8 : MonoBehaviour
         CanvasGroup canvasPrevButton = PrevButton.GetComponent<CanvasGroup>();
         LeanTween.alphaCanvas(canvasNextButton, 1, 0.4f);
         LeanTween.alphaCanvas(canvasPrevButton, 1, 0.4f);
+
+        levelFinished = true;
+        if (levelFinished == true)
+        {
+            SaveManager.instance.level_8_completed = true;
+            SaveManager.instance.Save();
+        }
     }
 
     private void MoveRewardButton()
