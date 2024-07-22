@@ -786,6 +786,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bb00111c068ba24d86f1e2544857104, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleManager: {fileID: 1747903651}
   scrollBar: {fileID: 719014038}
   clickSFX: {fileID: 8300000, guid: 7de2ad93f8c42984bb6f5609038d8495, type: 3}
 --- !u!224 &57384527
@@ -8666,7 +8667,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1325326280}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -10941,7 +10942,6 @@ MonoBehaviour:
   buttonNext: {fileID: 1904354769}
   rewardButton: {fileID: 1599238104}
   level: {fileID: 1409756173}
-  closeButton: {fileID: 1325326284}
   containerRewardHolder: {fileID: 1599238104}
   rewardHolder: {fileID: 432086157}
   rewardBox: {fileID: 691569065}

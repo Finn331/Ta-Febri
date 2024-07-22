@@ -22,7 +22,7 @@ public class PuzzleManager : MonoBehaviour
     public GameObject buttonNext;
     public GameObject rewardButton; // GameObject untuk reward button
     public GameObject level;
-    public Button closeButton; // Tombol untuk menutup deskripsiHolder
+    // public Button closeButton; // Tombol untuk menutup deskripsiHolder
     public GameObject containerRewardHolder;
     public GameObject rewardHolder;
     public GameObject rewardBox;
@@ -60,10 +60,10 @@ public class PuzzleManager : MonoBehaviour
         }
 
         // Pastikan closeButton terhubung dan menambahkan listener untuk menutup deskripsiHolder
-        if (closeButton != null)
-        {
-            closeButton.onClick.AddListener(CloseDeskripsiHolder);
-        }
+        // if (closeButton != null)
+        // {
+        //     closeButton.onClick.AddListener(CloseDeskripsiHolder);
+        // }
         SaveManager.instance.currentLevel = 1;
         SaveManager.instance.Save();
     }

@@ -10,6 +10,8 @@ public class SwipeControl : MonoBehaviour
     float[] pos;
     int posisi = 0;
     [SerializeField] private AudioClip clickSFX;
+    [SerializeField] private PuzzleManager puzzleManager; // Referensi ke skrip PuzzleManager
+
     public void Next()
     {
         if (posisi < pos.Length - 1)
@@ -29,6 +31,7 @@ public class SwipeControl : MonoBehaviour
         }
         AudioManager.instance.PlaySound(clickSFX);
     }
+
     private void Update()
     {
         pos = new float[transform.childCount];
@@ -51,6 +54,12 @@ public class SwipeControl : MonoBehaviour
                     posisi = i;
                 }
             }
+        }
+
+        // Tambahkan pengecekan posisi dan input untuk navigasi
+        if ((posisi == 4 && Input.GetMouseButtonDown(0)) || (posisi == 4 && Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began))
+        {
+            puzzleManager.CloseDeskripsiHolder();
         }
     }
 }
