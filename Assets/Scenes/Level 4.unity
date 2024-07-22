@@ -3289,7 +3289,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Buah-buahan, hewn kecil ubi-ubian
+  m_text: Buah-buahan, hewan kecil ubi-ubian
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
   m_sharedMaterial: {fileID: -587346571193639361, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}

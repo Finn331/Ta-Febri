@@ -7987,9 +7987,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Banteng merupakan spesies ruminasia besar liar Asia. Banteng jantan memiliki
-    warna lebih gelap lebih besar dan lebih besar dari pada betina. Tanduk jantan
-    keatas dantumbuh hingga 75 cm, sedangkan tanduk betina lebih kecil.
+  m_text: 'Merupakan satwa endemik Kalimantan. Memiliki berat sekitar 50-100 kg dan
+    panjang sekitar 1,2-1,4 meter. Memiliki lengan panjang dan kuat, rambut bewarnan
+    coklat. Lama waktu hidup bisa mencapai 35-40 tahun di alam bebas di penangkaran
+    bisa mencapai 60 tahun.
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
   m_sharedMaterial: {fileID: -587346571193639361, guid: be9ef5b0d4b032e41adfeda25966d3a6, type: 2}
