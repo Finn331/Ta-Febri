@@ -788,6 +788,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scrollBar: {fileID: 719014038}
   clickSFX: {fileID: 8300000, guid: 7de2ad93f8c42984bb6f5609038d8495, type: 3}
+  buttonNext: {fileID: 533601853}
 --- !u!224 &57384527
 RectTransform:
   m_ObjectHideFlags: 0

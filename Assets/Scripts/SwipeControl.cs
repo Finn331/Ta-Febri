@@ -10,10 +10,10 @@ public class SwipeControl : MonoBehaviour
     float[] pos;
     int posisi = 0;
     [SerializeField] private AudioClip clickSFX;
+    public Button buttonNext;
 
     public void Next()
     {
-
         if (posisi < pos.Length - 1)
         {
             posisi += 1;
@@ -21,7 +21,7 @@ public class SwipeControl : MonoBehaviour
         }
         if (posisi == 5)
         {
-
+            buttonNext.interactable = false;
             if (PuzzleManager.Instance != null)
             {
                 PuzzleManager.Instance.CloseDeskripsiHolder();
