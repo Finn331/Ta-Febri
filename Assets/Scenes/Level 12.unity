@@ -13462,7 +13462,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d802ab649c00314687bfc4d283d6e0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalPieces: 12
+  totalPieces: 20
   snappedPieces: 0
   rewardClaimed: 0
   levelFinished: 0
